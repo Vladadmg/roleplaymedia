@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head data-layout-view="default">
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Euro Gamers - Role Play Media Network</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+    <meta name="description" content="A group for gamers of a European persuasion." />
+    <meta name="keywords" content="" />
+<script type="text/javascript">
+djConfig = { baseScriptUri: 'http://www.roleplaymedia.net/xn/static-6.11.8.1/js/dojo-0.3.1-ning/', isDebug: false }
+ning = {"CurrentApp":{"premium":true,"iconUrl":"http:\/\/api.ning.com\/icons\/appatar\/4303603?default=4303603&width=64&height=64","url":"http:\/\/openrpgblog.ning.com","domains":["roleplaymedia.net"],"online":true,"privateSource":true,"id":"openrpgblog","description":"The RPG Media Network is a social networking site featuring blogs, forums, chat, and more dedicated to tabletop roleplaying games.","name":"Role Play Media Network","owner":"unclebear","createdDate":"2009-10-21T15:06:10.746Z","runOwnAds":false},"CurrentProfile":null,"maxFileUploadSize":5};
+    (function(){
+        if (!window.ning) { return; }
+
+        var age, gender, rand, obfuscated, combined;
+
+	    obfuscated = document.cookie.match(/xgdi=([^;]+)/);
+	    if (obfuscated) {
+	          var offset = 100000;
+	          obfuscated = parseInt(obfuscated[1]);
+	          rand = obfuscated / offset;
+	          combined = (obfuscated % offset) ^ rand;
+	          age = combined % 1000;
+	          gender = (combined / 1000) & 3;
+	          gender = (gender == 1 ? 'm' : gender == 2 ? 'f' : 0);
+	          ning.viewer = {"age":age,"gender":gender};
+	    }
+	 })();
+
+if (window.location.hash.indexOf('#!/') == 0) {
+    window.location.replace(window.location.hash.substr(2));
+}
+window.xg = {};
+xg.addOnRequire = function(f) { xg.addOnRequire.functions.push(f); };
+xg.addOnRequire.functions = [];
+xg.addOnFacebookLoad = function (f) { xg.addOnFacebookLoad.functions.push(f); };
+xg.addOnFacebookLoad.functions = [];
+xg._loader = {
+    p: 0,
+    loading: function(set) { xg._loader.p++; },
+    onLoad: function(set) {
+        xg._loader.p--;
+        if (xg._loader.p == 0 && typeof(xg._loader.onDone) == 'function') {
+            xg._loader.onDone();
+        }
+    }
+};
+xg._loader.loading('xnloader');
+if (window.bzplcm) {
+    window.bzplcm._profileCount = 0;
+    window.bzplcm._profileSend = function() { if (window.bzplcm._profileCount++ == 1) window.bzplcm.send(); };
+}
+xg._loader.onDone = function() {
+        if(window.bzplcm)window.bzplcm.start('ni');
+    xg.shared.util.parseWidgets();    var addOnRequireFunctions = xg.addOnRequire.functions;
+    xg.addOnRequire = function(f) { f(); };
+    try {
+        if (addOnRequireFunctions) { dojo.lang.forEach(addOnRequireFunctions, function(onRequire) { onRequire.apply(); }); }
+    } catch (e) {
+        if(window.bzplcm)window.bzplcm.ts('nx').send();
+        throw e;
+    }
+    if(window.bzplcm) { window.bzplcm.stop('ni'); window.bzplcm._profileSend(); }
+};
+window.xn = { track: { _globals: { screen_name: null, subdomain: "openrpgblog", is_owner: false, is_admin: false, is_member: false, join_date: 0, request_method: "GET", trace: "5fcbb8be-b9fc-442c-b9d8-673fdf6be46e"}, event: function() {}, pageView: function() {}, registerCompletedFlow: function() {}, registerError: function() {}, timer: function() { return { lapTime: function() {} }; }, _trackingHost: "track.ning.com", _jsDebug: false } }    </script>
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_ning_ga._setAccount', 'UA-2270114-6']); 
+    _gaq.push(['_ning_ga._setNamespace', 'ning']);
+        _gaq.push(['_ning_ga._setCustomVar', 1,"member_type", "anonymous", 3]);
+    _gaq.push(['_ning_ga._setCustomVar', 2,"subdomain",  "openrpgblog.ning.com" ,3]); 
+    _gaq.push(['_ning_ga._setCustomVar', 3,"category",    "gaming" ,3]);
+    _gaq.push(['_ning_ga._setCustomVar', 4,"product_type","plus" ,3]);
+    _gaq.push(['_ning_ga._setCustomVar', 5,"member_segment","150-999" ,3]);
+    _gaq.push(['_ning_ga._trackPageview']);
+
+    (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+     })();
+</script>
+<link rel="alternate" type="application/atom+xml" title="Forum - Role Play Media Network" href="http://www.roleplaymedia.net/group/eurogamers/forum/topic/list?feed=yes&amp;xn_auth=no" />
+<style type="text/css" media="screen,projection">
+#xg_navigation ul div.xg_subtab ul li a {
+    color:#666666;
+    background:#D3DBE4;
+}
+#xg_navigation ul div.xg_subtab ul li a:hover {
+    color:#333333;
+    background:#E3E8EE;
+}
+</style>
+
+
+<style type="text/css" media="screen,projection">
+@import url(http://static.ning.com/socialnetworkmain/widgets/index/css/common.min.css?xn_version=1487363733);
+@import url(http://static.ning.com/socialnetworkmain/widgets/groups/css/component.min.css?xn_version=3419320074);
+
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(http://static.ning.com/openrpgblog/instances/css/embed_1299061294.css?xn_version=201103012358);
+
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(http://static.ning.com/openrpgblog/instances/css/theme_1299026180.css?xn_version=201103012358);
+
+</style>
+
+<!--[if IE 6]>
+    <link rel="stylesheet" type="text/css" href="http://static.ning.com/socialnetworkmain/widgets/index/css/common-ie6.min.css?v=201103012358" />
+<![endif]-->
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" href="http://static.ning.com/socialnetworkmain/widgets/index/css/common-ie7.css?v=201103012358" />
+<![endif]-->
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.roleplaymedia.net/profiles/blog/rsd" />
+
+    </head>
+    <body>
+                <div id="xn_bar">
+            <div id="xn_bar_menu">
+                <div id="xn_bar_menu_branding" >
+                                    </div>
+
+                <div id="xn_bar_menu_more">
+                    <form id="xn_bar_menu_search" method="GET" action="http://www.roleplaymedia.net/main/search/search">
+                        <fieldset>
+                            <input type="text" name="q" id="xn_bar_menu_search_query" value="Search Role Play Media Network" _hint="Search Role Play Media Network" accesskey="4" class="text xj_search_hint" />
+                            <a id="xn_bar_menu_search_submit" href="#" onclick="document.getElementById('xn_bar_menu_search').submit();return false">Search</a>
+                        </fieldset>
+                    </form>
+                </div>
+
+                <ul id="xn_bar_menu_tabs">
+                                            <li><a href="http://www.roleplaymedia.net/main/authorization/signUp?target=http%3A%2F%2Fwww.roleplaymedia.net%2Fgroup%2Feurogamers%3FgroupUrl%3Deurogamers%26page%3D2">Sign Up</a></li>
+                        <li><a href="http://www.roleplaymedia.net/main/authorization/signIn?target=http%3A%2F%2Fwww.roleplaymedia.net%2Fgroup%2Feurogamers%3FgroupUrl%3Deurogamers%26page%3D2">Sign In</a></li>
+                        
+                </ul>
+            </div>
+        </div>
+        
+        
+        <div id="xg" class="xg_theme xg_widget_groups xg_widget_groups_group xg_widget_groups_group_show" data-layout-pack="classic">
+            <div id="xg_head">
+                <div id="xg_masthead">
+                    <p id="xg_sitename"><a id="application_name_header_link" href="/">Role Play Media Network</a></p>
+                    <p id="xg_sitedesc" class="xj_site_desc">a community for rpg bloggers, podcasters, vidcasters, and their audiences</p>
+                </div>
+                <div id="xg_navigation">
+                    <ul>
+    <li id="xg_tab_main" class="xg_subtab"><a href="/"><span>Home</span></a></li><li id="xg_tab_profile" class="xg_subtab"><a href="/profiles"><span>My Page</span></a></li><li id="xg_tab_http://os.ning.com/ningapps/paypal/gadget.xml?ning-app-status=network" class="xg_subtab"><a href="/opensocial/ningapps/show?appUrl=http%3A%2F%2Fos.ning.com%2Fningapps%2Fpaypal%2Fgadget.xml%3Fning-app-status%3Dnetwork&amp;owner=unclebear"><span>Donate</span></a></li><li id="xg_tab_blogs" class="xg_subtab"><a href="/profiles/blog/list"><span>Blogs</span></a></li><li id="xg_tab_xn1" class="xg_subtab"><a href="/profiles/blog/list?tag=review"><span>Reviews</span></a></li><li id="xg_tab_forum" class="xg_subtab"><a href="/forum"><span>Forum</span></a></li><li id="xg_tab_chat" class="xg_subtab"><a href="/chat"><span>Chat</span></a></li><li id="xg_tab_groups" class="xg_subtab this"><a href="/groups"><span>Groups</span></a></li><li id="xg_tab_events" class="xg_subtab"><a href="/events"><span>Events</span></a></li><li id="xg_tab_video" class="xg_subtab"><a href="/video"><span>Videos</span></a></li><li id="xg_tab_xn0" class="xg_subtab"><a href="http://www.rpgbloggers.com/" target="_blank"><span>RPGBN</span></a></li><li id="xg_tab_xn2" class="xg_subtab"><a href="http://www.rpgtabletalk.com"><span>RPG Table Talk</span></a></li></ul>
+
+                </div>
+            </div>
+            
+            <div id="xg_body">
+                
+                <div class="xg_column xg_span-16 xj_classic_canvas">
+                    <div  class='xg_span-16 xg_column first-child'>
+<ul class="navigation easyclear">
+	<li><a href="http://www.roleplaymedia.net/groups/group/list">All Groups</a></li><li><a href="http://www.roleplaymedia.net/groups/group/listForContributor?">My Groups</a></li>    </li>
+</ul>
+<div class="xg_headline xg_headline-img xg_headline-2l">
+    <div class="ib">        <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/Hammer"  title="Hammer"><img class=" photo"  src="http://api.ning.com:80/files/tUtZCH4RKavK2H0VfBiyCs5SBsiF7JVn2m6yZCr84io_/avatar9339_16.gif?width=64&amp;height=64&amp;crop=1%3A1" height="64" width="64" alt="Hammer" /></a></span>
+    </div>
+    <div class="tb">
+        <h1>Euro Gamers</h1>
+        <ul class="navigation byline">
+            <li><a class="nolink">Created by </a><a href="/profile/Hammer">Hammer</a></li>
+            <li><a class="xg_sprite xg_sprite-view" href="http://www.roleplaymedia.net/groups/group/listForContributor?user=3rox4lgpzwmsp">View Groups</a></li>
+        </ul>
+    </div>
+</div>
+<div  class='xg_span-12 xg_column'>
+<div class="xg_module">
+    <div class="xg_module_head">
+        <h2>Information</h2>
+    </div>
+    <div class="xg_module_body nopad">
+        <div class="xg_column xg_span-4">
+            <div class="pad5">
+                <img src="http://api.ning.com:80/files/E0KSZnYLGJmxb0LKEbOh5drWH4-O9fayNACucJ5C30g_/europemap.jpg?crop=1%3A1&amp;width=171" width="171" height="171" alt="Euro Gamers" class="groupicon"/>
+            </div>
+        </div>
+        <div class="xg_column xg_span-8 last-child">
+            <div class="pad5">
+                            <p>A group for gamers of a European persuasion.</p>
+                            <p>
+                                                                Location:                        <a href="http://www.roleplaymedia.net/groups/group/listByLocation?location=Europe">Europe</a><br/>
+                                            Members:                            <strong>21</strong><br/>
+                                            Latest Activity: <strong>Apr. 17, 2010</strong>                                    </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Template Start:  -->
+    <div class="xg_module module_forum">
+            <div class="xg_module_head">
+            <h2>Discussion Forum</h2>
+        </div>
+        <div class="xg_module_body">
+                <div class="vcard">
+                    <div class="author">        <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/RobLang"  title="Rob Lang"><img class=" photo"  src="http://api.ning.com:80/files/zJFqAzGZpsqJrkXbscCIyE5aGL4SVS6w1cZGISMyyv8_/65343907.bin?width=32&amp;height=32&amp;crop=1%3A1" height="32" width="32" alt="Rob Lang" /></a></span>
+    </div>
+                <div class="topic indent">
+            <h3>
+                <a href="http://www.roleplaymedia.net/group/eurogamers/forum/topics/tell-us-about-roleplaying-in" _snid="4303603:Topic:1995">Tell us about roleplaying in your country</a>
+                    <small class="nobr" >2&nbsp;Replies</small>
+            </h3>
+                            <p class="small indent">More languages than countries and a broad variety of temperaments can only make for a broad and fascinating gaming scenes. I'll start what I know there is in the South of the UK.
+
+In the South of the…</p>
+                                    <p>Tagged: <a href="http://www.roleplaymedia.net/group/eurogamers/forum/topic/listForTag?tag=europe">europe</a>, <a href="http://www.roleplaymedia.net/group/eurogamers/forum/topic/listForTag?tag=uk">uk</a>, <a href="http://www.roleplaymedia.net/group/eurogamers/forum/topic/listForTag?tag=roleplaying">roleplaying</a>, <a href="http://www.roleplaymedia.net/group/eurogamers/forum/topic/listForTag?tag=scene">scene</a></p>
+                                        <p class="small xg_lightfont indent ">
+                    Started by Rob Lang. <a href="http://www.roleplaymedia.net/group/eurogamers/forum/topics/tell-us-about-roleplaying-in/showLastReply">Last reply</a> by Farsight Games Dec. 4, 2009.            </p>
+        </div>
+    </div>
+        </div>
+            <div class="xg_module_foot">
+            <ul>
+                                    <li class="left"><a href="http://www.roleplaymedia.net/main/authorization/signUp?target=http%3A%2F%2Fwww.roleplaymedia.net%2Fgroup%2Feurogamers%2Fforum%2Ftopic%2Fnew%3Ftarget%3Dhttp%253A%252F%252Fwww.roleplaymedia.net%252Fgroup%252Feurogamers%253FgroupUrl%253Deurogamers%2526page%253D2&amp;groupToJoin=eurogamers" dojoType="PromptToJoinLink" _joinPromptText="Like what you see in Euro Gamers? Join Now!" _signInUrl="http://www.roleplaymedia.net/main/authorization/signIn?target=http%3A%2F%2Fwww.roleplaymedia.net%2Fgroup%2Feurogamers%2Fforum%2Ftopic%2Fnew%3Ftarget%3Dhttp%253A%252F%252Fwww.roleplaymedia.net%252Fgroup%252Feurogamers%253FgroupUrl%253Deurogamers%2526page%253D2&amp;groupToJoin=eurogamers" class="xg_sprite xg_sprite-add xj_new_topic_link">Start Discussion</a></li>
+                                <li class="right"><a href="http://www.roleplaymedia.net/group/eurogamers/forum">View All</a></li>
+            </ul>
+        </div>    </div>
+
+        <div class="xg_module">
+                            <div class="xg_module_head"><h2 id="comments" numComments="22">Comment Wall</h2></div>
+                                        <div class="xg_module_body">
+                    <p id="add-comment">Comment</p>
+                                            <div class="comment-join">
+                            <h3>You need to be a member of Euro Gamers to add comments!</h3>
+                                                    </div>
+                                                        </div>
+                    <div class="xg_module_body" id="comments"  _numComments="22" _scrollTo="">
+                    <dl _id="4303603:Comment:2056" id="c_6ce" class="comment vcard xg_lightborder">
+            <dt>
+                <a name="first_comment"></a><a name="comment-4303603_Comment_2056" id="comment-4303603_Comment_2056"></a>
+                        <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/RobLang"  title="Rob Lang"><img class=" photo"  src="http://api.ning.com:80/files/zJFqAzGZpsqJrkXbscCIyE5aGL4SVS6w1cZGISMyyv8_/65343907.bin?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="Rob Lang" /></a></span>
+                    Comment by <a href="/profile/RobLang" class="fn url">Rob Lang</a> on October 25, 2009 at 4:10pm            </dt>
+            <dd>
+            Some of the best banter I've had is with the Scots. Mostly because my family tree is littered with them. I even look Scottish. Until I open my moosh, I get taken for one of you!            </dd>
+                    </dl>
+            <dl _id="4303603:Comment:2035" id="c_875" class="comment vcard xg_lightborder">
+            <dt>
+                <a name="comment-4303603_Comment_2035" id="comment-4303603_Comment_2035"></a>
+                        <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/Hammer"  title="Hammer"><img class=" photo"  src="http://api.ning.com:80/files/tUtZCH4RKavK2H0VfBiyCs5SBsiF7JVn2m6yZCr84io_/avatar9339_16.gif?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="Hammer" /></a></span>
+                    Comment by <a href="/profile/Hammer" class="fn url">Hammer</a> on October 25, 2009 at 3:39pm            </dt>
+            <dd>
+            Yes. I even have the dour outlook on life ;)            </dd>
+                    </dl>
+            <dl _id="4303603:Comment:2012" id="c_9be" class="comment vcard xg_lightborder">
+            <dt>
+                <a name="comment-4303603_Comment_2012" id="comment-4303603_Comment_2012"></a>
+                        <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/MichaelWolf"  title="Michael Wolf"><img class=" photo"  src="http://api.ning.com:80/files/6vyl1V9H0gIxG6VCE3-YqVHveyK1dUjLszGn8B5vCXEx6gPp9QwbmB1QSle0ap-r2t1DIS-bA9KNBYocCWZDAs1Cnm3rdJ9d/stargazermike.png?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="Michael Wolf" /></a></span>
+                    Comment by <a href="/xn/detail/u_2ee7cbfndpjl4" class="fn url">Michael Wolf</a> on October 25, 2009 at 3:16pm            </dt>
+            <dd>
+            Hey, I have friends in Wales!            </dd>
+                    </dl>
+            <dl _id="4303603:Comment:2001" id="c_bcf" class="comment vcard xg_lightborder">
+            <dt>
+                <a name="comment-4303603_Comment_2001" id="comment-4303603_Comment_2001"></a>
+                        <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/RobLang"  title="Rob Lang"><img class=" photo"  src="http://api.ning.com:80/files/zJFqAzGZpsqJrkXbscCIyE5aGL4SVS6w1cZGISMyyv8_/65343907.bin?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="Rob Lang" /></a></span>
+                    Comment by <a href="/profile/RobLang" class="fn url">Rob Lang</a> on October 25, 2009 at 3:13pm            </dt>
+            <dd>
+            A broad kirk? A Scotsman, Hammer? :-)<br />
+I completely agree. Can we have Wales removed from the map? Just wondering if anyone would notice... ;-)            </dd>
+                    </dl>
+            <dl _id="4303603:Comment:1955" id="c_368" class="comment vcard xg_lightborder">
+            <dt>
+                <a name="comment-4303603_Comment_1955" id="comment-4303603_Comment_1955"></a>
+                        <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/Hammer"  title="Hammer"><img class=" photo"  src="http://api.ning.com:80/files/tUtZCH4RKavK2H0VfBiyCs5SBsiF7JVn2m6yZCr84io_/avatar9339_16.gif?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="Hammer" /></a></span>
+                    Comment by <a href="/profile/Hammer" class="fn url">Hammer</a> on October 25, 2009 at 2:48pm            </dt>
+            <dd>
+            Quite. In this case, I reckon we should be treating Europe as a broad kirk rather then sitting with two or three of us each in different country groups ;)            </dd>
+                    </dl>
+            <dl _id="4303603:Comment:1949" id="c_ee4" class="comment vcard xg_lightborder">
+            <dt>
+                <a name="comment-4303603_Comment_1949" id="comment-4303603_Comment_1949"></a>
+                        <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/RobertSandlan"  title="Robert Sandlan"><img class=" photo"  src="http://api.ning.com:80/files/TF6NnsH2a-LdSd5iloHgJMFUy5981dYF215x0o2ZyYA_/69332_bigger.jpg?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="Robert Sandlan" /></a></span>
+                    Comment by <a href="/xn/detail/u_3miww8955zqyb" class="fn url">Robert Sandlan</a> on October 25, 2009 at 2:44pm            </dt>
+            <dd>
+            Ah don't get Hammer started on the UK in Europe thing ;)            </dd>
+                    </dl>
+            <dl _id="4303603:Comment:1947" id="c_917" class="comment vcard xg_lightborder">
+            <dt>
+                <a name="comment-4303603_Comment_1947" id="comment-4303603_Comment_1947"></a>
+                        <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/MichaelWolf"  title="Michael Wolf"><img class=" photo"  src="http://api.ning.com:80/files/6vyl1V9H0gIxG6VCE3-YqVHveyK1dUjLszGn8B5vCXEx6gPp9QwbmB1QSle0ap-r2t1DIS-bA9KNBYocCWZDAs1Cnm3rdJ9d/stargazermike.png?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="Michael Wolf" /></a></span>
+                    Comment by <a href="/profile/MichaelWolf" class="fn url">Michael Wolf</a> on October 25, 2009 at 2:44pm            </dt>
+            <dd>
+            Haha! :)            </dd>
+                    </dl>
+            <dl _id="4303603:Comment:1945" id="c_393" class="comment vcard xg_lightborder">
+            <dt>
+                <a name="comment-4303603_Comment_1945" id="comment-4303603_Comment_1945"></a>
+                        <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/RobLang"  title="Rob Lang"><img class=" photo"  src="http://api.ning.com:80/files/zJFqAzGZpsqJrkXbscCIyE5aGL4SVS6w1cZGISMyyv8_/65343907.bin?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="Rob Lang" /></a></span>
+                    Comment by <a href="/profile/RobLang" class="fn url">Rob Lang</a> on October 25, 2009 at 2:43pm            </dt>
+            <dd>
+            Thanks for the invite. A smallpart of me feels like noting that I don't really live in Europe - I live in Britain, which is only in Europe by accident. RULE BRITANNIA, BRITANNIA RULES THE WAVES... etc etc.<br />
+<br />
+Alright, alright. I'm European. I'll admit it. ;-)            </dd>
+                    </dl>
+            <dl _id="4303603:Comment:1892" id="c_9ee" class="comment vcard xg_lightborder">
+            <dt>
+                <a name="comment-4303603_Comment_1892" id="comment-4303603_Comment_1892"></a>
+                        <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/MichaelWolf"  title="Michael Wolf"><img class=" photo"  src="http://api.ning.com:80/files/6vyl1V9H0gIxG6VCE3-YqVHveyK1dUjLszGn8B5vCXEx6gPp9QwbmB1QSle0ap-r2t1DIS-bA9KNBYocCWZDAs1Cnm3rdJ9d/stargazermike.png?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="Michael Wolf" /></a></span>
+                    Comment by <a href="/profile/MichaelWolf" class="fn url">Michael Wolf</a> on October 25, 2009 at 1:44pm            </dt>
+            <dd>
+            I've invited a few people, too. And I am pretty sure, more European gamers will sign up in the coming weeks. The network is still brand-new after all.            </dd>
+                    </dl>
+            <dl _id="4303603:Comment:1888" id="c_2e1" class="comment vcard xg_lightborder last-child">
+            <dt>
+                <a name="last_comment"></a><a name="comment-4303603_Comment_1888" id="comment-4303603_Comment_1888"></a>
+                        <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/Hammer"  title="Hammer"><img class=" photo"  src="http://api.ning.com:80/files/tUtZCH4RKavK2H0VfBiyCs5SBsiF7JVn2m6yZCr84io_/avatar9339_16.gif?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="Hammer" /></a></span>
+                    Comment by <a href="/profile/Hammer" class="fn url">Hammer</a> on October 25, 2009 at 1:42pm            </dt>
+            <dd>
+            Hopefully there will be a few more of us any way - I don't recognise a lot of the names here though, so I just invited you and Bob.            </dd>
+                    </dl>
+                <ul class="pagination easyclear ">
+                        <li><a class="" href="http://www.roleplaymedia.net/group/eurogamers?groupUrl=eurogamers&amp;id=4303603%3AGroup%3A1855&amp;page=1#comments">‹ Previous</a></li>
+                        <li><a href="http://www.roleplaymedia.net/group/eurogamers?groupUrl=eurogamers&amp;id=4303603%3AGroup%3A1855&amp;page=1#comments">1</a></li>
+                        <li><span>2</span></li>
+                    <li><a href="http://www.roleplaymedia.net/group/eurogamers?groupUrl=eurogamers&amp;id=4303603%3AGroup%3A1855&amp;page=3#comments">3</a></li>
+                            <li><a class="" href="http://www.roleplaymedia.net/group/eurogamers?groupUrl=eurogamers&amp;id=4303603%3AGroup%3A1855&amp;page=3#comments">Next ›</a></li>
+                                <li class="right">
+                        <span style="display:none" dojoType="Pagination" _maxPage="3" _gotoUrl="http://www.roleplaymedia.net/group/eurogamers?groupUrl=eurogamers&amp;id=4303603%3AGroup%3A1855&amp;page=__PAGE___#comments">
+                        <label>Page</label>
+                        <input class="textfield pagination_input align-right" value="3" type="text" name="goto_page" size="2"/>
+                        <input class="goto_button button" value="Go" type="button"/></span>
+                    </li>
+                            </ul>
+                </div>
+            </div>
+    &nbsp;</div>
+<div  class='xg_span-4 xg_column last-child'>
+    <div class="xg_module">
+        <div class="xg_module_head">
+            <h2>Members (21)</h2>
+        </div>
+        <div class="xg_module_body vcard-48grid">
+                               <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/FarsightGames"  title="Farsight Games"><img class=" photo"  src="http://api.ning.com:80/files/ayqwyHAwT3jwosfmx0G0NjMufKqoyRlQF09QtbOtI1Q_/jon.JPG?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="Farsight Games" /></a></span>
+                                   <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/Hammer"  title="Hammer"><img class=" photo"  src="http://api.ning.com:80/files/tUtZCH4RKavK2H0VfBiyCs5SBsiF7JVn2m6yZCr84io_/avatar9339_16.gif?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="Hammer" /></a></span>
+                                   <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/RobLang"  title="Rob Lang"><img class=" photo"  src="http://api.ning.com:80/files/zJFqAzGZpsqJrkXbscCIyE5aGL4SVS6w1cZGISMyyv8_/65343907.bin?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="Rob Lang" /></a></span>
+                                   <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/MattKatt"  title="Matt Katt"><img class=" photo"  src="http://api.ning.com:80/files/AsMJaeN*8VQs6Ajor5c3lWeSEH30BxgmJRWtTECrqYVz-GV-*MKgycq1YWo4m8KflQNbf6HyWUCouPU1TC78bOK314b8J9NC/19974_260989403943_511768943_3348709_4582519_n.jpg?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="Matt Katt" /></a></span>
+                                   <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/valinor"  title="valinor"><img class=" photo"  src="http://api.ning.com:80/files/xY3UY98-F8oJx-crTsV2Z4nbTfgWKsWV*5L*XACtDww_/453832972.bin?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="valinor" /></a></span>
+                                   <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/PetWerewolf"  title="Pet Werewolf"><img class=" photo"  src="http://api.ning.com:80/files/24e7xiTBggA-hlayySNMwBY2jwfauwfXnqIa3CyCiTYzNVKXCov5t4KiZsRGtpYI2fC4COwt3D2cyNpteyDpPWO8qZ3CN1ln/394414964.bin?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="Pet Werewolf" /></a></span>
+                                   <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/BierPhysik"  title="Bier Physik"><img class="xj_user_default photo"  src="http://api.ning.com:80/files/*XG8*0kVvmcUtSyEJ3RiEU9B7YXkwyBYJCYwrVYGTbhPllEcCUXVQTWBzlpaXItru0uYJquX6G1hdyrYEU5IR5REOXKKrQ1R/505522004.png?width=48&amp;height=48&amp;crop=1%3A1&amp;xj_user_default=1" height="48" width="48" alt="Bier Physik" /></a></span>
+                                   <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/Pookie"  title="Pookie"><img class=" photo"  src="http://api.ning.com:80/files/iFySxNPJrCKlszfwM6PuiPejv08jy8-kpZWSvrnUGB8_/Nigel.jpg?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="Pookie" /></a></span>
+                                   <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/JamesGrimDesborough"  title="James &#039;Grim&#039; Desborough"><img class=" photo"  src="http://api.ning.com:80/files/L-y7bPEw1e6hK4ZfQn1BbSyigVfqSacAVS2CGT4wH5I_/games.jpg?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="James &#039;Grim&#039; Desborough" /></a></span>
+                                   <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/dotperinch"  title="dotperinch"><img class=" photo"  src="http://api.ning.com:80/files/iHALr5tvEbjfw-2fEuJqPDne5ItiYCq42UEOm9X0Prg_/dotperinch.jpg?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="dotperinch" /></a></span>
+                                   <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/Jerall"  title="Jerall"><img class=" photo"  src="http://api.ning.com:80/files/1Gl3pgcqQ9CSlb1r13SdGc3R3cpK3zPWjKw6Y-0DCWo_/n684320328_2727786_6677256.jpg?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="Jerall" /></a></span>
+                                   <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/PaulMaclean"  title="Paul of Cthulhu"><img class=" photo"  src="http://api.ning.com:80/files/9104I8O*J8aTZrEEFV-7p7F9-kKaoP2cYaS4MBbJXQY_/13502127454a4ba18180993.jpg?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="Paul of Cthulhu" /></a></span>
+                                   <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/LeeWilliams"  title="Lee Williams"><img class=" photo"  src="http://api.ning.com:80/files/iiRWEMvmdQFigM7dHF2gAQxO7-y3bq6HE2bfwwhe0*FGIXvWUcns1U3eU4dbmDqeh4FqXVG-YY*JxYqhqyd9TtEdD9EGtIYw/Rousler_Kev_200px.jpg?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="Lee Williams" /></a></span>
+                                   <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/RobinStacey"  title="Robin Stacey"><img class=" photo"  src="http://api.ning.com:80/files/JspAo1-10M4YisryYpci3K98Eghzv4eTHloWKIONviY_/me.jpg?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="Robin Stacey" /></a></span>
+                                   <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/ChristianKennig"  title="CK"><img class=" photo"  src="http://api.ning.com:80/files/OFpjkfWxK7NDqRfIp492sprRxLv7ZouSTT0bkZtkdo4_/ghim2.gif?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="CK" /></a></span>
+                                   <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/JohnH"  title="John H"><img class=" photo"  src="http://api.ning.com:80/files/F9IBQ61iEQxV6S*QDZ4meJikGlIL4CpGgzWlCgf*oUs_/weemee3head.png?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="John H" /></a></span>
+                                   <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/Lurkinggherkin"  title="Lurkinggherkin"><img class=" photo"  src="http://api.ning.com:80/files/NSHj8Q88iJ8gSol6mSqs4D5WFuNqZFULWBqYEnzQ7DQ_/darkgherk.jpg?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="Lurkinggherkin" /></a></span>
+                                   <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/Xemides"  title="Xemides"><img class=" photo"  src="http://api.ning.com:80/files/HqD*zTWnWsnykO7KH4fzTuX1gx5M-u*UC2YPSj3KacY_/386639831.bin?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="Xemides" /></a></span>
+                                   <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/JamesEdwardRaggiIV"  title="James Edward Raggi IV"><img class=" photo"  src="http://api.ning.com:80/files/yb878QFtY4S-5aXlZSqh0lWO1L7q8SC4s6UCZYsb3Q4_/avatar.gif?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="James Edward Raggi IV" /></a></span>
+                                   <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/RobertSandlan"  title="Robert Sandlan"><img class=" photo"  src="http://api.ning.com:80/files/TF6NnsH2a-LdSd5iloHgJMFUy5981dYF215x0o2ZyYA_/69332_bigger.jpg?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="Robert Sandlan" /></a></span>
+                                   <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/MichaelWolf"  title="Michael Wolf"><img class=" photo"  src="http://api.ning.com:80/files/6vyl1V9H0gIxG6VCE3-YqVHveyK1dUjLszGn8B5vCXEx6gPp9QwbmB1QSle0ap-r2t1DIS-bA9KNBYocCWZDAs1Cnm3rdJ9d/stargazermike.png?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="Michael Wolf" /></a></span>
+                    </div>
+                <div class="xg_module_foot">
+            <ul>
+                                    <li class="right"><a href="http://www.roleplaymedia.net/group/eurogamers/user/list">View All</a></li>
+                            </ul>
+        </div>
+            </div>
+
+
+&nbsp;</div>
+&nbsp;</div>
+<div  class='xg_span-4 xg_column last-child'>
+&nbsp;</div>
+
+                </div>
+                <div class="xg_column xg_span-4 xg_last xj_classic_sidebar">
+                        <div class="xg_module" id="xg_module_account">
+        <div class="xg_module_body xg_signup xg_lightborder">
+            <p>Welcome to<br />Role Play Media Network</p>
+            <p class="last-child">
+                <big><strong><a href="http://www.roleplaymedia.net/main/authorization/signUp?target=http%3A%2F%2Fwww.roleplaymedia.net%2Fgroup%2Feurogamers%3FgroupUrl%3Deurogamers%26page%3D2">Sign Up</a></strong></big><br/>
+                or <a href="http://www.roleplaymedia.net/main/authorization/signIn?target=http%3A%2F%2Fwww.roleplaymedia.net%2Fgroup%2Feurogamers%3FgroupUrl%3Deurogamers%26page%3D2" style="white-space:nowrap">Sign In</a>            </p>
+                            <div class="xg_external_signup xg_lightborder xj_signup">
+                    <p class="dy-small">You can also sign up with:</p>
+                    <ul class="providers">
+            <li data-provider-name="Facebook"><a onclick="window.open('https://roleplaymedia.networkauth.com/facebook/connect_start?ext_perm=user_birthday%2Cuser_location%2Cemail&token_url=http%3A%2F%2Fwww.roleplaymedia.net%2Fmain%2Fauthorization%2FprocessExternalAuth%3Ftarget%3Dhttp%253A%252F%252Fwww.roleplaymedia.net%252Fgroups%252Fgroup%252Fshow%253FgroupUrl%253Deurogamers%2526id%253D4303603%25253AGroup%25253A1855%2526page%253D2%26source%3DsignUp%26close%3D1', null, 'width=626,height=436,location=no,menubar=no,resizable=yes,scrollbars=yes,toolbar=no,status=no'); return false;" href="https://roleplaymedia.networkauth.com/facebook/connect_start?ext_perm=user_birthday%2Cuser_location%2Cemail&amp;token_url=http%3A%2F%2Fwww.roleplaymedia.net%2Fmain%2Fauthorization%2FprocessExternalAuth%3Ftarget%3Dhttp%253A%252F%252Fwww.roleplaymedia.net%252Fgroups%252Fgroup%252Fshow%253FgroupUrl%253Deurogamers%2526id%253D4303603%25253AGroup%25253A1855%2526page%253D2%26source%3DsignUp%26close%3D0">
+                            <span class="mini-service mini-service-facebook" title="Facebook"></span>
+                    </a></li>
+            <li data-provider-name="Google"><a onclick="window.open('https://roleplaymedia.networkauth.com/openid/start?openid_identifier=http%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid&token_url=http%3A%2F%2Fwww.roleplaymedia.net%2Fmain%2Fauthorization%2FprocessExternalAuth%3Ftarget%3Dhttp%253A%252F%252Fwww.roleplaymedia.net%252Fgroups%252Fgroup%252Fshow%253FgroupUrl%253Deurogamers%2526id%253D4303603%25253AGroup%25253A1855%2526page%253D2%26source%3DsignUp%26close%3D1', null, 'width=530,height=480,location=no,menubar=no,resizable=yes,scrollbars=yes,toolbar=no,status=no'); return false;" href="https://roleplaymedia.networkauth.com/openid/start?openid_identifier=http%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid&amp;token_url=http%3A%2F%2Fwww.roleplaymedia.net%2Fmain%2Fauthorization%2FprocessExternalAuth%3Ftarget%3Dhttp%253A%252F%252Fwww.roleplaymedia.net%252Fgroups%252Fgroup%252Fshow%253FgroupUrl%253Deurogamers%2526id%253D4303603%25253AGroup%25253A1855%2526page%253D2%26source%3DsignUp%26close%3D0">
+            <span class="mini-service mini-service-google" title="Google"></span>
+        </a></li>
+            <li data-provider-name="Yahoo!"><a onclick="window.open('https://roleplaymedia.networkauth.com/openid/start?openid_identifier=http%3A%2F%2Fme.yahoo.com%2F&token_url=http%3A%2F%2Fwww.roleplaymedia.net%2Fmain%2Fauthorization%2FprocessExternalAuth%3Ftarget%3Dhttp%253A%252F%252Fwww.roleplaymedia.net%252Fgroups%252Fgroup%252Fshow%253FgroupUrl%253Deurogamers%2526id%253D4303603%25253AGroup%25253A1855%2526page%253D2%26source%3DsignUp%26close%3D1', null, 'width=500,height=480,location=no,menubar=no,resizable=yes,scrollbars=yes,toolbar=no,status=no'); return false;" href="https://roleplaymedia.networkauth.com/openid/start?openid_identifier=http%3A%2F%2Fme.yahoo.com%2F&amp;token_url=http%3A%2F%2Fwww.roleplaymedia.net%2Fmain%2Fauthorization%2FprocessExternalAuth%3Ftarget%3Dhttp%253A%252F%252Fwww.roleplaymedia.net%252Fgroups%252Fgroup%252Fshow%253FgroupUrl%253Deurogamers%2526id%253D4303603%25253AGroup%25253A1855%2526page%253D2%26source%3DsignUp%26close%3D0">
+            <span class="mini-service mini-service-yahoo" title="Yahoo!"></span>
+        </a></li>
+    </ul>
+                </div>
+                    </div>
+    </div>
+<div class="xg_module module_birthdays" >
+    <div class="xg_module_head">
+        <h2>Birthdays</h2>
+    </div>
+    <div class="xg_module_body">
+<h3>Birthdays Today</h3>
+<ul class="clist">
+    <li>
+        <div class="ib">
+                    <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/Labyrinthian"  title="Labyrinthian"><img class=" photo"  src="http://api.ning.com:80/files/Ec55v24RQn6obPbROlt1j2HElxOCgKfbc*1HuIcFbpEGcvls6fvB5MZd2ypOlsBWcKKJyB3V0Hytp8dT820kpzzKNJ9*T-m*/GravatarLogo4.jpg?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="Labyrinthian" /></a></span>
+            </div>
+        <div class="tb">
+            <p>
+	        <span><a href="http://www.roleplaymedia.net/profile/Labyrinthian">Labyrinthian</a></span>
+	        <span><a class="xg_sprite xg_sprite-gift" href="http://www.roleplaymedia.net/main/authorization/signUp?target=http%3A%2F%2Fwww.roleplaymedia.net%2Fgifts%2Fitem%2Flist%3Fto%3D3qnuydqi0ccp0%26xg_source%3Dbemb">Give a Gift</a> </span>
+	    </p>
+        </div>
+    </li>
+    <li>
+        <div class="ib">
+                    <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/MarkoKari"  title="Marko Kari"><img class=" photo"  src="http://api.ning.com:80/files/PusYI-F1KU2o-gC7sxh4zmVD7iPBDTFLTXAGkTpSD-Q_/noppamake32.jpg?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="Marko Kari" /></a></span>
+            </div>
+        <div class="tb">
+            <p>
+	        <span><a href="http://www.roleplaymedia.net/profile/MarkoKari">Marko Kari</a></span>
+	        <span><a class="xg_sprite xg_sprite-gift" href="http://www.roleplaymedia.net/main/authorization/signUp?target=http%3A%2F%2Fwww.roleplaymedia.net%2Fgifts%2Fitem%2Flist%3Fto%3D3bpx37smmw5kq%26xg_source%3Dbemb">Give a Gift</a> </span>
+	    </p>
+        </div>
+    </li>
+</ul>
+</div></div>
+	<div class="xg_module module_badge">
+		<div class="xg_module_head">
+	    <h2>Badge</h2>
+	    </div>
+	    <div class="xg_module_body xj_badge_body xj_embed_container" _embedCode="&lt;object classid=&quot;clsid:D27CDB6E-AE6D-11cf-96B8-444553540000&quot; codebase=&quot;http://fpdownload.macromedia.com/get/flashplayer/current/swflash.cab&quot;
+    id=&quot;badgeSwf&quot; width=&quot;100%&quot; height=&quot;104&quot; &gt;
+    &lt;param name=&quot;movie&quot; value=&quot;http://static.ning.com/socialnetworkmain/widgets/index/swf/badge.swf?v=201103012358&quot; /&gt;
+    &lt;param name=&quot;quality&quot; value=&quot;high&quot; /&gt;
+    &lt;param name=&quot;bgcolor&quot; value=&quot;#CDA950&quot; /&gt;
+    &lt;param name=&quot;flashvars&quot; value=&quot;hideVisit=1&amp;amp;config=http%3A%2F%2Fwww.roleplaymedia.net%2Fmain%2Fbadge%2FshowPlayerConfig%3Fsize%3Dsmall&amp;amp;backgroundColor=0xCDA950&amp;amp;textColor=0xB26400&quot; /&gt;
+    &lt;param name=&quot;wmode&quot; value=&quot;opaque&quot;/&gt;
+    &lt;param name=&quot;allowScriptAccess&quot; value=&quot;always&quot; /&gt;
+&lt;embed
+    class=&quot;xj_badge_embed&quot;
+    src=&quot;http://static.ning.com/socialnetworkmain/widgets/index/swf/badge.swf?v=201103012358&quot;
+    quality=high
+    bgColor=&quot;#CDA950&quot;
+    width=&quot;100%&quot;
+    height=&quot;104&quot;
+    name=&quot;badgeSwf&quot;
+    type=&quot;application/x-shockwave-flash&quot;
+    pluginspage=&quot;http://www.macromedia.com/go/getflashplayer&quot;
+    wmode=&quot;opaque&quot;
+    FlashVars=&quot;hideVisit=1&amp;amp;config=http%3A%2F%2Fwww.roleplaymedia.net%2Fmain%2Fbadge%2FshowPlayerConfig%3Fsize%3Dsmall&amp;amp;backgroundColor=0xCDA950&amp;amp;textColor=0xB26400&quot;
+    scale=&quot;noscale&quot;
+    allowScriptAccess=&quot;always&quot;&gt;
+&lt;/embed&gt;
+&lt;/object&gt;">
+    Loading…</div>
+	    <div class="xg_module_foot">
+	        <p class="right"><a href="http://www.roleplaymedia.net/main/embeddable/list">Get Badge</a></p>
+	    </div>
+	</div>
+
+<!-- Template Start:  -->
+
+                </div>
+            </div>
+            <div id="xg_foot">
+                <p class="left">
+    © 2011 &nbsp; Created by <a href="/xn/detail/u_unclebear">Berin Kinsman</a>.        &nbsp;
+    Powered by <a href="http://www.ning.com/"><img src="http://static.ning.com/socialnetworkmain/widgets/index/gfx/logo_ningbar.png?v=201103012358" width="48" height="15" alt="Ning" class="poweredbylogo" /></a>.
+    </p>
+    <p class="right xg_lightfont">
+                <a href="http://www.roleplaymedia.net/main/embeddable/list">Badges</a> &nbsp;|&nbsp;
+                            <a href="http://www.roleplaymedia.net/main/authorization/signUp?target=http%3A%2F%2Fwww.roleplaymedia.net%2Fmain%2Findex%2Freport&amp;groupToJoin=eurogamers" dojoType="PromptToJoinLink" _joinPromptText="Like what you see in Euro Gamers? Join Now!" _signInUrl="http://www.roleplaymedia.net/main/authorization/signIn?target=http%3A%2F%2Fwww.roleplaymedia.net%2Fmain%2Findex%2Freport&amp;groupToJoin=eurogamers">Report an Issue</a> &nbsp;|&nbsp;
+                <a href="http://www.roleplaymedia.net/main/authorization/termsOfService?previousUrl=http%3A%2F%2Fwww.roleplaymedia.net%2Fgroup%2Feurogamers%3FgroupUrl%3Deurogamers%26page%3D2">Terms of Service</a>
+    </p>
+
+            </div>
+        </div>
+        
+        <div id="xj_baz17246" class="xg_theme"></div>
+<div id="xg_overlay" style="display:none;">
+<!--[if lte IE 6.5]><iframe></iframe><![endif]-->
+</div>
+<!--googleoff: all--><noscript>
+	<style type="text/css" media="screen">
+        #xg { position:relative;top:120px; }
+        #xn_bar { top:120px; }
+	</style>
+	<div class="errordesc noscript">
+		<div>
+            <h3><strong>Hello, you need to enable JavaScript to use Role Play Media Network.</strong></h3>
+            <p>Please check your browser settings or contact your system administrator.</p>
+			<img src="/xn_resources/widgets/index/gfx/jstrk_off.gif" height="1" width="1" />
+		</div>
+	</div>
+</noscript><!--googleon: all-->
+<script type="text/javascript" src="http://static.ning.com/socialnetworkmain/widgets/lib/core.min.js?v=201103012358"></script>        <script>
+            var sources = ["http:\/\/b.scorecardresearch.com\/beacon.js","http:\/\/static.ning.com\/openrpgblog\/instances\/shared\/js\/set_common.min.js?r=1298581564","http:\/\/static.ning.com\/openrpgblog\/instances\/shared\/js\/set_sidebar_u.min.js?r=1297283455","http:\/\/static.ning.com\/openrpgblog\/instances\/shared\/js\/set_grougroushow_u.min.js?r=1299027594"];
+            var numSources = sources.length;
+            var heads = document.getElementsByTagName('head');
+            var node = heads.length > 0 ? heads[0] : document.body;
+            for (var i = 0; i < numSources; i++) {
+                var source = sources[i];
+                xg._loader.loading(source);
+                var script = document.createElement('script');
+                
+                script.type = 'text/javascript';
+                var cb = (function(source) { return function() { xg._loader.onLoad(source); }; })(source);
+                script.onerror = script.onload = cb;
+                script.onreadystatechange = function() {
+                    if (this.readyState == 'complete' || this.readyState == 'loaded') {
+                        cb();
+                    }
+                }
+                script.src = source;
+                node.appendChild(script);
+            }
+        </script>
+    <script type="text/javascript">
+if (!ning._) {ning._ = {}}
+ning._.compat = { encryptedToken: "<empty>" }
+ning._.CurrentServerTime = "2011-03-02T10:40:31+00:00";
+ning._.probableScreenName = "";
+ning._.domains = {
+    base: 'ning.com',
+    ports: { http: '80', ssl: '443' }
+};
+ning.loader.version = '201103012358_10'; // DEP-6402-1:f2931a0 26
+djConfig.parseWidgets = false;
+</script>
+<script type="text/javascript">
+    xg.token = '';
+    xg.cdnHost = 'static.ning.com';
+    xg.version = '201103012358';
+    xg.useMultiCdn = true;
+        xg.staticRoot = 'socialnetworkmain';
+    xg.xnTrackHost = "track.ning.com";
+            xg.cdnDefaultPolicyHost = 'static';
+        xg.cdnPolicy = [];
+        xg.global = xg.global||{}; xg.global.currentMozzle = 'groups';
+    xg.global.userCanInvite = false;
+    xg.global.requestBase = '';
+    xg.global.locale = 'en_US';
+    xg.num_thousand_sep = ",";
+        (function() {
+        dojo.addOnLoad(function() {
+            if(window.bzplcm) { window.bzplcm.ts('hr'); window.bzplcm._profileSend(); }
+                    });
+                            xg._loader.onLoad('xnloader');
+            })();
+</script>
+<div id="xgDock" class="xg_dock">
+            <div class="jsContainer">
+            <a class="xg_info" href="/main/authorization/signIn?chat=true">Sign in to chat!</a>            <a href="#" class="xg_status xg_status-offline" title="You are Offline" ></a>
+        </div>
+    </div>
+<div class="xg_dock_spacer"></div><script type="text/javascript" src="http://static.ning.com/socialnetworkmain/widgets/lib/js/thrift/xn_track.min.js?v=201103012358"></script>
+
+
+    </body>
+</html>
+
+<!-- Template Start:  -->

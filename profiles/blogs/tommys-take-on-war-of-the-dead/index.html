@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Tommy's Take on War of the Dead Chapter One - Role Play Media Network</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+    <meta name="description" content="War of the Dead Chapter One is the first leg of the War of the Dead campaign epic for Savage
+Worlds by Daring Entertainment.
+
+To be clear: Chapter One is actu…" />
+    <meta name="keywords" content="Daring Entertainment, Savage Worlds, War Dead, review, zombie" />
+    <meta name="title" content="Tommy&#039;s Take on War of the Dead Chapter One - Role Play Media Network" />
+    <script type="text/javascript">
+djConfig = { baseScriptUri: 'http://www.roleplaymedia.net/xn/static-6.11.8.1/js/dojo-0.3.1-ning/', isDebug: false }
+ning = {"CurrentApp":{"premium":true,"iconUrl":"http:\/\/api.ning.com\/icons\/appatar\/4303603?default=4303603&width=64&height=64","url":"http:\/\/openrpgblog.ning.com","domains":["roleplaymedia.net"],"online":true,"privateSource":true,"id":"openrpgblog","description":"The RPG Media Network is a social networking site featuring blogs, forums, chat, and more dedicated to tabletop roleplaying games.","name":"Role Play Media Network","owner":"unclebear","createdDate":"2009-10-21T15:06:10.746Z","runOwnAds":false},"CurrentProfile":null,"maxFileUploadSize":5};
+    (function(){
+        if (!window.ning) { return; }
+
+        var age, gender, rand, obfuscated, combined;
+
+	    obfuscated = document.cookie.match(/xgdi=([^;]+)/);
+	    if (obfuscated) {
+	          var offset = 100000;
+	          obfuscated = parseInt(obfuscated[1]);
+	          rand = obfuscated / offset;
+	          combined = (obfuscated % offset) ^ rand;
+	          age = combined % 1000;
+	          gender = (combined / 1000) & 3;
+	          gender = (gender == 1 ? 'm' : gender == 2 ? 'f' : 0);
+	          ning.viewer = {"age":age,"gender":gender};
+	    }
+	 })();
+
+if (window.location.hash.indexOf('#!/') == 0) {
+    window.location.replace(window.location.hash.substr(2));
+}
+window.xg = {};
+xg.addOnRequire = function(f) { xg.addOnRequire.functions.push(f); };
+xg.addOnRequire.functions = [];
+xg.addOnFacebookLoad = function (f) { xg.addOnFacebookLoad.functions.push(f); };
+xg.addOnFacebookLoad.functions = [];
+xg._loader = {
+    p: 0,
+    loading: function(set) { xg._loader.p++; },
+    onLoad: function(set) {
+        xg._loader.p--;
+        if (xg._loader.p == 0 && typeof(xg._loader.onDone) == 'function') {
+            xg._loader.onDone();
+        }
+    }
+};
+xg._loader.loading('xnloader');
+if (window.bzplcm) {
+    window.bzplcm._profileCount = 0;
+    window.bzplcm._profileSend = function() { if (window.bzplcm._profileCount++ == 1) window.bzplcm.send(); };
+}
+xg._loader.onDone = function() {
+        if(window.bzplcm)window.bzplcm.start('ni');
+    xg.shared.util.parseWidgets();    var addOnRequireFunctions = xg.addOnRequire.functions;
+    xg.addOnRequire = function(f) { f(); };
+    try {
+        if (addOnRequireFunctions) { dojo.lang.forEach(addOnRequireFunctions, function(onRequire) { onRequire.apply(); }); }
+    } catch (e) {
+        if(window.bzplcm)window.bzplcm.ts('nx').send();
+        throw e;
+    }
+    if(window.bzplcm) { window.bzplcm.stop('ni'); window.bzplcm._profileSend(); }
+};
+window.xn = { track: { _globals: { screen_name: null, subdomain: "openrpgblog", is_owner: false, is_admin: false, is_member: false, join_date: 0, request_method: "GET", trace: "2a70274c-2a3f-42ed-8b6b-a4a43829d0fd"}, event: function() {}, pageView: function() {}, registerCompletedFlow: function() {}, registerError: function() {}, timer: function() { return { lapTime: function() {} }; }, _trackingHost: "track.ning.com", _jsDebug: false } }    </script>
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_ning_ga._setAccount', 'UA-2270114-6']); 
+    _gaq.push(['_ning_ga._setNamespace', 'ning']);
+        _gaq.push(['_ning_ga._setCustomVar', 1,"member_type", "anonymous", 3]);
+    _gaq.push(['_ning_ga._setCustomVar', 2,"subdomain",  "openrpgblog.ning.com" ,3]); 
+    _gaq.push(['_ning_ga._setCustomVar', 3,"category",    "gaming" ,3]);
+    _gaq.push(['_ning_ga._setCustomVar', 4,"product_type","plus" ,3]);
+    _gaq.push(['_ning_ga._setCustomVar', 5,"member_segment","150-999" ,3]);
+    _gaq.push(['_ning_ga._trackPageview']);
+
+    (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+     })();
+</script>
+<meta name="medium" content="blog" /><link rel="alternate" type="application/atom+xml" title="Tommy Brownell&#039;s Posts - Role Play Media Network" href="http://www.roleplaymedia.net/profiles/blog/feed?user=2pve5o6nisb5r&amp;xn_auth=no" /><link rel="alternate" type="application/atom+xml" title="Comments - Tommy&#039;s Take on War of the Dead Chapter One - Role Play Media Network" href="http://www.roleplaymedia.net/profiles/comment/feed?attachedTo=4303603%3ABlogPost%3A11402&amp;xn_auth=no" />
+
+<style type="text/css" media="screen,projection">
+@import url(http://static.ning.com/socialnetworkmain/widgets/index/css/common.min.css?xn_version=1778925494);
+@import url(http://static.ning.com/socialnetworkmain/widgets/profiles/css/component.min.css?xn_version=1126017841);
+
+</style>
+
+<style type="text/css" media="screen,projection">
+#xg_navigation ul div.xg_subtab ul li a {
+    color:#666666;
+    background:#D3DBE4;
+}
+#xg_navigation ul div.xg_subtab ul li a:hover {
+    color:#333333;
+    background:#E3E8EE;
+}
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(http://static.ning.com/openrpgblog/instances/css/embed_1297111278.css?xn_version=201102040200);
+
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(http://static.ning.com/openrpgblog/instances/css/theme_1296786739.css?xn_version=201102040200);
+
+</style>
+
+<!--[if IE 6]>
+    <link rel="stylesheet" type="text/css" href="http://static.ning.com/socialnetworkmain/widgets/index/css/common-ie6.min.css?v=201102040200" />
+<![endif]-->
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" href="http://static.ning.com/socialnetworkmain/widgets/index/css/common-ie7.css?v=201102040200" />
+<![endif]-->
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.roleplaymedia.net/profiles/blog/rsd" />
+</head>
+<body class="">
+
+<div id="xn_bar">
+    <div id="xn_bar_menu">
+        <div id="xn_bar_menu_branding">
+                                </div>
+
+        <div id="xn_bar_menu_more">
+            <form id="xn_bar_menu_search" method="GET" action="http://www.roleplaymedia.net/main/search/search">
+                <fieldset>
+                    <input type="text" name="q" id="xn_bar_menu_search_query" value="Search Role Play Media Network" _hint="Search Role Play Media Network" accesskey="4" class="text xj_search_hint" />
+                    <a id="xn_bar_menu_search_submit" href="#" onclick="document.getElementById('xn_bar_menu_search').submit();return false">Search</a>
+                </fieldset>
+            </form>
+        </div>
+
+        <ul id="xn_bar_menu_tabs">
+                            <li><a href="http://www.roleplaymedia.net/main/authorization/signUp?target=http%3A%2F%2Fwww.roleplaymedia.net%2Fprofiles%2Fblogs%2Ftommys-take-on-war-of-the-dead">Sign Up</a></li>
+                <li><a href="http://www.roleplaymedia.net/main/authorization/signIn?target=http%3A%2F%2Fwww.roleplaymedia.net%2Fprofiles%2Fblogs%2Ftommys-take-on-war-of-the-dead">Sign In</a></li>
+                        </ul>
+    </div>
+</div>
+
+<div id="xg" class=" xg_widget_profiles xg_widget_profiles_blog xg_widget_profiles_blog_show">
+    <div id="xg_head">
+                    <div id="xg_masthead">
+                <p id="xg_sitename"><a id="application_name_header_link" href="/">Role Play Media Network</a></p>
+                <p id="xg_sitedesc">a community for rpg bloggers, podcasters, vidcasters, and their audiences</p>            </div>
+            <div id="xg_navigation" >
+                <ul>
+                    <li id="xg_tab_main" class="xg_subtab"><a href="/"><span>Home</span></a></li><li id="xg_tab_profile" class="xg_subtab"><a href="/profiles"><span>My Page</span></a></li><li id="xg_tab_http://os.ning.com/ningapps/paypal/gadget.xml?ning-app-status=network" class="xg_subtab"><a href="/opensocial/ningapps/show?appUrl=http%3A%2F%2Fos.ning.com%2Fningapps%2Fpaypal%2Fgadget.xml%3Fning-app-status%3Dnetwork&amp;owner=unclebear"><span>Donate</span></a></li><li id="xg_tab_blogs" class="xg_subtab this"><a href="/profiles/blog/list"><span>Blogs</span></a></li><li id="xg_tab_xn1" class="xg_subtab"><a href="/profiles/blog/list?tag=review"><span>Reviews</span></a></li><li id="xg_tab_forum" class="xg_subtab"><a href="/forum"><span>Forum</span></a></li><li id="xg_tab_chat" class="xg_subtab"><a href="/chat"><span>Chat</span></a></li><li id="xg_tab_groups" class="xg_subtab"><a href="/groups"><span>Groups</span></a></li><li id="xg_tab_events" class="xg_subtab"><a href="/events"><span>Events</span></a></li><li id="xg_tab_video" class="xg_subtab"><a href="/video"><span>Videos</span></a></li><li id="xg_tab_xn0" class="xg_subtab"><a href="http://www.rpgbloggers.com/" target="_blank"><span>RPGBN</span></a></li><li id="xg_tab_xn2" class="xg_subtab"><a href="http://www.rpgtabletalk.com"><span>RPG Table Talk</span></a></li>                </ul>
+            </div>
+            </div>
+                <div id="xg_body">
+                                                    <div class="xg_column xg_span-16">
+                                <ul class="navigation easyclear"><li><a href="http://www.roleplaymedia.net/profiles/blog/list">All Blog Posts</a></li><li><a href="http://www.roleplaymedia.net/profiles/blog/list?my=1">My Blog</a></li><li class="right  xg_lightborder navbutton"><a href="http://www.roleplaymedia.net/profiles/blog/new" class="xg_sprite xg_sprite-add">Add</a></li></ul>
+<div class="xg_module xg_blog xg_blog_detail xg_blog_mypage">
+        <div class="xg_headline xg_headline-img xg_headline-2l">
+    <div class="ib">        <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/TommyBrownell"  title="Tommy Brownell"><img class="photo"  src="http://api.ning.com:80/files/NeRZxIziDiHUS9VtUGdx32HVy9ou3VaO-EMVL7h7tiQ_/Picture0025.jpg?width=64&amp;height=64&amp;crop=1%3A1" height="64" width="64" alt="Tommy Brownell" /></a></span>
+    </div>
+    <div class="tb">
+        <h1>Tommy&#039;s Take on War of the Dead Chapter One</h1>
+        <ul class="navigation byline">
+            <li><a class="nolink">Posted by </a><a href="/profile/TommyBrownell">Tommy Brownell</a><a class="nolink"> on October 1, 2010 at 9:10pm</a></li>
+            <li><a class="xg_sprite xg_sprite-view" href="http://www.roleplaymedia.net/profiles/blog/list?user=2pve5o6nisb5r">View Tommy Brownell&#039;s blog</a></li>
+        </ul>
+    </div>
+</div>
+    <div class="xg_module_body">
+        <div class="postbody">
+                    <div class="separator" style="clear: both; text-align: center;"><a rel=nofollow href="http://2.bp.blogspot.com/_v7xUOmoI9e8/TKaeVYsXsQI/AAAAAAAAAIo/EE6fCQM2HTk/s1600/WaroftheDead.jpg" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><img border="0" src="http://2.bp.blogspot.com/_v7xUOmoI9e8/TKaeVYsXsQI/AAAAAAAAAIo/EE6fCQM2HTk/s1600/WaroftheDead.jpg"/></a></div>
+War of the Dead Chapter One is the first leg of the War of the Dead campaign epic for Savage<br />
+Worlds by Daring Entertainment.<br />
+<br />
+To be clear: Chapter One is actually 13 adventures, of which there will ultimately be 52 (not counting one sheets, which Daring has begun to release). It is a modern setting, set during a zombie outbreak, and you can buy them in bits or you can buy all of Chapter One as a package.<br />
+I'm going to save you the trouble: Like <a rel=nofollow href="http://www.rpgnow.com/product_info.php?products_id=51078&amp;affiliate_id=15975%20">Savage Worlds</a> and zombies? Go buy the <a rel=nofollow href="http://www.rpgnow.com/product_info.php?products_id=81548&amp;affiliate_id=15975">bundle</a>. I'll even<br />
+link to it for you.<br />
+<br />
+WARNING: Though I will go as light as I can on spoilers, as I always do with adventures, it is virtually impossible to do a review of substance and also go spoiler free. If you are going to be a player in War of the Dead, do yourself a favor and stay away.<br />
+<br />
+SERIOUSLY.<br />
+<br />
+HERE BE SPOILERS.<br />
+<br />
+WEEK 1 TO 3<br />
+<br />
+The PDF is layered, searchable and has a table of contents, and is copy and paste enabled. The book actually begins with important setting notes before getting into adventures. The War of the Dead is specifically inspired by the works of George Romero and Robert Kirkman, so that is the flavor of zombie horror you can expect.<br />
+<br />
+The character types available are pretty much anything in a "normal" modern setting, though handy character advice is offered for you, in common archetypes and how they might be affected in the new world.<br />
+<br />
+A new Benny rule is provided called Heroic Determination, which allows a PC to spend a benny and get Combat Edge for free for one round.<br />
+<br />
+Four new Hindrances are present (three of which having a Major/Minor scale), such as Responsibility to Others and Guilt. A new Scavenger edge is present as well, which provides a bonus for finding food, supplies and shelter.<br />
+<br />
+Several Edges are removed (relating to Powers), and some useful Knowledge skills are mentioned, along with their uses.<br />
+<br />
+Some character advancement tips beyond Fighting and Shooting are also offered, with a general emphasis on using more than using advancement to boost combat abilities.<br />
+<br />
+The GM section provides the "rules" of the zombies...such as how they will not stop coming unless their brain is destroyed, and clarifies that they neither have superhuman strength or senses. The rules also cover the effects of the enviroment and temperature on the undead, with cold causing them to freeze up and dry climates speeding up decomposition.<br />
+<br />
+Virtually everyone is susceptible to infection from a zombie's bite...however, there are odd individuals who are not. This is determined by the GM and not the players, so they can't just, say, take an Edge.<br />
+<br />
+There are also guidelines for stopping infection by severing limbs, with the horrific possibility of that STILL not working.<br />
+<br />
+There is a "random headshot rule", and it is recommended that PCs not be allowed to call headshots until the effects of a headshot have been witnessed first hand.<br />
+Tips are also given for the use of the Survival and Tracking skills in relation to the game world.<br />
+<br />
+There is lots of useful setting info here for the GM about incorporating NPCs (and Savage Worlds is system VERY well suited for a "group of survivors" type game).<br />
+<br />
+Week One begins aboard the cruise ship Pinnacle (the first of many easter eggs), setting off on its maiden voyage with 3,000 people on board. In the first act, that night at sea, a Texas oilman takes ill after speaking with the PCs and is taken to the infirmary. Once he savagely attacks his wife and anyone else in the infirmary, the cruise ship turns into a cruise ship from Hell.<br />
+<br />
+In Act two, the Head of Security Jason Kirkman starts taking control of the situation, and the PCs are sent to their rooms...where they soon hear cries for help from a nearby cabin, leading to another zombie encounter.<br />
+<br />
+This is all meant to bring the PCs to the attention of the Head of Security, ensuring that they are central figures in the ensuing chaos. The PCs get to witness a power struggle between Kirkman, Ship's Captain Romero and the ship's owner Mr. Forthington, hinting that things are about to get even uglier. Week one should conclude with Kirkman and the PCs on a ship rapidly going to Hell.<br />
+<br />
+While things are going south here, they are also going crazy out in the world...and the cell networks are clogged up, cutting the PCs communications options down.<br />
+<br />
+Week One is a good start, designed to familiarize the PCs with the situation before a fairly rapid (but not TOO fast) descent into anarchy, and they are cut off completely from the outside world.<br />
+<br />
+Week 2 begins with a grisly scene of panicked passengers being attacked by the undead, with the crowd actively getting in the way if the PCs try to stop the undead.<br />
+<br />
+Act two gets crazy ugly as a paramilitary team has attacked the ship out of nowhere, with the PCs stumbling into a fight between them and zombies. The immediate assumption is liable to be that they are involved with the zombies, but far from it: They are on the boat for other reasons altogether, a very nice touch as it already makes the world feel "bigger", in that not everything is tied directly into either the PCs or the zombies, but still has relevance.<br />
+<br />
+In Week 3, the ship has been crippled and everything is going to Hell quickly. The adventure opens with a big set piece just designed for Savage Worlds goodness, with the PCs, Kirkman and the remaining soldiers getting to fight 28 zombies.<br />
+<br />
+From there, we get to the first in what becomes a very cool recurring theme in the campaign: Encounter charts keyed to card draws. Draw a card for every PC and play through the encounters. Some very awesome encounters are present: A girl who has been bitten by her zombie mom, a man who has snapped and murdered his family and an entire deck that is completely overran by zombies being among my favorite. This all builds the paramilitary subplot to a head as we find out precisely why they are on board.<br />
+<br />
+In Act Two, things calm down for the first time, as the known survivors gather together and assess the damage. An homage to the crazy religious lady from The Mist begins rattling the people, and a new encounter chart is used featuring incidents with the survivors, such as a possible suspicious interaction with the paramilitary guys, a random zombie busting in and a depressed man cutting his own throat in the room.<br />
+<br />
+Week three ends with a fairly railroady beatdown of the PCs, Kirkman and the armed soldier for plot purposes...I would recommend just giving everyone a benny and moving on. I imagine they'll be okay enough with that. (Obviously, if you are wrapping up the session there, give it to them at the beginning of the next, just to be nice...they can use it.)<br />
+<br />
+In fact, there are a few "cinematic moments" that kick in for the advancement of the plot...for me, at least, rather than ditching these I would just give out bennies any time the narrative took over, 'cause it is INCREDIBLY likely that the PCs will need all that they can get.<br />
+<br />
+After the Week 3 section, the rest of the first book is filled with stats of the various Chapter One zombies: Shamblers, Sprinters, Newborns and Generals. Finally, all of the stats for the remaining NPCs in Chapter One, in order of appearance no less, are presented.<br />
+<br />
+I really love that last bit of organization as, among other things, it lets you know that the author's not just making it all up as he goes along, since this was originally released weekly.<br />
+<br />
+Overall, a very strong start to the campaign series.<br />
+<br />
+WEEK 4<br />
+<br />
+Week 4 begins with the big standoff with the dingbat zealot, and has one of the PC's allies flipping on them so that he can protect his family from the mob. She is convinced that the zombies only want the "sinners", but there are dead inside of the auditorium with the survivors that will help flip things on its ear.<br />
+<br />
+This provides the PCs and their allies a chance to make their escape, where they discover that a) a Coast Guard ship is coming and b) their paramilitary buddies have wired the Pinnacle to explode and are not sticking around, leading to one more betrayal.<br />
+<br />
+Of course, the Coast Guard ship is full of zombies, and is on a collision course with the Pinnacle.<br />
+<br />
+This Week ends what is really the first Act or so of Chapter One, as the PCs and any surviving allies manage to escape the cruise ship...only to be stranded at see for two weeks.<br />
+<br />
+The saga of the cruise ship Pinnacle is a great start to the War of the Dead, with a couple of early "human" breaks in the action...and I love the Encounter Charts being keyed to the card draws. I've just always dug stuff like that...I seriously love random charts, and making sense of the results.<br />
+<br />
+WEEK 5<br />
+<br />
+In Week 5, after two weeks at sea (thanks to a hurricane and their boat being damaged), the PCs make landfall for the first time since the game began. The first warning that something Just Isn't Right should be that the communications grid is largely dead. They make landfall at a marina, that just confirms that the whole zombie outbreak is a much larger phenomena (if the Coast Guard ship didn't clue them in, of course).<br />
+<br />
+This Week also provides their first contact with NPCs after the ship, and is the first Week to focus primarily on a more human problem, rather than a zombie problem, with rampaging bikers.<br />
+<br />
+This one also has a plot driven kidnap scenario that is required to set up the next Week. A little railroady, yes, but if they complain too much, give 'em two bennies this time.<br />
+<br />
+The whole tone is a good change of pace after the crushing saga of the Pinnacle. I do think that the second forced abduction in five adventures was probably spaced too close together, but I also think that a group buying into the "game" won't mind TOO much, especially with a benny reward.<br />
+<br />
+WEEK 6<br />
+<br />
+Hopefully the PCs made nice with the elderly couple from Week 5, because they are being used as leverage by the bikers to force the PCs into working for them. The PCs get to be bait, drawing zombies away as the bikers raid a town for supplies.<br />
+<br />
+This provides another cool encounter chart, including an opportunity to stock up on weapons, and two encounters featuring low flying aircraft...one of which is armed and doesn't see the PCs(!).<br />
+<br />
+The PCs also get an RV in this adventure, which his a model in the <a rel=nofollow href="http://www.rpgnow.com/product_info.php?products_id=83232&amp;affiliate_id=15975">Paper Dead</a> supplement, complete with removeable roof so that you can see inside AND "zombie proof gear" to affix to the outside!<br />
+<br />
+The raid allows the PCs the chance to escape...but it'll surely mean taking on the bikers.<br />
+<br />
+The PCs also catch a break from a radio broadcast...directing them to a Rescue Station in Jacksonville.<br />
+<br />
+The Encounters charts are always awesome, so any chance to bust those out are great. The PCs get a chance to not be whipping boys, and get a cool ride. And yes, in the Zombie Apocalypse genre, RVs are a cool ride.<br />
+<br />
+WEEK 7<br />
+<br />
+Now the PCs get a broader look at how the world has gone to pot in just a couple of weeks.<br />
+<br />
+Another encounter chart is provided, this time with road specific encounters such as mid-road ambushes, spooked birds, a life threatening flat tire and the possible return of the biker gang the PCs just escaped from!<br />
+<br />
+The RV Plot Device dies, setting up the PCs to meet a group of survivors, including a little girl destined to play a very important role in the overall arc of the story. It's best to take advantage of the calmed down atmosphere at the moment, to make it all have a little more impact when the church the survivors are holed up in comes under attack from the biker gang *while* a...creepy...zombie outbreak occurs inside the church.<br />
+<br />
+Things descend into an appropriately chaotic mess again, with zombie hordes, bikers and a unique new breed of zombie that will...unsettle some folks.<br />
+<br />
+The first time I saw "zombie newborn" was in the Dawn of the Dead remake...which came out a few months after my first son was born, after a tense delivery...I nearly walked out of the movie theatre, but I think I was overly sensitive at the time. I don't think it'll bother me as much here, and one cool bit is that one of the random encounters in the previous Week can foreshadow this.<br />
+<br />
+WEEK 8<br />
+<br />
+Week 8 serves, ultimately, to explain just what happened to the government as the group has their first formal encounter with the military, upon arriving in Jacksonville. Before that happens, the survivors of the church are threatened with a huge internal conflict that the PCs get to take sides in.<br />
+<br />
+The little girl mentioned in Week 7 is at the center of all of this controversy, as she seems to be infected, but has no wounds or the like. This is a huge point of contention for the survivors, some of who are afraid they are endangering everyone by keeping her around.<br />
+<br />
+One gripe with this scenario is that twice the girl in question is placed in a horrible, life threatening situation...but has plot immunity (as she is integral to later chapters). I don't mind the plot immunity, but two life threatening situations in this adventure for someone who is in no danger seems...excessive.<br />
+<br />
+WEEK 9<br />
+<br />
+Week 9 has the PCs and some military in the ruins of Jacksonville, trying to find medicine for the girl...and begins with three encounters to be spread out, featuring opportunities to aid people in awful situations, with guilt effects if they choose not to.<br />
+<br />
+More crazy fun from random Encounter Charts is included, this time focusing on crazy, chaotic encounters in a city in flames. They can get attacked by feral dogs, rescue a woman trapped in her car, get *shot* at and have to deal with an exploding gas main.<br />
+<br />
+If they make it past the zombies and a gun weilding raiding party, they get to return to camp to find out that tensions at home base have completely erupted, resulting in the PCs having to get the Hell out of dodge with whatever allies they have left.<br />
+<br />
+This is a nice "out of the frying pan, into the fire" adventure, and after two Weeks with the military, they are surprisingly not revealed to be evil, incompetent or traitors...just guys out of their depth a bit.<br />
+<br />
+WEEK 10<br />
+<br />
+Week 10 provides a huge, and much needed, change of pace: The PCs find an actual community of survivors...and pretty much this whole Week is decompressing, acclimating and so on. Not a ton of action going on in this Week, just a lot of slow build and plot development.<br />
+<br />
+For some groups, this is might be too "slow". It is definitely not what you expect from a Savage Worlds adventure, but I submit that this is a good thing.<br />
+<br />
+WEEK 11<br />
+<br />
+Another week of lite-action/heavy-roleplaying as the town's Mayor is ordering the military contingent that the players found while on patrol to leave, due to them being a drain on resources. This is setting up a large fracture among the survivors, as some (including possibly the PCs) are sure to be on the side of the military, but the father of the young girl who may be infected is far more concerned with utilizing the resources of the town to help his daughter.<br />
+<br />
+WEEK 12<br />
+<br />
+Week 12 begins ratcheting the action back up for the finale, as the PCs find out that the Living Dead have homed in on settlement, and the town has about a day's notice of their approach. This leads to a supply run at a nearby town...and turns into a race against time as the young girl has gone missing.<br />
+<br />
+This leads to a crucial choice for the PCs: They can help defend the town against the undead, which breaks into the mass combat rules...or they can abandon the town to try to rescue the girl, and unearth the secrets that the town has been hiding in the process.<br />
+<br />
+WEEK 13<br />
+<br />
+The adventure begins with a "surrender or die" scenario, which probably means that the PCs will be abducted for the third time since the plot began. However, some very important information is conveyed here, including the possible origin of the virus that creates zombies, as well as the reason the little girl is so important: She has been infected with the virus, and her body has been fighting off the virus ever since.<br />
+<br />
+This all builds to one more apocalyptic turn of events, putting the PCs back on the road once more, and setting the stage for Chapter Two.<br />
+<br />
+The WEEK 13 book ends with some teasers about what is coming in the future, as some of the past will come back to haunt the PCs.<br />
+<br />
+CONCLUSION<br />
+<br />
+$20 for 13 adventures and the beginning of an incredibly ambitious campaign for Savage Worlds. It definitely falls closer to the Evernight "scripted campaign" territory than it does the now-famous "Plot Point" campaigns...not saying that's a bad thing, just saying.<br />
+<br />
+The author plays to the strengths of Savage Worlds throughout Chapter One, as it is one of the few systems that could pull off large set pieces with hordes of zombies and a slew of NPC allies and not really slow down. The cruise ship is strong start, forcing a clausterphobic feel right off the bat. Chapter Two is supposed to begin releasing soon, but in the meantime Daring Entertainment has begun releasing War of the Dead <a rel=nofollow href="http://www.rpgnow.com/product_info.php?products_id=84216&amp;affiliate_id=15975%20">One Sheets</a>, as well as optional rules inspired by <a rel=nofollow href="http://http//www.rpgnow.com/product_info.php?products_id=84303&amp;affiliate_id=15975%20">FATE.</a><br />
+<br />
+While I don't hesitate to give this a strong recommendation, I do note that there are a couple of places where the plot hammer does come down awfully heavily. There will be some groups that will chaffe at this. I think my usual group would roll with the punches, especially if I tossed them an extra benny or two for their troubles...as they can usually use them in games where the odds are LESS stacked against them, so they'd love me for them here. I think three forced kidnappings/surrenders/captures in the first Chapter was probably pushing it.<br />
+<br />
+There are some pieces that are very obvious homages to various films and stories, but I think they are clearly meant to be homages and most folks will get that. The "card draw" random encounter charts absolutely rule it, though, and if I ever start writing Savage Worlds adventures, I will shamelessly steal the concept and incorporate it as often as I can because I absolutely love random tables.<br />
+<br />
+Highly recommended for some Savage Worlds/zombie killing fun. I wish to Hell I'd had this a year ago when I interrupted our Savage Worlds group to try to go back to <a rel=nofollow href="http://www.rpgnow.com/product_info.php?products_id=627&amp;affiliate_id=15975">All Flesh Must Be Eaten</a>. We wouldn't have bothered.        </div>
+        <div class="left-panel">
+                        <p class="share-links clear"><a class="xg_sprite xg_sprite-share" href="http://www.roleplaymedia.net/main/sharing/share?id=4303603%253ABlogPost%253A11402">Share</a>        <a class="post_to_twitter" href="http://twitter.com/home?status=http%3A%2F%2Fwww.roleplaymedia.net%2Fprofiles%2Fblogs%2Ftommys-take-on-war-of-the-dead" _message="Checking out &quot;Tommy&#039;s Take on War of the Dead Chapter One&quot; on Role Play Media Network:" _url="http://www.roleplaymedia.net/profiles/blogs/tommys-take-on-war-of-the-dead" _urlShortenerKey="330906949225" _screenName="" _twitterAuthenticationNeeded="" _source="content" target="_blank">Twitter</a>
+                <a class="post_to_facebook xj_post_to_facebook" href="http://www.facebook.com/share.php?u=http%3A%2F%2Fwww.roleplaymedia.net%2Fprofiles%2Fblogs%2Ftommys-take-on-war-of-the-dead%3Fxg_source%3Dfacebookshare&amp;t=" _url="http://www.roleplaymedia.net/profiles/blogs/tommys-take-on-war-of-the-dead?xg_source=facebookshare" _title="" _log="{&quot;module&quot;:&quot;profiles&quot;,&quot;page&quot;:&quot;blog&quot;,&quot;action&quot;:&quot;show&quot;}">Facebook</a>
+    </p>        </div>
+        <div class="right-panel">
+                            <p class="small object-detail" id="tagsList">
+                    Tags: <a href="http://www.roleplaymedia.net/profiles/blog/list?tag=Daring+Entertainment">Daring Entertainment</a>, <a href="http://www.roleplaymedia.net/profiles/blog/list?tag=Savage+Worlds">Savage Worlds</a>, <a href="http://www.roleplaymedia.net/profiles/blog/list?tag=War+of+the+Dead">War of the Dead</a>, <a href="http://www.roleplaymedia.net/profiles/blog/list?tag=review">review</a>, <a href="http://www.roleplaymedia.net/profiles/blog/list?tag=zombie">zombie</a>                </p>
+                    </div>
+                    <ul class="pagination smallpagination">
+                            <li class="left"><a href="http://www.roleplaymedia.net/profiles/blogs/tommys-take-on-wu-xing-the" title="Tommy&#039;s Take on Wu Xing: The Ninja Crusade">&lt; Previous Post</a></li>                             <li class="right"><a title="Tommy&#039;s Take on Blood Moon Rising" href="http://www.roleplaymedia.net/profiles/blogs/tommys-take-on-blood-moon">Next Post &gt;</a></li>
+                        </ul>
+            </div>
+</div>
+        
+        <div class="xg_module">
+                                        <div class="xg_module_body">
+                    <p id="add-comment">Comment</p>
+                                            <div class="comment-join">
+                            <h3>You need to be a member of Role Play Media Network to add comments!</h3>
+                        <p><a href="http://www.roleplaymedia.net/main/authorization/signUp?target=http%3A%2F%2Fwww.roleplaymedia.net%2Fprofiles%2Fblogs%2Ftommys-take-on-war-of-the-dead">Join Role Play Media Network</a></p>
+                        </div>
+                                                        </div>
+                    <div class="xg_module_body" id="comments" style="display: none" _numComments="0" _scrollTo="">
+                    </div>
+                    <div class="xg_module_foot" id="xj_comments_footer" style="display:none">
+                                            <p class="left">
+                            <a class="xg_icon xg_icon-rss" href="http://www.roleplaymedia.net/profiles/comment/feed?attachedTo=4303603%3ABlogPost%3A11402&amp;xn_auth=no">RSS</a>
+                        </p>
+                                    </div>
+                    </div>
+          <input type="hidden" id="incrementViewCountEndpoint" value="http://www.roleplaymedia.net/profiles/blog/incrementViewCount?id=4303603%3ABlogPost%3A11402&amp;xn_out=json" />
+                            </div>
+                            <div class="xg_column xg_span-4 xg_last">
+                       <div class="xg_module" id="xg_module_account">
+        <div class="xg_module_body xg_signup xg_lightborder">
+            <p>Welcome to<br />Role Play Media Network</p>
+            <p class="last-child">
+                <big><strong><a href="http://www.roleplaymedia.net/main/authorization/signUp?target=http%3A%2F%2Fwww.roleplaymedia.net%2Fprofiles%2Fblogs%2Ftommys-take-on-war-of-the-dead">Sign Up</a></strong></big><br/>
+                or <a href="http://www.roleplaymedia.net/main/authorization/signIn?target=http%3A%2F%2Fwww.roleplaymedia.net%2Fprofiles%2Fblogs%2Ftommys-take-on-war-of-the-dead" style="white-space:nowrap">Sign In</a>            </p>
+                            <div class="xg_external_signup xg_lightborder xj_signup">
+                    <p class="dy-small">You can also sign up with:</p>
+                    <ul class="providers">
+            <li data-provider-name="Facebook"><a onclick="window.open('https://roleplaymedia.networkauth.com/facebook/connect_start?ext_perm=user_birthday%2Cuser_location%2Cemail&token_url=http%3A%2F%2Fwww.roleplaymedia.net%2Fmain%2Fauthorization%2FprocessExternalAuth%3Ftarget%3Dhttp%253A%252F%252Fwww.roleplaymedia.net%252Fprofiles%252Fblogs%252Ftommys-take-on-war-of-the-dead%26source%3DsignUp%26close%3D1', null, 'width=626,height=436,location=no,menubar=no,resizable=yes,scrollbars=yes,toolbar=no,status=no'); return false;" href="https://roleplaymedia.networkauth.com/facebook/connect_start?ext_perm=user_birthday%2Cuser_location%2Cemail&amp;token_url=http%3A%2F%2Fwww.roleplaymedia.net%2Fmain%2Fauthorization%2FprocessExternalAuth%3Ftarget%3Dhttp%253A%252F%252Fwww.roleplaymedia.net%252Fprofiles%252Fblogs%252Ftommys-take-on-war-of-the-dead%26source%3DsignUp%26close%3D0">
+                            <span class="mini-service mini-service-facebook" title="Facebook"></span>
+                    </a></li>
+            <li data-provider-name="Google"><a onclick="window.open('https://roleplaymedia.networkauth.com/openid/start?openid_identifier=http%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid&token_url=http%3A%2F%2Fwww.roleplaymedia.net%2Fmain%2Fauthorization%2FprocessExternalAuth%3Ftarget%3Dhttp%253A%252F%252Fwww.roleplaymedia.net%252Fprofiles%252Fblogs%252Ftommys-take-on-war-of-the-dead%26source%3DsignUp%26close%3D1', null, 'width=530,height=480,location=no,menubar=no,resizable=yes,scrollbars=yes,toolbar=no,status=no'); return false;" href="https://roleplaymedia.networkauth.com/openid/start?openid_identifier=http%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid&amp;token_url=http%3A%2F%2Fwww.roleplaymedia.net%2Fmain%2Fauthorization%2FprocessExternalAuth%3Ftarget%3Dhttp%253A%252F%252Fwww.roleplaymedia.net%252Fprofiles%252Fblogs%252Ftommys-take-on-war-of-the-dead%26source%3DsignUp%26close%3D0">
+            <span class="mini-service mini-service-google" title="Google"></span>
+        </a></li>
+            <li data-provider-name="Yahoo!"><a onclick="window.open('https://roleplaymedia.networkauth.com/openid/start?openid_identifier=http%3A%2F%2Fme.yahoo.com%2F&token_url=http%3A%2F%2Fwww.roleplaymedia.net%2Fmain%2Fauthorization%2FprocessExternalAuth%3Ftarget%3Dhttp%253A%252F%252Fwww.roleplaymedia.net%252Fprofiles%252Fblogs%252Ftommys-take-on-war-of-the-dead%26source%3DsignUp%26close%3D1', null, 'width=500,height=480,location=no,menubar=no,resizable=yes,scrollbars=yes,toolbar=no,status=no'); return false;" href="https://roleplaymedia.networkauth.com/openid/start?openid_identifier=http%3A%2F%2Fme.yahoo.com%2F&amp;token_url=http%3A%2F%2Fwww.roleplaymedia.net%2Fmain%2Fauthorization%2FprocessExternalAuth%3Ftarget%3Dhttp%253A%252F%252Fwww.roleplaymedia.net%252Fprofiles%252Fblogs%252Ftommys-take-on-war-of-the-dead%26source%3DsignUp%26close%3D0">
+            <span class="mini-service mini-service-yahoo" title="Yahoo!"></span>
+        </a></li>
+    </ul>
+                </div>
+                    </div>
+    </div>
+<div class="xg_module module_birthdays" >
+    <div class="xg_module_head">
+        <h2>Birthdays</h2>
+    </div>
+    <div class="xg_module_body">
+<h3>Birthdays Today</h3>
+<ul class="clist">
+    <li>
+        <div class="ib">
+                    <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/Anarkeith"  title="Anarkeith"><img class="photo"  src="http://api.ning.com:80/files/7wlIZRNflU4taPEWc*tNgwYKGpZ9jo14*TkpFRurOlg_/avatarpicl.gif?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="Anarkeith" /></a></span>
+            </div>
+        <div class="tb">
+            <p>
+	        <span><a href="http://www.roleplaymedia.net/profile/Anarkeith">Anarkeith</a></span>
+	        <span><a class="xg_sprite xg_sprite-gift" href="http://www.roleplaymedia.net/main/authorization/signUp?target=http%3A%2F%2Fwww.roleplaymedia.net%2Fgifts%2Fitem%2Flist%3Fto%3D390qu4g6ddnuf%26xg_source%3Dbemb">Give a Gift</a> </span>
+	    </p>
+        </div>
+    </li>
+</ul>
+<h3>Birthdays Tomorrow</h3>
+<ul class="clist">
+    <li>
+        <div class="ib">
+                    <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/Gregory"  title="Gregory"><img class="photo"  src="http://api.ning.com:80/files/wY993y6RAtNopnjYlH-wpVoLxS36p-T2XlbEEfeo7XeyzYovAxNoFnhU-Oy6no4064WXmHfdTOYXsccTeC*vJ-uEale18Wlo/portrait.jpg?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="Gregory" /></a></span>
+            </div>
+        <div class="tb">
+            <p>
+	        <span><a href="http://www.roleplaymedia.net/profile/Gregory">Gregory</a></span>
+	        <span><a class="xg_sprite xg_sprite-gift" href="http://www.roleplaymedia.net/main/authorization/signUp?target=http%3A%2F%2Fwww.roleplaymedia.net%2Fgifts%2Fitem%2Flist%3Fto%3D2bfby31ng05qa%26xg_source%3Dbemb">Give a Gift</a> </span>
+	    </p>
+        </div>
+    </li>
+    <li>
+        <div class="ib">
+                    <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/MichaelGarcia"  title="Michael Garcia"><img class="photo"  src="http://api.ning.com:80/files/*Ad1Blto*cwHLfJLRhttcm*CVzZy6Qg1VHtagadzq7c_/dungeonraidersgmail.com_81415ee6.jpg?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="Michael Garcia" /></a></span>
+            </div>
+        <div class="tb">
+            <p>
+	        <span><a href="http://www.roleplaymedia.net/profile/MichaelGarcia">Michael Garcia</a></span>
+	        <span><a class="xg_sprite xg_sprite-gift" href="http://www.roleplaymedia.net/main/authorization/signUp?target=http%3A%2F%2Fwww.roleplaymedia.net%2Fgifts%2Fitem%2Flist%3Fto%3D0n22khsh1g917%26xg_source%3Dbemb">Give a Gift</a> </span>
+	    </p>
+        </div>
+    </li>
+    <li>
+        <div class="ib">
+                    <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/SeanHolland"  title="Sean Holland"><img class="photo"  src="http://api.ning.com:80/files/B7V0CK83lae3cr*lIXSXzShtIi6p7tsjtj*krST8gbI_/sos.jpg?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="Sean Holland" /></a></span>
+            </div>
+        <div class="tb">
+            <p>
+	        <span><a href="http://www.roleplaymedia.net/profile/SeanHolland">Sean Holland</a></span>
+	        <span><a class="xg_sprite xg_sprite-gift" href="http://www.roleplaymedia.net/main/authorization/signUp?target=http%3A%2F%2Fwww.roleplaymedia.net%2Fgifts%2Fitem%2Flist%3Fto%3D0bigqrtc41uyk%26xg_source%3Dbemb">Give a Gift</a> </span>
+	    </p>
+        </div>
+    </li>
+</ul>
+</div></div>
+	<div class="xg_module module_badge">
+		<div class="xg_module_head">
+	    <h2>Badge</h2>
+	    </div>
+	    <div class="xg_module_body xj_badge_body xj_embed_container" _embedCode="&lt;object classid=&quot;clsid:D27CDB6E-AE6D-11cf-96B8-444553540000&quot; codebase=&quot;http://fpdownload.macromedia.com/get/flashplayer/current/swflash.cab&quot;
+    id=&quot;badgeSwf&quot; width=&quot;100%&quot; height=&quot;104&quot; &gt;
+    &lt;param name=&quot;movie&quot; value=&quot;http://static.ning.com/socialnetworkmain/widgets/index/swf/badge.swf?v=201102040200&quot; /&gt;
+    &lt;param name=&quot;quality&quot; value=&quot;high&quot; /&gt;
+    &lt;param name=&quot;bgcolor&quot; value=&quot;#CDA950&quot; /&gt;
+    &lt;param name=&quot;flashvars&quot; value=&quot;hideVisit=1&amp;amp;config=http%3A%2F%2Fwww.roleplaymedia.net%2Fmain%2Fbadge%2FshowPlayerConfig%3Fsize%3Dsmall&amp;amp;backgroundColor=0xCDA950&amp;amp;textColor=0xB26400&quot; /&gt;
+    &lt;param name=&quot;wmode&quot; value=&quot;opaque&quot;/&gt;
+    &lt;param name=&quot;allowScriptAccess&quot; value=&quot;always&quot; /&gt;
+&lt;embed
+    src=&quot;http://static.ning.com/socialnetworkmain/widgets/index/swf/badge.swf?v=201102040200&quot;
+    quality=high
+    bgColor=&quot;#CDA950&quot;
+    width=&quot;100%&quot;
+    height=&quot;104&quot;
+    name=&quot;badgeSwf&quot;
+    type=&quot;application/x-shockwave-flash&quot;
+    pluginspage=&quot;http://www.macromedia.com/go/getflashplayer&quot;
+    wmode=&quot;opaque&quot;
+    FlashVars=&quot;hideVisit=1&amp;amp;config=http%3A%2F%2Fwww.roleplaymedia.net%2Fmain%2Fbadge%2FshowPlayerConfig%3Fsize%3Dsmall&amp;amp;backgroundColor=0xCDA950&amp;amp;textColor=0xB26400&quot;
+    scale=&quot;noscale&quot;
+    allowScriptAccess=&quot;always&quot;&gt;
+&lt;/embed&gt;
+&lt;/object&gt;">
+    Loading…</div>
+	    <div class="xg_module_foot">
+	        <p class="right"><a href="http://www.roleplaymedia.net/main/embeddable/list">Get Badge</a></p>
+	    </div>
+	</div>
+
+<!-- Template Start:  -->
+                </div>
+                                </div>
+            <div id="xg_foot">
+        <p class="left">
+            © 2011 &nbsp; Created by <a href="/xn/detail/u_unclebear">Berin Kinsman</a>.                        &nbsp;
+            Powered by <a href="http://www.ning.com/"><img src="http://static.ning.com/socialnetworkmain/widgets/index/gfx/logo_ningbar.png?v=201102040200" width="48" height="15" alt="Ning" class="poweredbylogo" /></a>.
+                    </p>
+                    <p class="right xg_lightfont">
+                                <a href="http://www.roleplaymedia.net/main/embeddable/list">Badges</a> &nbsp;|&nbsp;
+                                                    <a href="http://www.roleplaymedia.net/main/authorization/signUp?target=http%3A%2F%2Fwww.roleplaymedia.net%2Fmain%2Findex%2Freport" dojoType="PromptToJoinLink" _joinPromptText="Please sign up or sign in to complete this step." _signInUrl="http://www.roleplaymedia.net/main/authorization/signIn?target=http%3A%2F%2Fwww.roleplaymedia.net%2Fmain%2Findex%2Freport">Report an Issue</a> &nbsp;|&nbsp;
+                                <a href="http://www.roleplaymedia.net/main/authorization/termsOfService?previousUrl=http%3A%2F%2Fwww.roleplaymedia.net%2Fprofiles%2Fblogs%2Ftommys-take-on-war-of-the-dead">Terms of Service</a>
+            </p>
+            </div>
+
+</div>
+
+<div id="xj_baz17246"></div>
+<div id="xg_overlay" style="display:none;">
+<!--[if lte IE 6.5]><iframe></iframe><![endif]-->
+</div>
+
+<!--googleoff: all--><noscript>
+	<style type="text/css" media="screen">
+        #xg { position:relative;top:120px; }
+        #xn_bar { top:120px; }
+	</style>
+	<div class="errordesc noscript">
+		<div>
+            <h3><strong>Hello, you need to enable JavaScript to use Role Play Media Network.</strong></h3>
+            <p>Please check your browser settings or contact your system administrator.</p>
+			<img src="/xn_resources/widgets/index/gfx/jstrk_off.gif" height="1" width="1" />
+		</div>
+	</div>
+</noscript><!--googleon: all-->
+<script type="text/javascript" src="http://static.ning.com/socialnetworkmain/widgets/lib/core.min.js?v=201102040200"></script>        <script>
+            var sources = ["http:\/\/b.scorecardresearch.com\/beacon.js","http:\/\/static.ning.com\/openrpgblog\/instances\/shared\/js\/set_common.min.js?r=1296698699","http:\/\/static.ning.com\/openrpgblog\/instances\/shared\/js\/set_shared_c0.min.js?r=1296698885","http:\/\/static.ning.com\/openrpgblog\/instances\/shared\/js\/set_sidebar_u.min.js?r=1296782159"];
+            var numSources = sources.length;
+            var heads = document.getElementsByTagName('head');
+            var node = heads.length > 0 ? heads[0] : document.body;
+            for (var i = 0; i < numSources; i++) {
+                var source = sources[i];
+                xg._loader.loading(source);
+                var script = document.createElement('script');
+                
+                script.type = 'text/javascript';
+                var cb = (function(source) { return function() { xg._loader.onLoad(source); }; })(source);
+                script.onerror = script.onload = cb;
+                script.onreadystatechange = function() {
+                    if (this.readyState == 'complete' || this.readyState == 'loaded') {
+                        cb();
+                    }
+                }
+                script.src = source;
+                node.appendChild(script);
+            }
+        </script>
+    <script type="text/javascript">
+if (!ning._) {ning._ = {}}
+ning._.compat = { encryptedToken: "<empty>" }
+ning._.CurrentServerTime = "2011-02-07T21:27:37+00:00";
+ning._.probableScreenName = "";
+ning._.domains = {
+    base: 'ning.com',
+    ports: { http: '80', ssl: '443' }
+};
+ning.loader.version = '201102040200_10'; // DEP-6356-3:a53e801 21
+djConfig.parseWidgets = false;
+</script>
+<script type="text/javascript">
+    xg.token = '';
+    xg.cdnHost = 'static.ning.com';
+    xg.version = '201102040200';
+    xg.useMultiCdn = true;
+        xg.staticRoot = 'socialnetworkmain';
+    xg.xnTrackHost = "track.ning.com";
+            xg.cdnDefaultPolicyHost = 'static';
+        xg.cdnPolicy = [];
+        xg.global = xg.global||{}; xg.global.currentMozzle = 'profiles';
+    xg.global.userCanInvite = false;
+    xg.global.requestBase = '';
+    xg.global.locale = 'en_US';
+    xg.num_thousand_sep = ",";
+        (function() {
+        dojo.addOnLoad(function() {
+            if(window.bzplcm) { window.bzplcm.ts('hr'); window.bzplcm._profileSend(); }
+                    });
+                            ning.loader.require('xg.profiles.blog.show', 'xg.index.tweet.PostToTwitterLink', 'xg.shared.PostToFacebookLink', 'xg.gifts.embed.embed', function() { xg._loader.onLoad('xnloader'); });
+            })();
+</script>
+<div id="xgDock" class="xg_dock">
+            <div class="jsContainer">
+            <a class="xg_info" href="/main/authorization/signIn?chat=true">Sign in to chat!</a>            <a href="#" class="xg_status xg_status-offline" title="You are Offline" ></a>
+        </div>
+    </div>
+<div class="xg_dock_spacer"></div><script type="text/javascript" src="http://static.ning.com/socialnetworkmain/widgets/lib/js/thrift/xn_track.min.js?v=201102040200"></script>
+</body>
+</html>
+
+<!-- Template Start:  -->

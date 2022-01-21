@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Farsight Games's Blog - Role Play Media Network</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+    <meta name="description" content="Blog The RPG Media Network is a social networking site featuring blogs, forums, chat, and more dedicated to tabletop roleplaying games. Farsight Games" />
+    <meta name="keywords" content="" />
+<script type="text/javascript">
+djConfig = { baseScriptUri: 'http://www.roleplaymedia.net/xn/static-6.11.8.1/js/dojo-0.3.1-ning/', isDebug: false }
+ning = {"CurrentApp":{"premium":true,"iconUrl":"http:\/\/api.ning.com\/icons\/appatar\/4303603?default=4303603&width=64&height=64","url":"http:\/\/openrpgblog.ning.com","domains":["roleplaymedia.net"],"online":true,"privateSource":true,"id":"openrpgblog","description":"The RPG Media Network is a social networking site featuring blogs, forums, chat, and more dedicated to tabletop roleplaying games.","name":"Role Play Media Network","owner":"unclebear","createdDate":"2009-10-21T15:06:10.746Z","runOwnAds":false},"CurrentProfile":null,"maxFileUploadSize":5};
+    (function(){
+        if (!window.ning) { return; }
+
+        var age, gender, rand, obfuscated, combined;
+
+	    obfuscated = document.cookie.match(/xgdi=([^;]+)/);
+	    if (obfuscated) {
+	          var offset = 100000;
+	          obfuscated = parseInt(obfuscated[1]);
+	          rand = obfuscated / offset;
+	          combined = (obfuscated % offset) ^ rand;
+	          age = combined % 1000;
+	          gender = (combined / 1000) & 3;
+	          gender = (gender == 1 ? 'm' : gender == 2 ? 'f' : 0);
+	          ning.viewer = {"age":age,"gender":gender};
+	    }
+	 })();
+
+window.xg = {};
+xg.addOnRequire = function(f) { xg.addOnRequire.functions.push(f); };
+xg.addOnRequire.functions = [];
+xg._loader = {
+    p: 0,
+    loading: function(set) { xg._loader.p++; },
+    onLoad: function(set) {
+        xg._loader.p--;
+        if (xg._loader.p == 0 && typeof(xg._loader.onDone) == 'function') {
+            xg._loader.onDone();
+        }
+    }
+};
+xg._loader.loading('xnloader');
+if (window.bzplcm) {
+    window.bzplcm._profileCount = 0;
+    window.bzplcm._profileSend = function() { if (window.bzplcm._profileCount++ == 1) window.bzplcm.send(); };
+}
+xg._loader.onDone = function() {
+        if(window.bzplcm)window.bzplcm.start('ni');
+    xg.shared.util.parseWidgets();    var addOnRequireFunctions = xg.addOnRequire.functions;
+    xg.addOnRequire = function(f) { f(); };
+    try {
+        if (addOnRequireFunctions) { dojo.lang.forEach(addOnRequireFunctions, function(onRequire) { onRequire.apply(); }); }
+    } catch (e) {
+        if(window.bzplcm)window.bzplcm.ts('nx').send();
+        throw e;
+    }
+    if(window.bzplcm) { window.bzplcm.stop('ni'); window.bzplcm._profileSend(); }
+};
+window.xn = { track: { event: function() {}, pageView: function() {}, registerCompletedFlow: function() {}, registerError: function() {}, timer: function() { return { lapTime: function() {} }; } } };    </script>
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_ning_ga._setAccount', 'UA-2270114-6']); 
+    _gaq.push(['_ning_ga._setCustomVar', 1,"member_type", "anonymous", 3]);
+    _gaq.push(['_ning_ga._setCustomVar', 2,"subdomain",  "openrpgblog.ning.com" ,3]); 
+    _gaq.push(['_ning_ga._setCustomVar', 3,"category",    "gaming" ,3]);
+    _gaq.push(['_ning_ga._setCustomVar', 4,"product_type","plus" ,3]);
+    _gaq.push(['_ning_ga._setCustomVar', 5,"member_segment","150-999" ,3]);
+    _gaq.push(['_ning_ga._trackPageview']);
+
+    (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+     })();
+</script>
+<link rel="alternate" type="application/atom+xml" title="Farsight Games&#039;s Blog - Role Play Media Network" href="http://www.roleplaymedia.net/profiles/blog/feed?user=1vde8vjtredm9&amp;xn_auth=no" />
+
+<style type="text/css" media="screen,projection">
+@import url(http://static.ning.com/socialnetworkmain/widgets/index/css/common.min.css?xn_version=1753760372);
+@import url(http://static.ning.com/socialnetworkmain/widgets/profiles/css/component.min.css?xn_version=810965244);
+
+</style>
+
+<style type="text/css" media="screen,projection">
+#xg_navigation ul div.xg_subtab ul li a {
+    color:#666666;
+    background:#D3DBE4;
+}
+#xg_navigation ul div.xg_subtab ul li a:hover {
+    color:#333333;
+    background:#E3E8EE;
+}
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(http://static.ning.com/openrpgblog/instances/css/embed_1286900302.css?xn_version=201010112004);
+
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(http://static.ning.com/openrpgblog/instances/css/theme_1286828364.css?xn_version=201010112004);
+
+</style>
+
+<!--[if IE 6]>
+    <link rel="stylesheet" type="text/css" href="http://static.ning.com/socialnetworkmain/widgets/index/css/common-ie6.min.css?v=201010112004" />
+<![endif]-->
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" href="http://static.ning.com/socialnetworkmain/widgets/index/css/common-ie7.css?v=201010112004" />
+<![endif]-->
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.roleplaymedia.net/profiles/blog/rsd" />
+</head>
+<body class="">
+
+<div id="xn_bar">
+    <div id="xn_bar_menu">
+        <div id="xn_bar_menu_branding">
+                                </div>
+
+        <div id="xn_bar_menu_more">
+            <form id="xn_bar_menu_search" method="GET" action="http://www.roleplaymedia.net/main/search/search">
+                <fieldset>
+                    <input type="text" name="q" id="xn_bar_menu_search_query" value="Search Role Play Media Network" _hint="Search Role Play Media Network" accesskey="4" class="text xj_search_hint" />
+                    <a id="xn_bar_menu_search_submit" href="#" onclick="document.getElementById('xn_bar_menu_search').submit();return false">Search</a>
+                </fieldset>
+            </form>
+        </div>
+
+        <ul id="xn_bar_menu_tabs">
+                            <li><a href="http://www.roleplaymedia.net/main/authorization/signUp?target=http%3A%2F%2Fwww.roleplaymedia.net%2Fprofiles%2Fblog%2Flist%3Fuser%3D1vde8vjtredm9">Sign Up</a></li>
+                <li><a href="http://www.roleplaymedia.net/main/authorization/signIn?target=http%3A%2F%2Fwww.roleplaymedia.net%2Fprofiles%2Fblog%2Flist%3Fuser%3D1vde8vjtredm9">Sign In</a></li>
+                        </ul>
+    </div>
+</div>
+
+<div id="xg" class=" xg_widget_profiles xg_widget_profiles_blog xg_widget_profiles_blog_list">
+    <div id="xg_head">
+                    <div id="xg_masthead">
+                <p id="xg_sitename"><a id="application_name_header_link" href="/">Role Play Media Network</a></p>
+                <p id="xg_sitedesc">a community for rpg bloggers, podcasters, vidcasters, and their audiences</p>            </div>
+            <div id="xg_navigation" >
+                <ul>
+                    <li id="xg_tab_main" class="xg_subtab"><a href="/"><span>Home</span></a></li><li id="xg_tab_profile" class="xg_subtab"><a href="/profiles"><span>My Page</span></a></li><li id="xg_tab_http://os.ning.com/ningapps/paypal/gadget.xml?ning-app-status=network" class="xg_subtab"><a href="/opensocial/ningapps/show?appUrl=http%3A%2F%2Fos.ning.com%2Fningapps%2Fpaypal%2Fgadget.xml%3Fning-app-status%3Dnetwork&amp;owner=unclebear"><span>Donate</span></a></li><li id="xg_tab_blogs" class="xg_subtab this"><a href="/profiles/blog/list"><span>Blogs</span></a></li><li id="xg_tab_xn1" class="xg_subtab"><a href="/profiles/blog/list?tag=review"><span>Reviews</span></a></li><li id="xg_tab_forum" class="xg_subtab"><a href="/forum"><span>Forum</span></a></li><li id="xg_tab_chat" class="xg_subtab"><a href="/chat"><span>Chat</span></a></li><li id="xg_tab_groups" class="xg_subtab"><a href="/groups"><span>Groups</span></a></li><li id="xg_tab_events" class="xg_subtab"><a href="/events"><span>Events</span></a></li><li id="xg_tab_video" class="xg_subtab"><a href="/video"><span>Videos</span></a></li><li id="xg_tab_xn0" class="xg_subtab"><a href="http://www.rpgbloggers.com/" target="_blank"><span>RPGBN</span></a></li>                </ul>
+            </div>
+            </div>
+                <div id="xg_body">
+                                                    <div class="xg_column xg_span-16">
+                                <ul class="navigation easyclear"><li><a href="http://www.roleplaymedia.net/profiles/blog/list">All Blog Posts</a></li><li><a href="http://www.roleplaymedia.net/profiles/blog/list?my=1">My Blog</a></li><li class="right"><a href="http://www.roleplaymedia.net/profiles/blog/new" class="xg_sprite xg_sprite-add">Add a Blog Post</a></li></ul><div class="xg_headline xg_headline-img">
+    <div class="ib">        <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/FarsightGames"  title="Farsight Games"><img class="photo"  src="http://api.ning.com:80/files/ayqwyHAwT3jwosfmx0G0NjMufKqoyRlQF09QtbOtI1Q_/jon.JPG?width=64&amp;height=64&amp;crop=1%3A1" height="64" width="64" alt="Farsight Games" /></a></span>
+    </div>
+    <div class="tb">
+        <h1>Farsight Games&#039;s Blog <span class="count">(21)</span></h1>
+    </div>
+</div>
+    <div class="xg_column xg_span-12">
+        <div class="xg_module module_searchbar">
+    <div class="xg_module_body">
+        <form action="">
+            <p class="left">
+                                <input name="q" type="text" class="textfield" value=""  />
+                                <a class="xg_icon xg_icon-search" title="Search Blog Posts" onclick="x$(this).parents('form').submit();" href="#">Search Blog Posts</a>
+                            </p>
+                    </form>
+            </div>
+</div>
+        <div class="xg_module xg_blog xg_blog_list xg_blog_mypage">
+                            <div class="xg_module_body">
+                    <h3 class="title">
+                                                <a href="http://www.roleplaymedia.net/profiles/blogs/hard-sixes-saturday-madness" _snid="4303603:BlogPost:11324">Hard Sixes Saturday Madness - save up to 20%!</a>
+                    </h3>
+                    <div class="postbody">
+                      <p><strong>SATURDAY MADNESS<br/><br/></strong>Got a gaming club membership card? Got a Hard Sixes Club Discount membership card? Even if you haven’t we can sort you out on the day - get down to Hard Sixes in Sutton Coldfield and claim up to 20% discount on selected goods in the shop for one day only: Saturday 4th September.<br/><br/>We’ve got a gaming table so come on down and bring your decks, boardgames, sit in on a classic Fighting Fantasy competition game (simple rules rule!) to win a copy o</p>&hellip;                      <a href="http://www.roleplaymedia.net/profiles/blogs/hard-sixes-saturday-madness">Continue</a>
+                                          </div>
+                    <p class="small">
+                                                        Added by <a href="/profile/FarsightGames">Farsight Games</a> on September 2, 2010 at 3:47am                            —
+                                                            <a href="http://www.roleplaymedia.net/profiles/blogs/hard-sixes-saturday-madness#comments">1 Comment</a>
+                                                </p>
+                                    </div>
+                            <div class="xg_module_body">
+                    <h3 class="title">
+                                                <a href="http://www.roleplaymedia.net/profiles/blogs/hard-sixes-gaming-store-opens" _snid="4303603:BlogPost:11206">HARD SIXES Gaming Store Opens!</a>
+                    </h3>
+                    <div class="postbody">
+                      <p>Make a note in your diaries. Tattoo it on your body. Scream it from the rooftops.</p>
+<p></p>
+<p>Hard Sixes is open for business.</p>
+<p></p>
+<p>Our official opening date is Saturday 7th August, but we're open now. Boardgames, Wargames, Roleplaying games... if the game needs your imagination, we'll be doing it. It's our goal to not only cater for the exisiting gamer but to actively try and bring fresh blood into the hobby. We want more people sitting around more tables playing more games. We'</p>&hellip;                      <a href="http://www.roleplaymedia.net/profiles/blogs/hard-sixes-gaming-store-opens">Continue</a>
+                                          </div>
+                    <p class="small">
+                                                        Added by <a href="/profile/FarsightGames">Farsight Games</a> on August 2, 2010 at 2:30pm                            —
+                                                            No Comments                                                </p>
+                                    </div>
+                            <div class="xg_module_body">
+                    <h3 class="title">
+                                                <a href="http://www.roleplaymedia.net/profiles/blogs/hard-sixes-a-gaming-shop-for" _snid="4303603:BlogPost:11154">HARD SIXES -A Gaming Shop for... well... gamers.</a>
+                    </h3>
+                    <div class="postbody">
+                      <p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt"><font face="Times New Roman" color="#000000" size="3">Hi there!</font></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt"></p>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt"><font face="Times New Roman" color="#000000" size="3">Just thought you'd all like to know that on Saturday August 7th there is a new shop opening specialising in roleplay, war and board</font></p>&hellip;                      <a href="http://www.roleplaymedia.net/profiles/blogs/hard-sixes-a-gaming-shop-for">Continue</a>
+                                          </div>
+                    <p class="small">
+                                                        Added by <a href="/profile/FarsightGames">Farsight Games</a> on July 26, 2010 at 11:12am                            —
+                                                            <a href="http://www.roleplaymedia.net/profiles/blogs/hard-sixes-a-gaming-shop-for#comments">1 Comment</a>
+                                                </p>
+                                    </div>
+                            <div class="xg_module_body">
+                    <h3 class="title">
+                                                <a href="http://www.roleplaymedia.net/profiles/blogs/roleplaying-games-on-channel" _snid="4303603:BlogPost:10920">Roleplaying games on Channel 4's 'The IT Crowd'</a>
+                    </h3>
+                    <div class="postbody">
+                      <p>Last night the first episode of the new series of the popular sitcom 'The IT Crowd' was aired and it was, as expected, brilliant. What I didn't expect was for half the show to be taken up by the characters playing a tabletop roleplaying game!<br/><br/>You can watch the whole episode from Channel 4's website, so here's the link for the episode page below:<br/><br/><a rel=nofollow href="http://www.channel4.com/programmes/the-it-crowd/episode-guide/series-4/episode-1" target="_blank"><font color="#663399">ht</font></a></p>&hellip;                      <a href="http://www.roleplaymedia.net/profiles/blogs/roleplaying-games-on-channel">Continue</a>
+                                          </div>
+                    <p class="small">
+                                                        Added by <a href="/profile/FarsightGames">Farsight Games</a> on June 26, 2010 at 4:00pm                            —
+                                                            No Comments                                                </p>
+                                    </div>
+                            <div class="xg_module_body">
+                    <h3 class="title">
+                                                <a href="http://www.roleplaymedia.net/profiles/blogs/the-book-of-roleplaying-hints" _snid="4303603:BlogPost:10646">The Book Of Roleplaying Hints, Tips and Ideas</a>
+                    </h3>
+                    <div class="postbody">
+                      I've decided to re-release a book I wrote about tips for roleplayers a
+long, long time ago.<br/><br/><p align="center"><a rel=nofollow href="http://www.lulu.com/product/paperback/the-book-of-roleplaying-hints-tips-and-ideas/2412062"><img id="BLOGGER_PHOTO_ID_5464506242179195506" style="width: 212px; height: 320px;" alt="" src="http://3.bp.blogspot.com/_Qjws1vmGX1A/S9XTeZ3-4nI/AAAAAAAAAPc/gSSR69xwUzk/s320/untitled.bmp" border="0" name="BLOGGER_PHOTO_ID_5464506242179195506"/></a></p>
+<p align="left"></p>&hellip;                      <a href="http://www.roleplaymedia.net/profiles/blogs/the-book-of-roleplaying-hints">Continue</a>
+                                          </div>
+                    <p class="small">
+                                                        Added by <a href="/profile/FarsightGames">Farsight Games</a> on May 8, 2010 at 9:08am                            —
+                                                            No Comments                                                </p>
+                                    </div>
+                            <div class="xg_module_body">
+                    <h3 class="title">
+                                                <a href="http://www.roleplaymedia.net/profiles/blogs/sharing-the-dragon-warriors" _snid="4303603:BlogPost:9930">Sharing the Dragon Warriors Love</a>
+                    </h3>
+                    <div class="postbody">
+                      <div>It's probably become apparent to those of you who are mad enough to read my <a rel=nofollow href="http://www.farsightblogger.blogspot.com">www.farsightblogger.blogspot.com</a> blog regularly that I kind of like Dragon Warriors.<br/><br/>Well, it's true, I do like it a lot. In fact, if you click on the image below you'll be able to download a completely free introductory book which will give you the full character-generation rules, two of the game's seven basic character classes, the combat system, full</div>&hellip;                      <a href="http://www.roleplaymedia.net/profiles/blogs/sharing-the-dragon-warriors">Continue</a>
+                                          </div>
+                    <p class="small">
+                                                        Added by <a href="/profile/FarsightGames">Farsight Games</a> on March 16, 2010 at 10:55am                            —
+                                                            No Comments                                                </p>
+                                    </div>
+                            <div class="xg_module_body">
+                    <h3 class="title">
+                                                <a href="http://www.roleplaymedia.net/profiles/blogs/dragon-warriors-ordo-draconis" _snid="4303603:BlogPost:9850">Dragon Warriors Ordo Draconis Review</a>
+                    </h3>
+                    <div class="postbody">
+                      The fantasy role-playing game Dragon Warriors has a healthy following and the Lands of Legend have been around for many years; as such there are a lot of stories to tell from around this vast pseudo-mediaeval land and more than enough places to visit and people to meet. With that in mind, a small group of Dragon Warriors fans - following the lead of Bill Edmunds who volunteered himself to produce the magazine - decided to produce a fanzine dedicated to the game, to include articles on locations,&hellip;                      <a href="http://www.roleplaymedia.net/profiles/blogs/dragon-warriors-ordo-draconis">Continue</a>
+                                          </div>
+                    <p class="small">
+                                                        Added by <a href="/profile/FarsightGames">Farsight Games</a> on March 9, 2010 at 3:09pm                            —
+                                                            No Comments                                                </p>
+                                    </div>
+                            <div class="xg_module_body">
+                    <h3 class="title">
+                                                <a href="http://www.roleplaymedia.net/profiles/blogs/an-interview-with-james-semple" _snid="4303603:BlogPost:9382">An Interview with James Semple</a>
+                    </h3>
+                    <div class="postbody">
+                      <div class="post-body entry-content"><div>I'd like to welcome to the blog <a rel=nofollow href="http://www.jamessemple.com/"><font color="#336699">James Semple</font></a>. He's a talented composer and experienced gamer, the man who bought you music for the games 'Trail of Cthulhu' and 'The Esoterrorists'.</div>
+<p align="center"><a rel=nofollow href="http://www.rpgnow.com/product_info.php?products_id=57994&amp;src=jamessemple"></a></p>
+</div>&hellip;                      <a href="http://www.roleplaymedia.net/profiles/blogs/an-interview-with-james-semple">Continue</a>
+                                          </div>
+                    <p class="small">
+                                                        Added by <a href="/profile/FarsightGames">Farsight Games</a> on February 18, 2010 at 7:26am                            —
+                                                            No Comments                                                </p>
+                                    </div>
+                            <div class="xg_module_body">
+                    <h3 class="title">
+                                                <a href="http://www.roleplaymedia.net/profiles/blogs/warhammer-fantasy-roleplay" _snid="4303603:BlogPost:8995">Warhammer Fantasy Roleplay - First Edition Review</a>
+                    </h3>
+                    <div class="postbody">
+                      Just so we’re clear on this – this isn’t a review for Warhammer Fantasy Roleplay Second or Third Edition. This is a review of the 1989 softback Warhammer Fantasy Roleplay First Edition, the re-release of the hardback edition with some of the mistakes of the hardback printing corrected.
+
+<p style="text-align: left;"><img src="http://api.ning.com:80/files/w9faLTNIIClXya7hDTsYiCzoxLb2s9kari5RCpmTQxBuEP2vFw1pIsHiguNdC-OgTNo-*rZJhGnZjdHbua2b1qPQOz1zbK80/wfrpsoft.jpg" alt=""/></p>
+
+I’d been playing RP&hellip;                      <a href="http://www.roleplaymedia.net/profiles/blogs/warhammer-fantasy-roleplay">Continue</a>
+                                          </div>
+                    <p class="small">
+                                                        Added by <a href="/profile/FarsightGames">Farsight Games</a> on February 3, 2010 at 8:00am                            —
+                                                            <a href="http://www.roleplaymedia.net/profiles/blogs/warhammer-fantasy-roleplay#comments">2 Comments</a>
+                                                </p>
+                                    </div>
+                            <div class="xg_module_body">
+                    <h3 class="title">
+                                                <a href="http://www.roleplaymedia.net/profiles/blogs/dragon-warriors-first-game-of" _snid="4303603:BlogPost:8971">Dragon Warriors - first game of the campaign</a>
+                    </h3>
+                    <div class="postbody">
+                      Last night I ran the first part of my Dragon Warriors campaign, set in England during the Third Crusade. Prince John is conspiring against his brother Richard whilst he crusades in the Holy Land, the people are oppressed and abused under the yoke of the gentry and the Church, bled white by taxes to pay for foreign wars, and treaties and pacts with neighbouring countries are stretching to breaking point.
+
+Oh, and a Knight and two Assassins are being hunted down by a massive eff-off monster in an&hellip;                      <a href="http://www.roleplaymedia.net/profiles/blogs/dragon-warriors-first-game-of">Continue</a>
+                                          </div>
+                    <p class="small">
+                                                        Added by <a href="/profile/FarsightGames">Farsight Games</a> on February 1, 2010 at 11:04am                            —
+                                                            No Comments                                                </p>
+                                    </div>
+                            <div class="xg_module_body">
+                    <h3 class="title">
+                                                <a href="http://www.roleplaymedia.net/profiles/blogs/gamers-in-the-wild-part-4" _snid="4303603:BlogPost:7963">GAMERS IN THE WILD Part 4 – Actual bad gaming footage!</a>
+                    </h3>
+                    <div class="postbody">
+                      Simple things to remember so that your games run smoother.
+
+Everyone relies on the GM to provide a solid, enjoyable adventure with memorable NPCs and fantastic settings. What can players and GMs do to make the game better? What responsibilities can a GM and player have other than simply sitting at the table and playing that game?
+
+The tips below are for GMs and players to identify potential problems and nip them in the bud. With all the new-fangled technology, silicon chips, and such, a roleplay&hellip;                      <a href="http://www.roleplaymedia.net/profiles/blogs/gamers-in-the-wild-part-4">Continue</a>
+                                          </div>
+                    <p class="small">
+                                                        Added by <a href="/profile/FarsightGames">Farsight Games</a> on December 20, 2009 at 7:00am                            —
+                                                            No Comments                                                </p>
+                                    </div>
+                            <div class="xg_module_body">
+                    <h3 class="title">
+                                                <a href="http://www.roleplaymedia.net/profiles/blogs/gamers-in-the-wild-part-3" _snid="4303603:BlogPost:7962">GAMERS IN THE WILD Part 3 – Non-evolving players</a>
+                    </h3>
+                    <div class="postbody">
+                      <i>Sarcasm mode on</i>
+
+How to be an annoying player.
+Every game has them, and you don't want to be the exception. Take a few tips from these ten easy to learn steps on how to ruin the game your GM has so carefully designed.
+
+Number One: Make sure that you never talk in character. Its much more effective to say 'My character tells the Navy officer to surrender or die' instead of just giving the GM a scowl and saying 'Surrender or die, Captain Vud!' in the most convincing Royal Shakespeare voice&hellip;                      <a href="http://www.roleplaymedia.net/profiles/blogs/gamers-in-the-wild-part-3">Continue</a>
+                                          </div>
+                    <p class="small">
+                                                        Added by <a href="/profile/FarsightGames">Farsight Games</a> on December 19, 2009 at 7:00am                            —
+                                                            No Comments                                                </p>
+                                    </div>
+                            <div class="xg_module_body">
+                    <h3 class="title">
+                                                <a href="http://www.roleplaymedia.net/profiles/blogs/scifi-horror-roleplaying" _snid="4303603:BlogPost:7986">Sci-Fi Horror Roleplaying</a>
+                    </h3>
+                    <div class="postbody">
+                      A while ago I released a playtest version of a game I was working on called 'Those Dark Places'. The system used a single D20 (I called it the ODDS system - One Die Determines Success) and it had full rules for characters, vehicles and starships. I never completed it and never had any feedback.
+
+<a rel=nofollow href="http://www.farsightgames.com/#/tdp-playtest/4535150669">http://www.farsightgames.com/#/tdp-playtest/4535150669</a>
+
+If you get the chance, check it out and let me know what you think. I'm thinki&hellip;                      <a href="http://www.roleplaymedia.net/profiles/blogs/scifi-horror-roleplaying">Continue</a>
+                                          </div>
+                    <p class="small">
+                                                        Added by <a href="/profile/FarsightGames">Farsight Games</a> on December 18, 2009 at 10:07am                            —
+                                                            No Comments                                                </p>
+                                    </div>
+                            <div class="xg_module_body">
+                    <h3 class="title">
+                                                <a href="http://www.roleplaymedia.net/profiles/blogs/gamers-in-the-wild-part-2" _snid="4303603:BlogPost:7961">GAMERS IN THE WILD Part 2 – Gaming Groups in ACTION!</a>
+                    </h3>
+                    <div class="postbody">
+                      There are quite a few roleplaying groups out there. Which type are you most suited to?
+
+A myriad of different gaming groups has spawned a lot of different styles of gaming. You get your heroes, your wargame-types, your freeformers... each group has a different approach to how the game should be played. Roleplaying has come a long way since the days of ‘don your armour and draw your sword to kill lots of nasties and get the gold from the dungeon’ type games.
+
+Hundreds of groups all over the world&hellip;                      <a href="http://www.roleplaymedia.net/profiles/blogs/gamers-in-the-wild-part-2">Continue</a>
+                                          </div>
+                    <p class="small">
+                                                        Added by <a href="/profile/FarsightGames">Farsight Games</a> on December 18, 2009 at 7:00am                            —
+                                                            No Comments                                                </p>
+                                    </div>
+                            <div class="xg_module_body">
+                    <h3 class="title">
+                                                <a href="http://www.roleplaymedia.net/profiles/blogs/gamers-in-the-wild-part-1" _snid="4303603:BlogPost:7960">GAMERS IN THE WILD Part 1 – Species of GM</a>
+                    </h3>
+                    <div class="postbody">
+                      I'm going to reproduce (ie copy and paste) my old hints and tips articles here for a while. Some of these articles originally appeared on <a rel=nofollow href="http://www.roleplayingtips.com/">http://www.roleplayingtips.com/</a> and in my book 'Roleplaying Hints, Tips and Ideas' (now out of print).
+
+** ** **
+
+What makes Gamesmasters act the way they do? Jonathan Hicks would like to know, but he can't be bothered to get involved with all that psychological rubbish. Let's have a look at some of the more common&hellip;                      <a href="http://www.roleplaymedia.net/profiles/blogs/gamers-in-the-wild-part-1">Continue</a>
+                                          </div>
+                    <p class="small">
+                                                        Added by <a href="/profile/FarsightGames">Farsight Games</a> on December 17, 2009 at 5:30am                            —
+                                                            <a href="http://www.roleplaymedia.net/profiles/blogs/gamers-in-the-wild-part-1#comments">2 Comments</a>
+                                                </p>
+                                    </div>
+                            <div class="xg_module_body">
+                    <h3 class="title">
+                                                <a href="http://www.roleplaymedia.net/profiles/blogs/star-wars-a-review-of-the-d6" _snid="4303603:BlogPost:7685">STAR WARS: A Review of the D6 Products from West End Games</a>
+                    </h3>
+                    <div class="postbody">
+                      This material is, of course, out of print but there are probably a lot of collectors who wish to add to their mass of books through trading or personal ads. Of course the choice is limited making the buyer choose carefully before purchase. What is good enough to use and what may be a bad buy?
+I have played D6 Star Wars with a variety of groups in a variety of settings (mostly our own creation - the Setnin Sector) and therefore I have a good idea of what is helpful and what is not. This list is b&hellip;                      <a href="http://www.roleplaymedia.net/profiles/blogs/star-wars-a-review-of-the-d6">Continue</a>
+                                          </div>
+                    <p class="small">
+                                                        Added by <a href="/profile/FarsightGames">Farsight Games</a> on December 10, 2009 at 12:00pm                            —
+                                                            No Comments                                                </p>
+                                    </div>
+                            <div class="xg_module_body">
+                    <h3 class="title">
+                                                <a href="http://www.roleplaymedia.net/profiles/blogs/rogue-trader-rpg-review" _snid="4303603:BlogPost:7658">Rogue Trader RPG Review</a>
+                    </h3>
+                    <div class="postbody">
+                      <b>ROGUE TRADER RPG REVIEW (capsule)
+Fantasy Flight Games</b>
+
+Ah, Rogue Trader. Where else could I fly through space in a giant cathedral, commanding tens of thousands of crew and deciding the fate of entire worlds? Nowhere, that’s where.
+
+<p style="text-align: left;"><img src="http://api.ning.com:80/files/d7RCHUmAuKgUJiM-WI3pWTsitG8SMiZAnUt7AauLgUY_/FFGRT01SM.jpg" alt=""/></p>
+
+My experience with free trading in a science fiction setting has been pretty much nothing but the D6 Star Wars RPG us&hellip;                      <a href="http://www.roleplaymedia.net/profiles/blogs/rogue-trader-rpg-review">Continue</a>
+                                          </div>
+                    <p class="small">
+                                                        Added by <a href="/profile/FarsightGames">Farsight Games</a> on December 3, 2009 at 9:00am                            —
+                                                            No Comments                                                </p>
+                                    </div>
+                            <div class="xg_module_body">
+                    <h3 class="title">
+                                                <a href="http://www.roleplaymedia.net/profiles/blogs/sotu-d6-ogl-project" _snid="4303603:BlogPost:6321">SOTU D6 OGL Project</a>
+                    </h3>
+                    <div class="postbody">
+                      I'm pushing ahead with my D6 SOTU game, to be published in magazine format at 54 pages. I have no idea when It'll be ready, but I do know that if I work it out correctly I'll be able to sell it for as little as £5.00 British Pounds a copy. Full game with setting. I'm generally re-writing the original Star Wars D6 1st Edition rules, so it'll basically be a copy of the original Star Wars game from 1987, cut down and with a whole new setting. I'm taking my cue from the OGL PDFs of the West End Game&hellip;                      <a href="http://www.roleplaymedia.net/profiles/blogs/sotu-d6-ogl-project">Continue</a>
+                                          </div>
+                    <p class="small">
+                                                        Added by <a href="/profile/FarsightGames">Farsight Games</a> on November 5, 2009 at 9:00am                            —
+                                                            No Comments                                                </p>
+                                    </div>
+                            <div class="xg_module_body">
+                    <h3 class="title">
+                                                <a href="http://www.roleplaymedia.net/profiles/blogs/fighting-fantasy-gamebooks-and" _snid="4303603:BlogPost:5401">Fighting Fantasy Gamebooks and the Introductory RPG</a>
+                    </h3>
+                    <div class="postbody">
+                      Fighting Fantasy Gamebooks were what got me into tabletop roleplaying games. I started with book 2 – ‘The Citadel Of Chaos’ – and played it to death. I’ve still got it, the cover all faded and the pages yellowed with age, the spine heavily creased and the centre of the pages smudged and marked by all the thumb-flipping I did. I was hooked on these books all the way through the 1980s, and when I couldn’t get a tabletop RPG on I’d turn to my gamebooks for my fix. I bought them all, even the ‘Sorce&hellip;                      <a href="http://www.roleplaymedia.net/profiles/blogs/fighting-fantasy-gamebooks-and">Continue</a>
+                                          </div>
+                    <p class="small">
+                                                        Added by <a href="/profile/FarsightGames">Farsight Games</a> on October 30, 2009 at 5:46am                            —
+                                                            <a href="http://www.roleplaymedia.net/profiles/blogs/fighting-fantasy-gamebooks-and#comments">2 Comments</a>
+                                                </p>
+                                    </div>
+                            <div class="xg_module_body">
+                    <h3 class="title">
+                                                <a href="http://www.roleplaymedia.net/profiles/blogs/the-horrors-sketch-rpg" _snid="4303603:BlogPost:4978">'The Horrors' SKETCH RPG</a>
+                    </h3>
+                    <div class="postbody">
+                      Well, it's finally finished. 'The Horrors' is a SKETCH game for the horror genre, be it monsters and creatures or Eldritch horrors from ages past.
+
+<a href="http://www.farsightgames.com" target="_blank"></a><p style="text-align: left;"><img src="http://api.ning.com:80/files/HnpQStn2kDml-Soo2siYEzDeqPGL3dnmvJaCqxm4VhE_/thehorrorscover.JPG" alt=""/></p>
+
+It's completely free so get your sweet arse over to <a rel=nofollow href="http://www.farsightgames.com">www.farsightgames.com</a> and download it now. Once yo&hellip;                      <a href="http://www.roleplaymedia.net/profiles/blogs/the-horrors-sketch-rpg">Continue</a>
+                                          </div>
+                    <p class="small">
+                                                        Added by <a href="/profile/FarsightGames">Farsight Games</a> on October 29, 2009 at 6:48am                            —
+                                                            <a href="http://www.roleplaymedia.net/profiles/blogs/the-horrors-sketch-rpg#comments">1 Comment</a>
+                                                </p>
+                                    </div>
+                        <div class="xg_module_body"><ul class="pagination smallpagination">                        <li class="left"><a href="http://www.roleplaymedia.net/profiles/blog/list?user=1vde8vjtredm9&amp;start=20">&lt; Previous Post</a></li>
+                    </ul></div>                            <div class="xg_module_foot">
+                    <ul>
+                        <li class="left"><a class="xg_icon xg_icon-rss" href="http://www.roleplaymedia.net/profiles/blog/feed?user=1vde8vjtredm9&amp;xn_auth=no">RSS</a></li>
+                    </ul>
+                    <p class="right"><a href="#" dojoType="FollowLink" _isFollowed="0" _addUrl="http://www.roleplaymedia.net/main/content/startFollowingNewContent?user=1vde8vjtredm9&amp;type=BlogPost&amp;xn_out=json" _removeUrl="http://www.roleplaymedia.net/main/content/stopFollowingNewContent?user=1vde8vjtredm9&amp;type=BlogPost&amp;xn_out=json" _addDescription="Email me when this member adds new blog posts" _removeDescription="Don&#039;t email me when this member adds new blog posts" _joinPromptText="" _signUpUrl="http://www.roleplaymedia.net/main/authorization/signUp?target=http%3A%2F%2Fwww.roleplaymedia.net%2Fprofiles%2Fblog%2Flist%3Fuser%3D1vde8vjtredm9"></a></p>                </div>
+                    </div>
+    </div>
+    <div class="xg_column xg_span-4 xg_last">
+         <div class="xg_module">
+    <div class="xg_module_head">
+        <h2>Latest Blog Posts</h2>
+    </div>
+    <div class="xg_module_body">
+        <ul class="nobullets">
+                            <li><a href="http://www.roleplaymedia.net/profiles/blogs/hard-sixes-saturday-madness">Hard Sixes Saturday Madness - save up to 20%!</a></li>
+                            <li><a href="http://www.roleplaymedia.net/profiles/blogs/hard-sixes-gaming-store-opens">HARD SIXES Gaming Store Opens!</a></li>
+                            <li><a href="http://www.roleplaymedia.net/profiles/blogs/hard-sixes-a-gaming-shop-for">HARD SIXES -A Gaming Shop for... well... gamers.</a></li>
+                            <li><a href="http://www.roleplaymedia.net/profiles/blogs/roleplaying-games-on-channel">Roleplaying games on Channel 4&#039;s &#039;The IT Crowd&#039;</a></li>
+                            <li><a href="http://www.roleplaymedia.net/profiles/blogs/the-book-of-roleplaying-hints">The Book Of Roleplaying Hints, Tips and Ideas</a></li>
+                            <li><a href="http://www.roleplaymedia.net/profiles/blogs/sharing-the-dragon-warriors">Sharing the Dragon Warriors Love</a></li>
+                            <li><a href="http://www.roleplaymedia.net/profiles/blogs/dragon-warriors-ordo-draconis">Dragon Warriors Ordo Draconis Review</a></li>
+                    </ul>
+    </div>
+</div>
+
+ <div class="xg_module">
+    <div class="xg_module_head">
+        <h2>Most Popular Blog Posts</h2>
+    </div>
+    <div class="xg_module_body">
+        <ul class="nobullets">
+                            <li><a href="http://www.roleplaymedia.net/profiles/blogs/roleplaying-games-on-channel">Roleplaying games on Channel 4&#039;s &#039;The IT Crowd&#039;</a></li>
+                            <li><a href="http://www.roleplaymedia.net/profiles/blogs/rogue-trader-rpg-review">Rogue Trader RPG Review</a></li>
+                            <li><a href="http://www.roleplaymedia.net/profiles/blogs/sharing-the-dragon-warriors">Sharing the Dragon Warriors Love</a></li>
+                            <li><a href="http://www.roleplaymedia.net/profiles/blogs/star-wars-a-review-of-the-d6">STAR WARS: A Review of the D6 Products from West End Games</a></li>
+                            <li><a href="http://www.roleplaymedia.net/profiles/blogs/fighting-fantasy-gamebooks-and">Fighting Fantasy Gamebooks and the Introductory RPG</a></li>
+                            <li><a href="http://www.roleplaymedia.net/profiles/blogs/gamers-in-the-wild-part-2">GAMERS IN THE WILD Part 2 &ndash; Gaming Groups in ACTION!</a></li>
+                            <li><a href="http://www.roleplaymedia.net/profiles/blogs/gamers-in-the-wild-part-1">GAMERS IN THE WILD Part 1 &ndash; Species of GM</a></li>
+                    </ul>
+    </div>
+</div>
+
+<div class="xg_module">
+    <div class="xg_module_head">
+        <h2>Blog Topics by Tags</h2>
+    </div>
+    <div class="xg_module_body">
+            <ul class="nobullets">
+                                    <li><a rel="tag" href="http://www.roleplaymedia.net/profiles/blog/list?tag=dragon&amp;user=1vde8vjtredm9">dragon</a> (3)</li>
+                                    <li><a rel="tag" href="http://www.roleplaymedia.net/profiles/blog/list?tag=games&amp;user=1vde8vjtredm9">games</a> (2)</li>
+                                    <li><a rel="tag" href="http://www.roleplaymedia.net/profiles/blog/list?tag=40k&amp;user=1vde8vjtredm9">40k</a> (1)</li>
+                                    <li><a rel="tag" href="http://www.roleplaymedia.net/profiles/blog/list?tag=weg&amp;user=1vde8vjtredm9">weg</a> (1)</li>
+                                    <li><a rel="tag" href="http://www.roleplaymedia.net/profiles/blog/list?tag=crusades&amp;user=1vde8vjtredm9">crusades</a> (1)</li>
+                                    <li><a rel="tag" href="http://www.roleplaymedia.net/profiles/blog/list?tag=legend&amp;user=1vde8vjtredm9">legend</a> (1)</li>
+                                    <li><a rel="tag" href="http://www.roleplaymedia.net/profiles/blog/list?tag=zombie&amp;user=1vde8vjtredm9">zombie</a> (1)</li>
+                                    <li><a rel="tag" href="http://www.roleplaymedia.net/profiles/blog/list?tag=star&amp;user=1vde8vjtredm9">star</a> (1)</li>
+                                    <li><a rel="tag" href="http://www.roleplaymedia.net/profiles/blog/list?tag=lotr&amp;user=1vde8vjtredm9">lotr</a> (1)</li>
+                                    <li><a rel="tag" href="http://www.roleplaymedia.net/profiles/blog/list?tag=show&amp;user=1vde8vjtredm9">show</a> (1)</li>
+                                    <li><a rel="tag" href="http://www.roleplaymedia.net/profiles/blog/list?tag=stage&amp;user=1vde8vjtredm9">stage</a> (1)</li>
+                                    <li><a rel="tag" href="http://www.roleplaymedia.net/profiles/blog/list?tag=review&amp;user=1vde8vjtredm9">review</a> (7)</li>
+                                    <li><a rel="tag" href="http://www.roleplaymedia.net/profiles/blog/list?tag=trader&amp;user=1vde8vjtredm9">trader</a> (1)</li>
+                                    <li><a rel="tag" href="http://www.roleplaymedia.net/profiles/blog/list?tag=pathfinder&amp;user=1vde8vjtredm9">pathfinder</a> (1)</li>
+                                    <li><a rel="tag" href="http://www.roleplaymedia.net/profiles/blog/list?tag=rpg&amp;user=1vde8vjtredm9">rpg</a> (8)</li>
+                                    <li><a rel="tag" href="http://www.roleplaymedia.net/profiles/blog/list?tag=warhammer&amp;user=1vde8vjtredm9">warhammer</a> (1)</li>
+                                    <li><a rel="tag" href="http://www.roleplaymedia.net/profiles/blog/list?tag=scifi&amp;user=1vde8vjtredm9">scifi</a> (1)</li>
+                                    <li><a rel="tag" href="http://www.roleplaymedia.net/profiles/blog/list?tag=book&amp;user=1vde8vjtredm9">book</a> (1)</li>
+                                    <li><a rel="tag" href="http://www.roleplaymedia.net/profiles/blog/list?tag=warriors&amp;user=1vde8vjtredm9">warriors</a> (4)</li>
+                                    <li><a rel="tag" href="http://www.roleplaymedia.net/profiles/blog/list?tag=farsight&amp;user=1vde8vjtredm9">farsight</a> (1)</li>
+                                    <li><a rel="tag" href="http://www.roleplaymedia.net/profiles/blog/list?tag=squirrels&amp;user=1vde8vjtredm9">squirrels</a> (1)</li>
+                                    <li><a rel="tag" href="http://www.roleplaymedia.net/profiles/blog/list?tag=wars&amp;user=1vde8vjtredm9">wars</a> (1)</li>
+                                    <li><a rel="tag" href="http://www.roleplaymedia.net/profiles/blog/list?tag=tips&amp;user=1vde8vjtredm9">tips</a> (2)</li>
+                                    <li><a rel="tag" href="http://www.roleplaymedia.net/profiles/blog/list?tag=cthulhu&amp;user=1vde8vjtredm9">cthulhu</a> (1)</li>
+                                    <li><a rel="tag" href="http://www.roleplaymedia.net/profiles/blog/list?tag=sketch&amp;user=1vde8vjtredm9">sketch</a> (1)</li>
+                                    <li><a rel="tag" href="http://www.roleplaymedia.net/profiles/blog/list?tag=sotu&amp;user=1vde8vjtredm9">sotu</a> (1)</li>
+                                    <li><a rel="tag" href="http://www.roleplaymedia.net/profiles/blog/list?tag=rogue&amp;user=1vde8vjtredm9">rogue</a> (1)</li>
+                                    <li><a rel="tag" href="http://www.roleplaymedia.net/profiles/blog/list?tag=end&amp;user=1vde8vjtredm9">end</a> (1)</li>
+                                    <li><a rel="tag" href="http://www.roleplaymedia.net/profiles/blog/list?tag=gm&amp;user=1vde8vjtredm9">gm</a> (3)</li>
+                                    <li><a rel="tag" href="http://www.roleplaymedia.net/profiles/blog/list?tag=referee&amp;user=1vde8vjtredm9">referee</a> (1)</li>
+                                    <li><a rel="tag" href="http://www.roleplaymedia.net/profiles/blog/list?tag=fantasy&amp;user=1vde8vjtredm9">fantasy</a> (5)</li>
+                                    <li><a rel="tag" href="http://www.roleplaymedia.net/profiles/blog/list?tag=fighting&amp;user=1vde8vjtredm9">fighting</a> (1)</li>
+                                    <li><a rel="tag" href="http://www.roleplaymedia.net/profiles/blog/list?tag=ogl&amp;user=1vde8vjtredm9">ogl</a> (1)</li>
+                                    <li><a rel="tag" href="http://www.roleplaymedia.net/profiles/blog/list?tag=project&amp;user=1vde8vjtredm9">project</a> (1)</li>
+                                    <li><a rel="tag" href="http://www.roleplaymedia.net/profiles/blog/list?tag=west&amp;user=1vde8vjtredm9">west</a> (1)</li>
+                                    <li><a rel="tag" href="http://www.roleplaymedia.net/profiles/blog/list?tag=humour&amp;user=1vde8vjtredm9">humour</a> (1)</li>
+                                    <li><a rel="tag" href="http://www.roleplaymedia.net/profiles/blog/list?tag=Dragon&amp;user=1vde8vjtredm9">Dragon</a> (1)</li>
+                                    <li><a rel="tag" href="http://www.roleplaymedia.net/profiles/blog/list?tag=interview&amp;user=1vde8vjtredm9">interview</a> (1)</li>
+                                    <li><a rel="tag" href="http://www.roleplaymedia.net/profiles/blog/list?tag=semple&amp;user=1vde8vjtredm9">semple</a> (1)</li>
+                                    <li><a rel="tag" href="http://www.roleplaymedia.net/profiles/blog/list?tag=soundtrack&amp;user=1vde8vjtredm9">soundtrack</a> (1)</li>
+                                    <li><a rel="tag" href="http://www.roleplaymedia.net/profiles/blog/list?tag=tolkien&amp;user=1vde8vjtredm9">tolkien</a> (1)</li>
+                                    <li><a rel="tag" href="http://www.roleplaymedia.net/profiles/blog/list?tag=ideas&amp;user=1vde8vjtredm9">ideas</a> (1)</li>
+                                    <li><a rel="tag" href="http://www.roleplaymedia.net/profiles/blog/list?tag=horror&amp;user=1vde8vjtredm9">horror</a> (1)</li>
+                                    <li><a rel="tag" href="http://www.roleplaymedia.net/profiles/blog/list?tag=d6&amp;user=1vde8vjtredm9">d6</a> (1)</li>
+                                    <li><a rel="tag" href="http://www.roleplaymedia.net/profiles/blog/list?tag=hints&amp;user=1vde8vjtredm9">hints</a> (2)</li>
+                                    <li><a rel="tag" href="http://www.roleplaymedia.net/profiles/blog/list?tag=WFRP&amp;user=1vde8vjtredm9">WFRP</a> (1)</li>
+                                    <li><a rel="tag" href="http://www.roleplaymedia.net/profiles/blog/list?tag=esoterrorists&amp;user=1vde8vjtredm9">esoterrorists</a> (1)</li>
+                                    <li><a rel="tag" href="http://www.roleplaymedia.net/profiles/blog/list?tag=james&amp;user=1vde8vjtredm9">james</a> (1)</li>
+                                    <li><a rel="tag" href="http://www.roleplaymedia.net/profiles/blog/list?tag=advice&amp;user=1vde8vjtredm9">advice</a> (1)</li>
+                            </ul>
+    </div>
+</div>
+<div class="xg_module">
+    <div class="xg_module_head">
+        <h2>Monthly Archives</h2>
+    </div>
+    <div class="xg_module_body">
+        <p><strong>2010</strong></p><ul class="nobullets"><li><a href="http://www.roleplaymedia.net/profiles/blog/list?user=1vde8vjtredm9&amp;month=09&amp;year=2010">September</a> (1)</li><li><a href="http://www.roleplaymedia.net/profiles/blog/list?user=1vde8vjtredm9&amp;month=08&amp;year=2010">August</a> (1)</li><li><a href="http://www.roleplaymedia.net/profiles/blog/list?user=1vde8vjtredm9&amp;month=07&amp;year=2010">July</a> (1)</li><li><a href="http://www.roleplaymedia.net/profiles/blog/list?user=1vde8vjtredm9&amp;month=06&amp;year=2010">June</a> (1)</li><li><a href="http://www.roleplaymedia.net/profiles/blog/list?user=1vde8vjtredm9&amp;month=05&amp;year=2010">May</a> (1)</li><li><a href="http://www.roleplaymedia.net/profiles/blog/list?user=1vde8vjtredm9&amp;month=03&amp;year=2010">March</a> (2)</li><li><a href="http://www.roleplaymedia.net/profiles/blog/list?user=1vde8vjtredm9&amp;month=02&amp;year=2010">February</a> (3)</li></ul><p><strong>2009</strong></p><ul class="nobullets"><li><a href="http://www.roleplaymedia.net/profiles/blog/list?user=1vde8vjtredm9&amp;month=12&amp;year=2009">December</a> (7)</li><li><a href="http://www.roleplaymedia.net/profiles/blog/list?user=1vde8vjtredm9&amp;month=11&amp;year=2009">November</a> (1)</li><li><a href="http://www.roleplaymedia.net/profiles/blog/list?user=1vde8vjtredm9&amp;month=10&amp;year=2009">October</a> (3)</li></ul>    </div>
+</div>
+    </div>
+                            </div>
+                            <div class="xg_column xg_span-4 xg_last">
+                       <div class="xg_module" id="xg_module_account">
+		<div class="xg_module_body xg_signup xg_lightborder">
+			<p>Welcome to<br />Role Play Media Network</p>
+			<p class="last-child">
+				<big><strong><a href="http://www.roleplaymedia.net/main/authorization/signUp?target=http%3A%2F%2Fwww.roleplaymedia.net%2Fprofiles%2Fblog%2Flist%3Fuser%3D1vde8vjtredm9">Sign Up</a></strong></big><br/>
+            	or <a href="http://www.roleplaymedia.net/main/authorization/signIn?target=http%3A%2F%2Fwww.roleplaymedia.net%2Fprofiles%2Fblog%2Flist%3Fuser%3D1vde8vjtredm9" style="white-space:nowrap">Sign In</a>			</p>
+        </div>
+    </div>
+<div class="xg_module module_birthdays" >
+    <div class="xg_module_head">
+        <h2>Birthdays</h2>
+    </div>
+    <div class="xg_module_body">
+<h3>Birthdays Today</h3>
+<ul class="clist">
+    <li>
+        <div class="ib">
+                    <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/DanielMPerez"  title="Daniel M. Perez"><img class="photo"  src="http://api.ning.com:80/files/SMCEfXbt0070W6c3bIJnh2BG8URiIWXTIc7T2a5SrSI_/738529947.jpeg?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="Daniel M. Perez" /></a></span>
+            </div>
+        <div class="tb">
+            <p>
+	        <span><a href="http://www.roleplaymedia.net/profile/DanielMPerez">Daniel M. Perez</a></span>
+	        <span><a class="xg_sprite xg_sprite-gift" href="http://www.roleplaymedia.net/main/authorization/signUp?target=http%3A%2F%2Fwww.roleplaymedia.net%2Fgifts%2Fitem%2Flist%3Fto%3D3t1embywzv4im%26xg_source%3Dbemb">Give a Gift</a> </span>
+	    </p>
+        </div>
+    </li>
+</ul>
+<h3>Birthdays Tomorrow</h3>
+<ul class="clist">
+    <li>
+        <div class="ib">
+                    <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/BeckieKuipers"  title="Beckie Kuipers"><img class="photo"  src="http://api.ning.com:80/files/dM1GieAyOPLJfJkOK450Bu5COs6TjzMrWVudS9nQONs_/060108_0736.jpg?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="Beckie Kuipers" /></a></span>
+            </div>
+        <div class="tb">
+            <p>
+	        <span><a href="http://www.roleplaymedia.net/profile/BeckieKuipers">Beckie Kuipers</a></span>
+	        <span><a class="xg_sprite xg_sprite-gift" href="http://www.roleplaymedia.net/main/authorization/signUp?target=http%3A%2F%2Fwww.roleplaymedia.net%2Fgifts%2Fitem%2Flist%3Fto%3D3lu5xmrdp5djd%26xg_source%3Dbemb">Give a Gift</a> </span>
+	    </p>
+        </div>
+    </li>
+    <li>
+        <div class="ib">
+                    <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/JohnReyst"  title="John Reyst"><img class="photo"  src="http://api.ning.com:80/files/iTQvF8UGOLreI3JxfvIYEOPHIAfllyP0gFPGJsMulxA_/d20pfsrd_logosquare2.png?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="John Reyst" /></a></span>
+            </div>
+        <div class="tb">
+            <p>
+	        <span><a href="http://www.roleplaymedia.net/profile/JohnReyst">John Reyst</a></span>
+	        <span><a class="xg_sprite xg_sprite-gift" href="http://www.roleplaymedia.net/main/authorization/signUp?target=http%3A%2F%2Fwww.roleplaymedia.net%2Fgifts%2Fitem%2Flist%3Fto%3D3284rerv3pijm%26xg_source%3Dbemb">Give a Gift</a> </span>
+	    </p>
+        </div>
+    </li>
+</ul>
+</div></div>
+	<div class="xg_module module_badge">
+		<div class="xg_module_head">
+	    <h2>Badge</h2>
+	    </div>
+	    <div class="xg_module_body xj_badge_body xj_embed_container" _embedCode="&lt;object classid=&quot;clsid:D27CDB6E-AE6D-11cf-96B8-444553540000&quot; codebase=&quot;http://fpdownload.macromedia.com/get/flashplayer/current/swflash.cab&quot;
+    id=&quot;badgeSwf&quot; width=&quot;100%&quot; height=&quot;104&quot; &gt;
+    &lt;param name=&quot;movie&quot; value=&quot;http://static.ning.com/socialnetworkmain/widgets/index/swf/badge.swf?v=201010112004&quot; /&gt;
+    &lt;param name=&quot;quality&quot; value=&quot;high&quot; /&gt;
+    &lt;param name=&quot;bgcolor&quot; value=&quot;#FFFFFF&quot; /&gt;
+    &lt;param name=&quot;flashvars&quot; value=&quot;hideVisit=1&amp;amp;config=http%3A%2F%2Fwww.roleplaymedia.net%2Fmain%2Fbadge%2FshowPlayerConfig%3Fsize%3Dsmall&amp;amp;backgroundColor=0xFFFFFF&amp;amp;textColor=0x315288&quot; /&gt;
+    &lt;param name=&quot;wmode&quot; value=&quot;opaque&quot;/&gt;
+    &lt;param name=&quot;allowScriptAccess&quot; value=&quot;always&quot; /&gt;
+&lt;embed
+    src=&quot;http://static.ning.com/socialnetworkmain/widgets/index/swf/badge.swf?v=201010112004&quot;
+    quality=high
+    bgColor=&quot;#FFFFFF&quot;
+    width=&quot;100%&quot;
+    height=&quot;104&quot;
+    name=&quot;badgeSwf&quot;
+    type=&quot;application/x-shockwave-flash&quot;
+    pluginspage=&quot;http://www.macromedia.com/go/getflashplayer&quot;
+    wmode=&quot;opaque&quot;
+    FlashVars=&quot;hideVisit=1&amp;amp;config=http%3A%2F%2Fwww.roleplaymedia.net%2Fmain%2Fbadge%2FshowPlayerConfig%3Fsize%3Dsmall&amp;amp;backgroundColor=0xFFFFFF&amp;amp;textColor=0x315288&quot;
+    scale=&quot;noscale&quot;
+    allowScriptAccess=&quot;always&quot;&gt;
+&lt;/embed&gt;
+&lt;/object&gt;">
+    Loading…</div>
+	    <div class="xg_module_foot">
+	        <p class="right"><a href="http://www.roleplaymedia.net/main/embeddable/list">Get Badge</a></p>
+	    </div>
+	</div>
+
+<!-- Template Start:  -->
+                </div>
+                                </div>
+            <div id="xg_foot">
+        <p class="left">
+            © 2010 &nbsp; Created by <a href="/xn/detail/u_unclebear">Berin Kinsman</a>.                        &nbsp;
+            Powered by <a href="http://www.ning.com/"><img src="http://static.ning.com/socialnetworkmain/widgets/index/gfx/logo_ningbar.png?v=201010112004" width="48" height="15" alt="Ning" class="poweredbylogo" /></a>.
+                    </p>
+                    <p class="right xg_lightfont">
+                                <a href="http://www.roleplaymedia.net/main/embeddable/list">Badges</a> &nbsp;|&nbsp;
+                                                    <a href="http://www.roleplaymedia.net/main/authorization/signUp?target=http%3A%2F%2Fwww.roleplaymedia.net%2Fmain%2Findex%2Freport" dojoType="PromptToJoinLink" _joinPromptText="Please sign up or sign in to complete this step." _signInUrl="http://www.roleplaymedia.net/main/authorization/signIn?target=http%3A%2F%2Fwww.roleplaymedia.net%2Fmain%2Findex%2Freport">Report an Issue</a> &nbsp;|&nbsp;
+                                <a href="http://www.roleplaymedia.net/main/authorization/termsOfService?previousUrl=http%3A%2F%2Fwww.roleplaymedia.net%2Fprofiles%2Fblog%2Flist%3Fuser%3D1vde8vjtredm9">Terms of Service</a>
+            </p>
+            </div>
+
+</div>
+
+<div id="xj_baz17246"></div>
+<div id="xg_overlay" style="display:none;">
+<!--[if lte IE 6.5]><iframe></iframe><![endif]-->
+</div>
+
+<!--googleoff: all--><noscript>
+	<style type="text/css" media="screen">
+        #xg { position:relative;top:120px; }
+        #xn_bar { top:120px; }
+	</style>
+	<div class="errordesc noscript">
+		<div>
+            <h3><strong>Hello, you need to enable JavaScript to use Role Play Media Network.</strong></h3>
+            <p>Please check your browser settings or contact your system administrator.</p>
+			<img src="/xn_resources/widgets/index/gfx/jstrk_off.gif" height="1" width="1" />
+		</div>
+	</div>
+</noscript><!--googleon: all-->
+<script type="text/javascript" src="http://static.ning.com/socialnetworkmain/widgets/lib/core.min.js?v=201010112004"></script>        <script>
+            var sources = ["http:\/\/b.scorecardresearch.com\/beacon.js","http:\/\/static.ning.com\/openrpgblog\/instances\/shared\/js\/set_common.min.js?r=1286828364","http:\/\/static.ning.com\/openrpgblog\/instances\/shared\/js\/set_shared_c0.min.js?r=1285790575","http:\/\/static.ning.com\/openrpgblog\/instances\/shared\/js\/set_sidebar_u.min.js?r=1256690803"];
+            var numSources = sources.length;
+            var heads = document.getElementsByTagName('head');
+            var node = heads.length > 0 ? heads[0] : document.body;
+            for (var i = 0; i < numSources; i++) {
+                var source = sources[i];
+                xg._loader.loading(source);
+                var script = document.createElement('script');
+                
+                script.type = 'text/javascript';
+                var cb = (function(source) { return function() { xg._loader.onLoad(source); }; })(source);
+                script.onerror = script.onload = cb;
+                script.onreadystatechange = function() {
+                    if (this.readyState == 'complete' || this.readyState == 'loaded') {
+                        cb();
+                    }
+                }
+                script.src = source;
+                node.appendChild(script);
+            }
+        </script>
+    <script type="text/javascript">
+if (!ning._) {ning._ = {}}
+ning._.compat = { encryptedToken: "<empty>" }
+ning._.CurrentServerTime = "2010-10-12T16:21:10+00:00";
+ning._.probableScreenName = "";
+ning._.domains = {
+    base: 'ning.com',
+    ports: { http: '80', ssl: '443' }
+};
+ning.loader.version = '201010112004_10'; // DEP-5711:295ccbd 14
+djConfig.parseWidgets = false;
+</script>
+<script type="text/javascript">
+    xg.token = '';
+    xg.cdnHost = 'static.ning.com';
+    xg.version = '201010112004';
+    xg.useMultiCdn = true;
+        xg.staticRoot = 'socialnetworkmain';
+    xg.xnTrackHost = "track.ning.com";
+            xg.cdnDefaultPolicyHost = 'static';
+        xg.cdnPolicy = [];
+        xg.global = xg.global||{}; xg.global.currentMozzle = 'profiles';
+    xg.global.userCanInvite = false;
+    xg.global.requestBase = '';
+    xg.global.locale = 'en_US';
+    xg.num_thousand_sep = ",";
+        (function() {
+        dojo.addOnLoad(function() {
+            if(window.bzplcm) { window.bzplcm.ts('hr'); window.bzplcm._profileSend(); }
+                    });
+                            ning.loader.require('xg.gifts.embed.embed', function() { xg._loader.onLoad('xnloader'); });
+            })();
+</script>
+<div id="xgDock" class="xg_dock">
+            <div class="jsContainer">
+            <a class="xg_info" href="/main/authorization/signIn?chat=true">Sign in to chat!</a>            <a href="#" class="xg_status xg_status-offline" title="You are Offline" ></a>
+        </div>
+    </div>
+<div class="xg_dock_spacer"></div></body>
+</html>
+
+<!-- Template Start:  -->

@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head data-layout-view="default">
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Online Pathfinder RPG Character Generator - Role Play Media Network</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+    <meta name="description" content="I have opened up the online Pathfinder PRG character generator beta testing to the public. You can find the generator at VentureCaptain.com. I actually plan on…" />
+    <meta name="keywords" content="builder, character, generator, pathfinder, rpg" />
+    <meta name="title" content="Online Pathfinder RPG Character Generator - Role Play Media Network" />
+            <link rel="image_src" href="http://api.ning.com/icons/appatar/4303603?default=4303603&amp;width=64&amp;height=64" />
+    <script type="text/javascript">
+djConfig = { baseScriptUri: 'http://www.roleplaymedia.net/xn/static-6.11.8.1/js/dojo-0.3.1-ning/', isDebug: false }
+ning = {"CurrentApp":{"premium":true,"iconUrl":"http:\/\/api.ning.com\/icons\/appatar\/4303603?default=4303603&width=64&height=64","url":"http:\/\/openrpgblog.ning.com","domains":["roleplaymedia.net"],"online":true,"privateSource":true,"id":"openrpgblog","description":"The RPG Media Network is a social networking site featuring blogs, forums, chat, and more dedicated to tabletop roleplaying games.","name":"Role Play Media Network","owner":"unclebear","createdDate":"2009-10-21T15:06:10.746Z","runOwnAds":false},"CurrentProfile":null,"maxFileUploadSize":5};
+    (function(){
+        if (!window.ning) { return; }
+
+        var age, gender, rand, obfuscated, combined;
+
+	    obfuscated = document.cookie.match(/xgdi=([^;]+)/);
+	    if (obfuscated) {
+	          var offset = 100000;
+	          obfuscated = parseInt(obfuscated[1]);
+	          rand = obfuscated / offset;
+	          combined = (obfuscated % offset) ^ rand;
+	          age = combined % 1000;
+	          gender = (combined / 1000) & 3;
+	          gender = (gender == 1 ? 'm' : gender == 2 ? 'f' : 0);
+	          ning.viewer = {"age":age,"gender":gender};
+	    }
+	 })();
+
+if (window.location.hash.indexOf('#!/') == 0) {
+    window.location.replace(window.location.hash.substr(2));
+}
+window.xg = {};
+xg.addOnRequire = function(f) { xg.addOnRequire.functions.push(f); };
+xg.addOnRequire.functions = [];
+xg.addOnFacebookLoad = function (f) { xg.addOnFacebookLoad.functions.push(f); };
+xg.addOnFacebookLoad.functions = [];
+xg._loader = {
+    p: 0,
+    loading: function(set) { xg._loader.p++; },
+    onLoad: function(set) {
+        xg._loader.p--;
+        if (xg._loader.p == 0 && typeof(xg._loader.onDone) == 'function') {
+            xg._loader.onDone();
+        }
+    }
+};
+xg._loader.loading('xnloader');
+if (window.bzplcm) {
+    window.bzplcm._profileCount = 0;
+    window.bzplcm._profileSend = function() { if (window.bzplcm._profileCount++ == 1) window.bzplcm.send(); };
+}
+xg._loader.onDone = function() {
+        if(window.bzplcm)window.bzplcm.start('ni');
+    xg.shared.util.parseWidgets();    var addOnRequireFunctions = xg.addOnRequire.functions;
+    xg.addOnRequire = function(f) { f(); };
+    try {
+        if (addOnRequireFunctions) { dojo.lang.forEach(addOnRequireFunctions, function(onRequire) { onRequire.apply(); }); }
+    } catch (e) {
+        if(window.bzplcm)window.bzplcm.ts('nx').send();
+        throw e;
+    }
+    if(window.bzplcm) { window.bzplcm.stop('ni'); window.bzplcm._profileSend(); }
+};
+window.xn = { track: { _globals: { screen_name: null, subdomain: "openrpgblog", is_owner: false, is_admin: false, is_member: false, join_date: 0, request_method: "GET", trace: "2e63c9e3-9713-49dd-b336-142385b551d1"}, event: function() {}, pageView: function() {}, registerCompletedFlow: function() {}, registerError: function() {}, timer: function() { return { lapTime: function() {} }; }, _trackingHost: "track.ning.com", _jsDebug: false } }    </script>
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_ning_ga._setAccount', 'UA-2270114-6']); 
+    _gaq.push(['_ning_ga._setNamespace', 'ning']);
+        _gaq.push(['_ning_ga._setCustomVar', 1,"member_type", "anonymous", 3]);
+    _gaq.push(['_ning_ga._setCustomVar', 2,"subdomain",  "openrpgblog.ning.com" ,3]); 
+    _gaq.push(['_ning_ga._setCustomVar', 3,"category",    "gaming" ,3]);
+    _gaq.push(['_ning_ga._setCustomVar', 4,"product_type","plus" ,3]);
+    _gaq.push(['_ning_ga._setCustomVar', 5,"member_segment","150-999" ,3]);
+    _gaq.push(['_ning_ga._trackPageview']);
+
+    (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+     })();
+</script>
+<meta name="medium" content="blog" /><link rel="alternate" type="application/atom+xml" title="Michael Brewer&#039;s Posts - Role Play Media Network" href="http://www.roleplaymedia.net/profiles/blog/feed?user=39rhg4njqx4bt&amp;xn_auth=no" /><link rel="alternate" type="application/atom+xml" title="Comments - Online Pathfinder RPG Character Generator - Role Play Media Network" href="http://www.roleplaymedia.net/profiles/comment/feed?attachedTo=4303603%3ABlogPost%3A11738&amp;xn_auth=no" />
+<style type="text/css" media="screen,projection">
+#xg_navigation ul div.xg_subtab ul li a {
+    color:#666666;
+    background:#D3DBE4;
+}
+#xg_navigation ul div.xg_subtab ul li a:hover {
+    color:#333333;
+    background:#E3E8EE;
+}
+</style>
+
+
+<style type="text/css" media="screen,projection">
+@import url(http://static.ning.com/socialnetworkmain/widgets/index/css/common.min.css?xn_version=1943777821);
+@import url(http://static.ning.com/socialnetworkmain/widgets/profiles/css/component.min.css?xn_version=1354925269);
+
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(http://static.ning.com/openrpgblog/instances/css/embed_1303182993.css?xn_version=201104152208);
+
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(http://static.ning.com/openrpgblog/instances/css/theme_1302907207.css?xn_version=201104152208);
+
+</style>
+
+<!--[if IE 6]>
+    <link rel="stylesheet" type="text/css" href="http://static.ning.com/socialnetworkmain/widgets/index/css/common-ie6.min.css?v=201104152208" />
+<![endif]-->
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" href="http://static.ning.com/socialnetworkmain/widgets/index/css/common-ie7.css?v=201104152208" />
+<![endif]-->
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.roleplaymedia.net/profiles/blog/rsd" />
+
+    </head>
+    <body>
+                <div id="xn_bar">
+            <div id="xn_bar_menu">
+                <div id="xn_bar_menu_branding" >
+                                    </div>
+
+                <div id="xn_bar_menu_more">
+                    <form id="xn_bar_menu_search" method="GET" action="http://www.roleplaymedia.net/main/search/search">
+                        <fieldset>
+                            <input type="text" name="q" id="xn_bar_menu_search_query" value="Search Role Play Media Network" _hint="Search Role Play Media Network" accesskey="4" class="text xj_search_hint" />
+                            <a id="xn_bar_menu_search_submit" href="#" onclick="document.getElementById('xn_bar_menu_search').submit();return false">Search</a>
+                        </fieldset>
+                    </form>
+                </div>
+
+                <ul id="xn_bar_menu_tabs">
+                                            <li><a href="http://www.roleplaymedia.net/main/authorization/signUp?target=http%3A%2F%2Fwww.roleplaymedia.net%2Fprofiles%2Fblogs%2Fonline-pathfinder-rpg">Sign Up</a></li>
+                        <li><a href="http://www.roleplaymedia.net/main/authorization/signIn?target=http%3A%2F%2Fwww.roleplaymedia.net%2Fprofiles%2Fblogs%2Fonline-pathfinder-rpg">Sign In</a></li>
+                        
+                </ul>
+            </div>
+        </div>
+        
+        
+        <div id="xg" class="xg_theme xg_widget_profiles xg_widget_profiles_blog xg_widget_profiles_blog_show" data-layout-pack="classic">
+            <div id="xg_head">
+                <div id="xg_masthead">
+                    <p id="xg_sitename"><a id="application_name_header_link" href="/">Role Play Media Network</a></p>
+                    <p id="xg_sitedesc" class="xj_site_desc">a community for rpg bloggers, podcasters, vidcasters, and their audiences</p>
+                </div>
+                <div id="xg_navigation">
+                    <ul>
+    <li id="xg_tab_main" class="xg_subtab"><a href="/"><span>Home</span></a></li><li id="xg_tab_profile" class="xg_subtab"><a href="/profiles"><span>My Page</span></a></li><li id="xg_tab_http://os.ning.com/ningapps/paypal/gadget.xml?ning-app-status=network" class="xg_subtab"><a href="/opensocial/ningapps/show?appUrl=http%3A%2F%2Fos.ning.com%2Fningapps%2Fpaypal%2Fgadget.xml%3Fning-app-status%3Dnetwork&amp;owner=unclebear"><span>Donate</span></a></li><li id="xg_tab_blogs" class="xg_subtab this"><a href="/profiles/blog/list"><span>Blogs</span></a></li><li id="xg_tab_xn1" class="xg_subtab"><a href="/profiles/blog/list?tag=review"><span>Reviews</span></a></li><li id="xg_tab_forum" class="xg_subtab"><a href="/forum"><span>Forum</span></a></li><li id="xg_tab_chat" class="xg_subtab"><a href="/chat"><span>Chat</span></a></li><li id="xg_tab_groups" class="xg_subtab"><a href="/groups"><span>Groups</span></a></li><li id="xg_tab_events" class="xg_subtab"><a href="/events"><span>Events</span></a></li><li id="xg_tab_video" class="xg_subtab"><a href="/video"><span>Videos</span></a></li><li id="xg_tab_xn0" class="xg_subtab"><a href="http://www.rpgbloggers.com/" target="_blank"><span>RPGBN</span></a></li><li id="xg_tab_xn2" class="xg_subtab"><a href="http://www.rpgtabletalk.com"><span>RPG Table Talk</span></a></li></ul>
+
+                </div>
+            </div>
+            
+            <div id="xg_body">
+                
+                <div class="xg_column xg_span-16 xj_classic_canvas">
+                    <ul class="navigation easyclear"><li><a href="http://www.roleplaymedia.net/profiles/blog/list">All Blog Posts</a></li><li><a href="http://www.roleplaymedia.net/profiles/blog/list?my=1">My Blog</a></li><li class="right  xg_lightborder navbutton"><a href="http://www.roleplaymedia.net/profiles/blog/new" class="xg_sprite xg_sprite-add">Add</a></li></ul>
+<div class="xg_module xg_blog xg_blog_detail xg_blog_mypage">
+        <div class="xg_headline xg_headline-img xg_headline-2l">
+    <div class="ib">        <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/MadBrew"  title="Michael Brewer"><img class=" photo"  src="http://api.ning.com:80/files/M2aMCDB6ueB6SUGho5wsYS2xdCpnWyR-usdI7raqg1M_/madbrew.jpg?width=64&amp;height=64&amp;crop=1%3A1" height="64" width="64" alt="Michael Brewer" /></a></span>
+    </div>
+    <div class="tb">
+        <h1>Online Pathfinder RPG Character Generator</h1>
+        <ul class="navigation byline">
+            <li><a class="nolink">Posted by </a><a href="/profile/MadBrew">Michael Brewer</a><a class="nolink"> on December 13, 2010 at 10:04pm</a></li>
+            <li><a class="xg_sprite xg_sprite-view" href="http://www.roleplaymedia.net/profiles/blog/list?user=39rhg4njqx4bt">View Michael Brewer&#039;s blog</a></li>
+        </ul>
+    </div>
+</div>
+    <div class="xg_module_body">
+        <div class="postbody">
+                    <p>I have opened up the online Pathfinder PRG character generator beta testing to the public. You can find the generator at <a rel=nofollow href="http://venturecaptain.com/" target="_blank">VentureCaptain.com</a>. I actually plan on expanding the site to host a suite of utilities for use with the Pathfinder RPG including a dice app I’ve been tinkering with that uses true random number generation, courtesy of Random.org. You can also follow Venture Captain on <a rel=nofollow href="http://www.facebook.com/venturecaptain" target="_blank">Facebook</a> and on <a rel=nofollow href="http://twitter.com/Venture_Captain" target="_blank">Twitter</a>.</p>
+<p><strong>TECHNOLOGY</strong></p>
+<p>The character generator is a plain web app. It runs XHTML 1.0 Strict (every page but the contact page validates), CSS2.1, and JavaScript/jQuery. So it should display and render fine on most standards compliant-ish web browsers. The generator exports characters as a small PDF (~40k) file, so whatever platform you are using must support PDFs.</p>
+<p>I’ve built the app according to how I plan on using it. I run Chrome on Windows 7 have no issues. Chrome renders JavaScript blazingly fast, but I’ve also tested it on Firefox 3.5/3.6 and it runs fine. On IE 7/8, the generator performs a bit on the sluggish side. I haven’t tested it on mobile devices, because quite frankly, there is just too much information to try to display effectively on such a small screen.</p>
+<p><strong>THIS IS BETA</strong></p>
+<p>I must stress that the generator is in BETA. There are obvious things missing, as well as ton of undiscovered bugs waiting to be squashed. I am working on tying up loose ends with the current implemented features before slaying the bigger dragons of Equipment and Spells. Oh yeah, and the only guy writing code for this app is me.</p>
+<p>Some things I’m working on now is expanding the class feature information presented on the character sheet (displaying bloodline powers, school powers, etc.) as well as creating an interface for missing elements such as being able to choose what Mercy you get when you take the Extra Mercy feat.</p>
+<p>This being said, if you find anything missing, improperly formatted, not compliant with the latest Pathfinder RPG rules, or have a general suggestion please do not hesitate to contact me via <a rel=nofollow rel="nofollow" href="http://twitter.com/Venture_Captain" target="_blank">Twitter</a>, <a rel=nofollow rel="nofollow" href="http://www.facebook.com/pages/Venture-Captain/177595318923708?ref=mf" target="_blank">Facebook</a>, or using the VentureCaptain.com <a rel=nofollow rel="nofollow" href="http://venturecaptain.com/Contact.aspx" target="_blank">Contact page</a>. I want this tool be the best it can be, so everyone’s feedback is important to me.</p>
+<p><strong>FEATURE ROADMAP</strong></p>
+<p>Below is how I think feature implementation will roll-out. I’m naming the builds after cities in Golarion, with the first build belonging to capital of the oldest empire.</p>
+<p>v1.0 [Sothis] Feature Implementation (bold items are finished; italicized items are in development):</p>
+<ul>
+<li style="list-style: none"><br/>
+</li>
+<li><strong>Ability Scores (point buy, tier points, racial adjustments)</strong></li>
+<li><strong>Core Classes (alignment restrictions, favored class bonuses, selectable class features)</strong></li>
+<li><strong>Skills (class skill training bonus, skill focus bonus, racial bonuses, ability modifiers)</strong></li>
+<li><strong>Calculated Combat Stats (BAB, CMB, CMD, AC, Touch AC, Flat Footed AC, Saves, HPs, Speed, Initiative)</strong></li>
+<li><strong>Feats (Racial, class granted feats, full prerequisite validation)</strong></li>
+<li>Equipment (calculate wealth, calculate encumbrance, attack/damage bonuses, highlight proficiency, equip to slots)</li>
+<li>Spells (select known spells, select memorized spells, calculate DCs, calculate dice/bonuses)</li>
+<li>Portraits by 60+ Terrible Portraits</li>
+<li><strong>Save to PDF (complete with calculated values, racial &amp;amp; class features, custom landscape layout)</strong></li>
+</ul>
+<p></p>
+<p>v2.0 [Oppara] Feature Roadmap:</p>
+<ul>
+<li style="list-style: none"><br/>
+</li>
+<li>Prestige Classes</li>
+<li>Traits</li>
+<li>Language Selection</li>
+<li>Custom Magic Weapon &amp;amp; Armor</li>
+<li>Random Bio Generation (Name, Homeland, Age, Height, Weight, Hair, &amp;amp; Eyes) based on Race &amp;amp; Gender</li>
+<li>Aging Affects validation based on Age in Bio</li>
+<li>Rules Info (overlays with PRD definitions for class features, feats, etc.)</li>
+<li>Pathfinder Society legal character validation</li>
+<li>Save to HTML</li>
+</ul>
+<p></p>
+<p>v3.0 [Egorian] Feature Roadmap:</p>
+<ul>
+<li style="list-style: none"><br/>
+</li>
+<li>Advanced Player&amp;#8217;s Guide Update</li>
+<li>Non-core free entry for class, feats, traits, skills, equipment, &amp;amp; spells.</li>
+<li>Pre-calculated Combat Maneuver &amp;amp; Spell sheets</li>
+<li>Storage Solutions</li>
+</ul>
+<p></p>
+<p><strong>IT’S FREE!</strong></p>
+<p>Did I mention this web app is free? Yeah, creating characters with Venture Captain costs you nothing (except whatever you pay to access the internet already). It will continue to be free for as long as I feel like covering the cost of hosting and development. There may be pay features in the future (storing characters in cloud?), but only for convenience services, never for content.</p>
+<p>If you like it, please follow <a rel=nofollow href="http://twitter.com/Venture_Captain" target="_blank">@Venture_Captain</a> on Twitter and spread the word, like <a rel=nofollow href="http://www.facebook.com/venturecaptain">Venture Captain</a> on Facebook, or even blog about it.</p>
+<p><a rel=nofollow href="http://venturecaptain.com/" target="_blank">Venture Captain Online Pathfinder Character Generator</a></p>        </div>
+        <div class="left-panel">
+                        <p class="share-links clear"><a class="xg_sprite xg_sprite-share" href="http://www.roleplaymedia.net/main/sharing/share?id=4303603%253ABlogPost%253A11738">Share</a>        <a class="post_to_twitter" href="http://twitter.com/home?status=http%3A%2F%2Fwww.roleplaymedia.net%2Fprofiles%2Fblogs%2Fonline-pathfinder-rpg" _message="Checking out &quot;Online Pathfinder RPG Character Generator&quot; on Role Play Media Network:" _url="http://www.roleplaymedia.net/profiles/blogs/online-pathfinder-rpg" _urlShortenerKey="334857207562" _screenName="" _twitterAuthenticationNeeded="" _source="content" target="_blank">Twitter</a>
+                <a class="post_to_facebook xj_post_to_facebook" href="http://www.facebook.com/share.php?u=http%3A%2F%2Fwww.roleplaymedia.net%2Fprofiles%2Fblogs%2Fonline-pathfinder-rpg%3Fxg_source%3Dfacebookshare&amp;t=" _url="http://www.roleplaymedia.net/profiles/blogs/online-pathfinder-rpg?xg_source=facebookshare" _title="" _log="{&quot;module&quot;:&quot;profiles&quot;,&quot;page&quot;:&quot;blog&quot;,&quot;action&quot;:&quot;show&quot;}">Facebook</a>
+    </p>        </div>
+        <div class="right-panel">
+                            <p class="small object-detail" id="tagsList">
+                    Tags: <a href="http://www.roleplaymedia.net/profiles/blog/list?tag=builder">builder</a>, <a href="http://www.roleplaymedia.net/profiles/blog/list?tag=character">character</a>, <a href="http://www.roleplaymedia.net/profiles/blog/list?tag=generator">generator</a>, <a href="http://www.roleplaymedia.net/profiles/blog/list?tag=pathfinder">pathfinder</a>, <a href="http://www.roleplaymedia.net/profiles/blog/list?tag=rpg">rpg</a>                </p>
+                    </div>
+                    <ul class="pagination smallpagination">
+                            <li class="left"><a href="http://www.roleplaymedia.net/profiles/blogs/5-ways-social-media-impacts" title="5 Ways Social Media Impacts RPGs">&lt; Previous Post</a></li>                         </ul>
+            </div>
+</div>
+
+        <div class="xg_module">
+                                        <div class="xg_module_body">
+                    <p id="add-comment">Comment</p>
+                                            <div class="comment-join">
+                            <h3>You need to be a member of Role Play Media Network to add comments!</h3>
+                        <p><a href="http://www.roleplaymedia.net/main/authorization/signUp?target=http%3A%2F%2Fwww.roleplaymedia.net%2Fprofiles%2Fblogs%2Fonline-pathfinder-rpg">Join Role Play Media Network</a></p>
+                        </div>
+                                                        </div>
+                    <div class="xg_module_body" id="comments" style="display: none" _numComments="0" _scrollTo="">
+                    </div>
+                    <div class="xg_module_foot" id="xj_comments_footer" style="display:none">
+                                            <p class="left">
+                            <a class="xg_icon xg_icon-rss" href="http://www.roleplaymedia.net/profiles/comment/feed?attachedTo=4303603%3ABlogPost%3A11738&amp;xn_auth=no">RSS</a>
+                        </p>
+                                    </div>
+                    </div>
+    
+      <input type="hidden" id="incrementViewCountEndpoint" value="http://www.roleplaymedia.net/profiles/blog/incrementViewCount?id=4303603%3ABlogPost%3A11738&amp;xn_out=json" />
+
+                </div>
+                <div class="xg_column xg_span-4 xg_last xj_classic_sidebar">
+                        <div class="xg_module" id="xg_module_account">
+        <div class="xg_module_body xg_signup xg_lightborder">
+            <p>Welcome to<br />Role Play Media Network</p>
+            <p class="last-child">
+                <big><strong><a href="http://www.roleplaymedia.net/main/authorization/signUp?target=http%3A%2F%2Fwww.roleplaymedia.net%2Fprofiles%2Fblogs%2Fonline-pathfinder-rpg">Sign Up</a></strong></big><br/>
+                or <a href="http://www.roleplaymedia.net/main/authorization/signIn?target=http%3A%2F%2Fwww.roleplaymedia.net%2Fprofiles%2Fblogs%2Fonline-pathfinder-rpg" style="white-space:nowrap">Sign In</a>            </p>
+                            <div class="xg_external_signup xg_lightborder xj_signup">
+                    <p class="dy-small">You can also sign up with:</p>
+                    <ul class="providers">
+            <li data-provider-name="Facebook"><a onclick="window.open('https://roleplaymedia.networkauth.com/facebook/connect_start?ext_perm=user_birthday%2Cuser_location%2Cemail&token_url=http%3A%2F%2Fwww.roleplaymedia.net%2Fmain%2Fauthorization%2FprocessExternalAuth%3Ftarget%3Dhttp%253A%252F%252Fwww.roleplaymedia.net%252Fprofiles%252Fblogs%252Fonline-pathfinder-rpg%26source%3DsignUp%26close%3D1', null, 'width=626,height=436,location=no,menubar=no,resizable=yes,scrollbars=yes,toolbar=no,status=no'); return false;" href="https://roleplaymedia.networkauth.com/facebook/connect_start?ext_perm=user_birthday%2Cuser_location%2Cemail&amp;token_url=http%3A%2F%2Fwww.roleplaymedia.net%2Fmain%2Fauthorization%2FprocessExternalAuth%3Ftarget%3Dhttp%253A%252F%252Fwww.roleplaymedia.net%252Fprofiles%252Fblogs%252Fonline-pathfinder-rpg%26source%3DsignUp%26close%3D0">
+                            <span class="mini-service mini-service-facebook" title="Facebook"></span>
+                    </a></li>
+            <li data-provider-name="Google"><a onclick="window.open('https://roleplaymedia.networkauth.com/openid/start?openid_identifier=http%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid&token_url=http%3A%2F%2Fwww.roleplaymedia.net%2Fmain%2Fauthorization%2FprocessExternalAuth%3Ftarget%3Dhttp%253A%252F%252Fwww.roleplaymedia.net%252Fprofiles%252Fblogs%252Fonline-pathfinder-rpg%26source%3DsignUp%26close%3D1', null, 'width=530,height=480,location=no,menubar=no,resizable=yes,scrollbars=yes,toolbar=no,status=no'); return false;" href="https://roleplaymedia.networkauth.com/openid/start?openid_identifier=http%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid&amp;token_url=http%3A%2F%2Fwww.roleplaymedia.net%2Fmain%2Fauthorization%2FprocessExternalAuth%3Ftarget%3Dhttp%253A%252F%252Fwww.roleplaymedia.net%252Fprofiles%252Fblogs%252Fonline-pathfinder-rpg%26source%3DsignUp%26close%3D0">
+            <span class="mini-service mini-service-google" title="Google"></span>
+        </a></li>
+            <li data-provider-name="Yahoo!"><a onclick="window.open('https://roleplaymedia.networkauth.com/openid/start?openid_identifier=http%3A%2F%2Fme.yahoo.com%2F&token_url=http%3A%2F%2Fwww.roleplaymedia.net%2Fmain%2Fauthorization%2FprocessExternalAuth%3Ftarget%3Dhttp%253A%252F%252Fwww.roleplaymedia.net%252Fprofiles%252Fblogs%252Fonline-pathfinder-rpg%26source%3DsignUp%26close%3D1', null, 'width=500,height=480,location=no,menubar=no,resizable=yes,scrollbars=yes,toolbar=no,status=no'); return false;" href="https://roleplaymedia.networkauth.com/openid/start?openid_identifier=http%3A%2F%2Fme.yahoo.com%2F&amp;token_url=http%3A%2F%2Fwww.roleplaymedia.net%2Fmain%2Fauthorization%2FprocessExternalAuth%3Ftarget%3Dhttp%253A%252F%252Fwww.roleplaymedia.net%252Fprofiles%252Fblogs%252Fonline-pathfinder-rpg%26source%3DsignUp%26close%3D0">
+            <span class="mini-service mini-service-yahoo" title="Yahoo!"></span>
+        </a></li>
+    </ul>
+                </div>
+                    </div>
+    </div>
+<div class="xg_module module_birthdays" >
+    <div class="xg_module_head">
+        <h2>Birthdays</h2>
+    </div>
+    <div class="xg_module_body">
+<h3>Birthdays Today</h3>
+<ul class="clist">
+    <li>
+        <div class="ib">
+                    <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/ChrisHillman"  title="Chris Hillman"><img class=" photo"  src="http://api.ning.com:80/files/SyF-RVPuojylnVajrWzn1nkBK3oEJRhuDZrb5Gvbeqh5kQCNenCW-Ax27wx0nhWqr8jKWzdN5Iodj3a2q3rG-oDO2FgAs246/profile.jpg?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="Chris Hillman" /></a></span>
+            </div>
+        <div class="tb">
+            <p>
+	        <span><a href="http://www.roleplaymedia.net/profile/ChrisHillman">Chris Hillman</a></span>
+	        <span><a class="xg_sprite xg_sprite-gift" href="http://www.roleplaymedia.net/main/authorization/signUp?target=http%3A%2F%2Fwww.roleplaymedia.net%2Fgifts%2Fitem%2Flist%3Fto%3D1ntr9577z89k3%26xg_source%3Dbemb">Give a Gift</a> </span>
+	    </p>
+        </div>
+    </li>
+    <li>
+        <div class="ib">
+                    <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/JustinDavidMargulski"  title="Justin David Margulski"><img class=" photo"  src="http://api.ning.com:80/files/CIVO-A9JrE8ri7dH-AbUA8EmRMSE*QlbK-cDYidk3kw_/386702057.bin?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="Justin David Margulski" /></a></span>
+            </div>
+        <div class="tb">
+            <p>
+	        <span><a href="http://www.roleplaymedia.net/profile/JustinDavidMargulski">Justin David Margulski</a></span>
+	        <span><a class="xg_sprite xg_sprite-gift" href="http://www.roleplaymedia.net/main/authorization/signUp?target=http%3A%2F%2Fwww.roleplaymedia.net%2Fgifts%2Fitem%2Flist%3Fto%3D107dvrxhp2e33%26xg_source%3Dbemb">Give a Gift</a> </span>
+	    </p>
+        </div>
+    </li>
+</ul>
+<h3>Birthdays Tomorrow</h3>
+<ul class="clist">
+    <li>
+        <div class="ib">
+                    <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/DanielleJenkins"  title="Danielle Jenkins"><img class="xj_user_default photo"  src="http://api.ning.com:80/files/*XG8*0kVvmcUtSyEJ3RiEU9B7YXkwyBYJCYwrVYGTbhPllEcCUXVQTWBzlpaXItru0uYJquX6G1hdyrYEU5IR5REOXKKrQ1R/505522004.png?width=48&amp;height=48&amp;crop=1%3A1&amp;xj_user_default=1" height="48" width="48" alt="Danielle Jenkins" /></a></span>
+            </div>
+        <div class="tb">
+            <p>
+	        <span><a href="http://www.roleplaymedia.net/profile/DanielleJenkins">Danielle Jenkins</a></span>
+	        <span><a class="xg_sprite xg_sprite-gift" href="http://www.roleplaymedia.net/main/authorization/signUp?target=http%3A%2F%2Fwww.roleplaymedia.net%2Fgifts%2Fitem%2Flist%3Fto%3D1jz5ymvrwv0ag%26xg_source%3Dbemb">Give a Gift</a> </span>
+	    </p>
+        </div>
+    </li>
+    <li>
+        <div class="ib">
+                    <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/JoshuaBurnett"  title="Joshua Burnett"><img class=" photo"  src="http://api.ning.com:80/files/xDL0jWhnSO6dtP1UGAGu*8tSAWvZ3z964VGPJ8OUqzrSd*JBRv2qhpzTpwWeCWpXApbmMtTjXB5cFRxVFiXcoIQrsa7lR8TL/selfportrait.jpg?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="Joshua Burnett" /></a></span>
+            </div>
+        <div class="tb">
+            <p>
+	        <span><a href="http://www.roleplaymedia.net/profile/JoshuaBurnett">Joshua Burnett</a></span>
+	        <span><a class="xg_sprite xg_sprite-gift" href="http://www.roleplaymedia.net/main/authorization/signUp?target=http%3A%2F%2Fwww.roleplaymedia.net%2Fgifts%2Fitem%2Flist%3Fto%3D2mr7cf1uqr2ss%26xg_source%3Dbemb">Give a Gift</a> </span>
+	    </p>
+        </div>
+    </li>
+</ul>
+</div></div>
+	<div class="xg_module module_badge">
+		<div class="xg_module_head">
+	    <h2>Badge</h2>
+	    </div>
+	    <div class="xg_module_body xj_badge_body xj_embed_container" _embedCode="&lt;object classid=&quot;clsid:D27CDB6E-AE6D-11cf-96B8-444553540000&quot; codebase=&quot;http://fpdownload.macromedia.com/get/flashplayer/current/swflash.cab&quot;
+    id=&quot;badgeSwf&quot; width=&quot;100%&quot; height=&quot;104&quot; &gt;
+    &lt;param name=&quot;movie&quot; value=&quot;http://static.ning.com/socialnetworkmain/widgets/index/swf/badge.swf?v=201104152208&quot; /&gt;
+    &lt;param name=&quot;quality&quot; value=&quot;high&quot; /&gt;
+    &lt;param name=&quot;bgcolor&quot; value=&quot;#CDA950&quot; /&gt;
+    &lt;param name=&quot;flashvars&quot; value=&quot;hideVisit=1&amp;amp;config=http%3A%2F%2Fwww.roleplaymedia.net%2Fmain%2Fbadge%2FshowPlayerConfig%3Fsize%3Dsmall%26v%3D10&amp;amp;backgroundColor=0xCDA950&amp;amp;textColor=0xB26400&quot; /&gt;
+    &lt;param name=&quot;wmode&quot; value=&quot;opaque&quot;/&gt;
+    &lt;param name=&quot;allowScriptAccess&quot; value=&quot;always&quot; /&gt;
+&lt;embed
+    class=&quot;xj_badge_embed&quot;
+    src=&quot;http://static.ning.com/socialnetworkmain/widgets/index/swf/badge.swf?v=201104152208&quot;
+    quality=high
+    bgColor=&quot;#CDA950&quot;
+    width=&quot;100%&quot;
+    height=&quot;104&quot;
+    name=&quot;badgeSwf&quot;
+    type=&quot;application/x-shockwave-flash&quot;
+    pluginspage=&quot;http://www.macromedia.com/go/getflashplayer&quot;
+    wmode=&quot;opaque&quot;
+    FlashVars=&quot;hideVisit=1&amp;amp;config=http%3A%2F%2Fwww.roleplaymedia.net%2Fmain%2Fbadge%2FshowPlayerConfig%3Fsize%3Dsmall%26v%3D10&amp;amp;backgroundColor=0xCDA950&amp;amp;textColor=0xB26400&quot;
+    scale=&quot;noscale&quot;
+    allowScriptAccess=&quot;always&quot;&gt;
+&lt;/embed&gt;
+&lt;/object&gt;">
+    Loading…</div>
+	    <div class="xg_module_foot">
+	        <p class="right"><a href="http://www.roleplaymedia.net/main/embeddable/list">Get Badge</a></p>
+	    </div>
+	</div>
+
+                </div>
+            </div>
+            <div id="xg_foot">
+                <p class="left">
+    © 2011 &nbsp; Created by <a href="/xn/detail/u_unclebear">Berin Kinsman</a>.        &nbsp;
+    Powered by <a href="http://www.ning.com/"><img src="http://static.ning.com/socialnetworkmain/widgets/index/gfx/logo_ningbar.png?v=201104152208" width="48" height="15" alt="Ning" class="poweredbylogo" /></a>.
+    </p>
+    <p class="right xg_lightfont">
+                <a href="http://www.roleplaymedia.net/main/embeddable/list">Badges</a> &nbsp;|&nbsp;
+                            <a href="http://www.roleplaymedia.net/main/authorization/signUp?target=http%3A%2F%2Fwww.roleplaymedia.net%2Fmain%2Findex%2Freport" dojoType="PromptToJoinLink" _joinPromptText="Please sign up or sign in to complete this step." _signInUrl="http://www.roleplaymedia.net/main/authorization/signIn?target=http%3A%2F%2Fwww.roleplaymedia.net%2Fmain%2Findex%2Freport">Report an Issue</a> &nbsp;|&nbsp;
+                <a href="http://www.roleplaymedia.net/main/authorization/termsOfService?previousUrl=http%3A%2F%2Fwww.roleplaymedia.net%2Fprofiles%2Fblogs%2Fonline-pathfinder-rpg">Terms of Service</a>
+    </p>
+
+            </div>
+        </div>
+        
+        <div id="xj_baz17246" class="xg_theme"></div>
+<div id="xg_overlay" style="display:none;">
+<!--[if lte IE 6.5]><iframe></iframe><![endif]-->
+</div>
+<!--googleoff: all--><noscript>
+	<style type="text/css" media="screen">
+        #xg { position:relative;top:120px; }
+        #xn_bar { top:120px; }
+	</style>
+	<div class="errordesc noscript">
+		<div>
+            <h3><strong>Hello, you need to enable JavaScript to use Role Play Media Network.</strong></h3>
+            <p>Please check your browser settings or contact your system administrator.</p>
+			<img src="/xn_resources/widgets/index/gfx/jstrk_off.gif" height="1" width="1" />
+		</div>
+	</div>
+</noscript><!--googleon: all-->
+<script type="text/javascript" src="http://static.ning.com/socialnetworkmain/widgets/lib/core.min.js?v=201104152208"></script>        <script>
+            var sources = ["http:\/\/static.ning.com\/openrpgblog\/instances\/shared\/js\/set_common.min.js?r=1302815834","http:\/\/static.ning.com\/openrpgblog\/instances\/shared\/js\/set_shared_c0.min.js?r=1298582331","http:\/\/static.ning.com\/openrpgblog\/instances\/shared\/js\/set_sidebar_u.min.js?r=1297283455"];
+            var numSources = sources.length;
+            var heads = document.getElementsByTagName('head');
+            var node = heads.length > 0 ? heads[0] : document.body;
+            for (var i = 0; i < numSources; i++) {
+                var source = sources[i];
+                xg._loader.loading(source);
+                var script = document.createElement('script');
+                
+                script.type = 'text/javascript';
+                var cb = (function(source) { return function() { xg._loader.onLoad(source); }; })(source);
+                script.onerror = script.onload = cb;
+                script.onreadystatechange = function() {
+                    if (this.readyState == 'complete' || this.readyState == 'loaded') {
+                        cb();
+                    }
+                }
+                script.src = source;
+                node.appendChild(script);
+            }
+        </script>
+    <script type="text/javascript">
+if (!ning._) {ning._ = {}}
+ning._.compat = { encryptedToken: "<empty>" }
+ning._.CurrentServerTime = "2011-04-19T03:22:08+00:00";
+ning._.probableScreenName = "";
+ning._.domains = {
+    base: 'ning.com',
+    ports: { http: '80', ssl: '443' }
+};
+ning.loader.version = '201104152208_10'; // DEP-6518:e900b31 27
+djConfig.parseWidgets = false;
+</script>
+<script type="text/javascript">
+    xg.token = '';
+    xg.cdnHost = 'static.ning.com';
+    xg.version = '201104152208';
+    xg.useMultiCdn = true;
+        xg.staticRoot = 'socialnetworkmain';
+    xg.xnTrackHost = "track.ning.com";
+            xg.cdnDefaultPolicyHost = 'static';
+        xg.cdnPolicy = [];
+        xg.global = xg.global||{}; xg.global.currentMozzle = 'profiles';
+    xg.global.userCanInvite = false;
+    xg.global.requestBase = '';
+    xg.global.locale = 'en_US';
+    xg.num_thousand_sep = ",";
+    xg.num_decimal_sep = ".";
+        (function() {
+        dojo.addOnLoad(function() {
+            if(window.bzplcm) { window.bzplcm.ts('hr'); window.bzplcm._profileSend(); }
+                    });
+                            ning.loader.require('xg.profiles.blog.show', 'xg.index.tweet.PostToTwitterLink', 'xg.shared.PostToFacebookLink', 'xg.gifts.embed.embed', function() { xg._loader.onLoad('xnloader'); });
+            })();
+</script>
+<div id="xgDock" class="xg_dock">
+            <div class="jsContainer">
+            <a class="xg_info" href="/main/authorization/signIn?chat=true">Sign in to chat!</a>            <a href="#" class="xg_status xg_status-offline" title="You are Offline" ></a>
+        </div>
+    </div>
+<div class="xg_dock_spacer"></div><script type="text/javascript" src="http://static.ning.com/socialnetworkmain/widgets/lib/js/thrift/xn_track.min.js?v=201104152208"></script>
+
+
+    </body>
+</html>

@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head data-layout-view="default">
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Traveller - Role Play Media Network</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+    <meta name="description" content="For discussion of all versions of the classic, ageless space and sci-fi RPG.  From Classic to Mongoose and beyond!" />
+    <meta name="keywords" content="" />
+<script type="text/javascript">
+djConfig = { baseScriptUri: 'http://www.roleplaymedia.net/xn/static-6.11.8.1/js/dojo-0.3.1-ning/', isDebug: false }
+ning = {"CurrentApp":{"premium":true,"iconUrl":"http:\/\/api.ning.com\/icons\/appatar\/4303603?default=4303603&width=64&height=64","url":"http:\/\/openrpgblog.ning.com","domains":["roleplaymedia.net"],"online":true,"privateSource":true,"id":"openrpgblog","description":"The RPG Media Network is a social networking site featuring blogs, forums, chat, and more dedicated to tabletop roleplaying games.","name":"Role Play Media Network","owner":"unclebear","createdDate":"2009-10-21T15:06:10.746Z","runOwnAds":false},"CurrentProfile":null,"maxFileUploadSize":5};
+    (function(){
+        if (!window.ning) { return; }
+
+        var age, gender, rand, obfuscated, combined;
+
+	    obfuscated = document.cookie.match(/xgdi=([^;]+)/);
+	    if (obfuscated) {
+	          var offset = 100000;
+	          obfuscated = parseInt(obfuscated[1]);
+	          rand = obfuscated / offset;
+	          combined = (obfuscated % offset) ^ rand;
+	          age = combined % 1000;
+	          gender = (combined / 1000) & 3;
+	          gender = (gender == 1 ? 'm' : gender == 2 ? 'f' : 0);
+	          ning.viewer = {"age":age,"gender":gender};
+	    }
+	 })();
+
+if (window.location.hash.indexOf('#!/') == 0) {
+    window.location.replace(window.location.hash.substr(2));
+}
+window.xg = {};
+xg.addOnRequire = function(f) { xg.addOnRequire.functions.push(f); };
+xg.addOnRequire.functions = [];
+xg.addOnFacebookLoad = function (f) { xg.addOnFacebookLoad.functions.push(f); };
+xg.addOnFacebookLoad.functions = [];
+xg._loader = {
+    p: 0,
+    loading: function(set) { xg._loader.p++; },
+    onLoad: function(set) {
+        xg._loader.p--;
+        if (xg._loader.p == 0 && typeof(xg._loader.onDone) == 'function') {
+            xg._loader.onDone();
+        }
+    }
+};
+xg._loader.loading('xnloader');
+if (window.bzplcm) {
+    window.bzplcm._profileCount = 0;
+    window.bzplcm._profileSend = function() { if (window.bzplcm._profileCount++ == 1) window.bzplcm.send(); };
+}
+xg._loader.onDone = function() {
+        if(window.bzplcm)window.bzplcm.start('ni');
+    xg.shared.util.parseWidgets();    var addOnRequireFunctions = xg.addOnRequire.functions;
+    xg.addOnRequire = function(f) { f(); };
+    try {
+        if (addOnRequireFunctions) { dojo.lang.forEach(addOnRequireFunctions, function(onRequire) { onRequire.apply(); }); }
+    } catch (e) {
+        if(window.bzplcm)window.bzplcm.ts('nx').send();
+        throw e;
+    }
+    if(window.bzplcm) { window.bzplcm.stop('ni'); window.bzplcm._profileSend(); }
+};
+window.xn = { track: { _globals: { screen_name: null, subdomain: "openrpgblog", is_owner: false, is_admin: false, is_member: false, join_date: 0, request_method: "GET", trace: "e54bf33f-7f8c-4395-88f6-5256622ef7cb"}, event: function() {}, pageView: function() {}, registerCompletedFlow: function() {}, registerError: function() {}, timer: function() { return { lapTime: function() {} }; }, _trackingHost: "track.ning.com", _jsDebug: false } }    </script>
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_ning_ga._setAccount', 'UA-2270114-6']); 
+    _gaq.push(['_ning_ga._setNamespace', 'ning']);
+        _gaq.push(['_ning_ga._setCustomVar', 1,"member_type", "anonymous", 3]);
+    _gaq.push(['_ning_ga._setCustomVar', 2,"subdomain",  "openrpgblog.ning.com" ,3]); 
+    _gaq.push(['_ning_ga._setCustomVar', 3,"category",    "gaming" ,3]);
+    _gaq.push(['_ning_ga._setCustomVar', 4,"product_type","plus" ,3]);
+    _gaq.push(['_ning_ga._setCustomVar', 5,"member_segment","150-999" ,3]);
+    _gaq.push(['_ning_ga._trackPageview']);
+
+    (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+     })();
+</script>
+<link rel="alternate" type="application/atom+xml" title="Forum - Role Play Media Network" href="http://www.roleplaymedia.net/group/traveller/forum/topic/list?feed=yes&amp;xn_auth=no" />
+<style type="text/css" media="screen,projection">
+#xg_navigation ul div.xg_subtab ul li a {
+    color:#666666;
+    background:#D3DBE4;
+}
+#xg_navigation ul div.xg_subtab ul li a:hover {
+    color:#333333;
+    background:#E3E8EE;
+}
+</style>
+
+
+<style type="text/css" media="screen,projection">
+@import url(http://static.ning.com/socialnetworkmain/widgets/index/css/common.min.css?xn_version=847961647);
+@import url(http://static.ning.com/socialnetworkmain/widgets/groups/css/component.min.css?xn_version=3419320074);
+
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(http://static.ning.com/openrpgblog/instances/css/embed_1300993117.css?xn_version=201103232153);
+
+</style>
+
+<style type="text/css" media="screen,projection">
+@import url(http://static.ning.com/openrpgblog/instances/css/theme_1300918694.css?xn_version=201103232153);
+
+</style>
+
+<!--[if IE 6]>
+    <link rel="stylesheet" type="text/css" href="http://static.ning.com/socialnetworkmain/widgets/index/css/common-ie6.min.css?v=201103232153" />
+<![endif]-->
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" href="http://static.ning.com/socialnetworkmain/widgets/index/css/common-ie7.css?v=201103232153" />
+<![endif]-->
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.roleplaymedia.net/profiles/blog/rsd" />
+
+    </head>
+    <body>
+                <div id="xn_bar">
+            <div id="xn_bar_menu">
+                <div id="xn_bar_menu_branding" >
+                                    </div>
+
+                <div id="xn_bar_menu_more">
+                    <form id="xn_bar_menu_search" method="GET" action="http://www.roleplaymedia.net/main/search/search">
+                        <fieldset>
+                            <input type="text" name="q" id="xn_bar_menu_search_query" value="Search Role Play Media Network" _hint="Search Role Play Media Network" accesskey="4" class="text xj_search_hint" />
+                            <a id="xn_bar_menu_search_submit" href="#" onclick="document.getElementById('xn_bar_menu_search').submit();return false">Search</a>
+                        </fieldset>
+                    </form>
+                </div>
+
+                <ul id="xn_bar_menu_tabs">
+                                            <li><a href="http://www.roleplaymedia.net/main/authorization/signUp?target=http%3A%2F%2Fwww.roleplaymedia.net%2Fgroup%2Ftraveller">Sign Up</a></li>
+                        <li><a href="http://www.roleplaymedia.net/main/authorization/signIn?target=http%3A%2F%2Fwww.roleplaymedia.net%2Fgroup%2Ftraveller">Sign In</a></li>
+                        
+                </ul>
+            </div>
+        </div>
+        
+        
+        <div id="xg" class="xg_theme xg_widget_groups xg_widget_groups_group xg_widget_groups_group_show" data-layout-pack="classic">
+            <div id="xg_head">
+                <div id="xg_masthead">
+                    <p id="xg_sitename"><a id="application_name_header_link" href="/">Role Play Media Network</a></p>
+                    <p id="xg_sitedesc" class="xj_site_desc">a community for rpg bloggers, podcasters, vidcasters, and their audiences</p>
+                </div>
+                <div id="xg_navigation">
+                    <ul>
+    <li id="xg_tab_main" class="xg_subtab"><a href="/"><span>Home</span></a></li><li id="xg_tab_profile" class="xg_subtab"><a href="/profiles"><span>My Page</span></a></li><li id="xg_tab_http://os.ning.com/ningapps/paypal/gadget.xml?ning-app-status=network" class="xg_subtab"><a href="/opensocial/ningapps/show?appUrl=http%3A%2F%2Fos.ning.com%2Fningapps%2Fpaypal%2Fgadget.xml%3Fning-app-status%3Dnetwork&amp;owner=unclebear"><span>Donate</span></a></li><li id="xg_tab_blogs" class="xg_subtab"><a href="/profiles/blog/list"><span>Blogs</span></a></li><li id="xg_tab_xn1" class="xg_subtab"><a href="/profiles/blog/list?tag=review"><span>Reviews</span></a></li><li id="xg_tab_forum" class="xg_subtab"><a href="/forum"><span>Forum</span></a></li><li id="xg_tab_chat" class="xg_subtab"><a href="/chat"><span>Chat</span></a></li><li id="xg_tab_groups" class="xg_subtab this"><a href="/groups"><span>Groups</span></a></li><li id="xg_tab_events" class="xg_subtab"><a href="/events"><span>Events</span></a></li><li id="xg_tab_video" class="xg_subtab"><a href="/video"><span>Videos</span></a></li><li id="xg_tab_xn0" class="xg_subtab"><a href="http://www.rpgbloggers.com/" target="_blank"><span>RPGBN</span></a></li><li id="xg_tab_xn2" class="xg_subtab"><a href="http://www.rpgtabletalk.com"><span>RPG Table Talk</span></a></li></ul>
+
+                </div>
+            </div>
+            
+            <div id="xg_body">
+                
+                <div class="xg_column xg_span-16 xj_classic_canvas">
+                    <div  class='xg_span-16 xg_column first-child'>
+<ul class="navigation easyclear">
+	<li><a href="http://www.roleplaymedia.net/groups/group/list">All Groups</a></li><li><a href="http://www.roleplaymedia.net/groups/group/listForContributor?">My Groups</a></li>    </li>
+</ul>
+<div class="xg_headline xg_headline-img xg_headline-2l">
+    <div class="ib">        <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/ZacharyHoughton"  title="Zachary Houghton"><img class=" photo"  src="http://api.ning.com:80/files/eSLQvCVeKRm13fyX1KiRvf243t19MVOUXj9mMNoXeiw_/crest2b.JPG?width=64&amp;height=64&amp;crop=1%3A1" height="64" width="64" alt="Zachary Houghton" /></a></span>
+    </div>
+    <div class="tb">
+        <h1>Traveller</h1>
+        <ul class="navigation byline">
+            <li><a class="nolink">Created by </a><a href="/profile/ZacharyHoughton">Zachary Houghton</a></li>
+            <li><a class="xg_sprite xg_sprite-view" href="http://www.roleplaymedia.net/groups/group/listForContributor?user=1mz1wxnuq9qqk">View Groups</a></li>
+        </ul>
+    </div>
+</div>
+<div  class='xg_span-12 xg_column'>
+<div class="xg_module">
+    <div class="xg_module_head">
+        <h2>Information</h2>
+    </div>
+    <div class="xg_module_body nopad">
+        <div class="xg_column xg_span-4">
+            <div class="pad5">
+                <img src="http://api.ning.com:80/files/uUbq0RTI4UfF9iBalnDi0Bn19JyDpT9HLxDDDhQqzq0_/Traveller.jpg?crop=1%3A1&amp;width=171" width="171" height="171" alt="Traveller" class="groupicon"/>
+            </div>
+        </div>
+        <div class="xg_column xg_span-8 last-child">
+            <div class="pad5">
+                            <p>For discussion of all versions of the classic, ageless space and sci-fi RPG. From Classic to Mongoose and beyond!</p>
+                            <p>
+                                                                Members:                            <strong>21</strong><br/>
+                                            Latest Activity: <strong>Dec. 10, 2010</strong>                                    </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Template Start:  -->
+    <div class="xg_module module_forum">
+            <div class="xg_module_head">
+            <h2>Discussion Forum</h2>
+        </div>
+        <div class="xg_module_body">
+                <div class="vcard">
+                    <div class="author">        <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/DaleCMcCoyJr"  title="Dale C. McCoy, Jr."><img class=" photo"  src="http://api.ning.com:80/files/itGizomINULMw1Wklfo9Togqeunp-7aSomiGcl5FEug_/CorporateLogoSquare.JPG?width=32&amp;height=32&amp;crop=1%3A1" height="32" width="32" alt="Dale C. McCoy, Jr." /></a></span>
+    </div>
+                <div class="topic indent">
+            <h3>
+                <a href="http://www.roleplaymedia.net/group/traveller/forum/topics/mgt-what-kinds-of-products-are" _snid="4303603:Topic:5548">[MGT] What kinds of products are you interested in?</a>
+                    <small class="nobr" >8&nbsp;Replies</small>
+            </h3>
+                            <p class="small indent">Good day.
+
+As you may or may not know, Mongoose allows other companies to publish products with a "Traveller Compatible Product" logo on it, my company being one of them. I currently have almost 30 p…</p>
+                                        <p class="small xg_lightfont indent ">
+                    Started by Dale C. McCoy, Jr.. <a href="http://www.roleplaymedia.net/group/traveller/forum/topics/mgt-what-kinds-of-products-are/showLastReply">Last reply</a> by Dale C. McCoy, Jr. Nov. 9, 2009.            </p>
+        </div>
+    </div>
+    <div class="vcard">
+                    <div class="author">        <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/ZacharyHoughton"  title="Zachary Houghton"><img class=" photo"  src="http://api.ning.com:80/files/eSLQvCVeKRm13fyX1KiRvf243t19MVOUXj9mMNoXeiw_/crest2b.JPG?width=32&amp;height=32&amp;crop=1%3A1" height="32" width="32" alt="Zachary Houghton" /></a></span>
+    </div>
+                <div class="topic indent">
+            <h3>
+                <a href="http://www.roleplaymedia.net/group/traveller/forum/topics/your-traveller-experience" _snid="4303603:Topic:6206">Your Traveller Experience</a>
+                    <small class="nobr" >3&nbsp;Replies</small>
+            </h3>
+                            <p class="small indent">I don't want this to be a love/hate thread on various Traveller systems, but I thought it might be useful to get an idea of which Traveller iterations people on here have played the most. That way, w…</p>
+                                        <p class="small xg_lightfont indent ">
+                    Started by Zachary Houghton. <a href="http://www.roleplaymedia.net/group/traveller/forum/topics/your-traveller-experience/showLastReply">Last reply</a> by Conrad R. Nov. 5, 2009.            </p>
+        </div>
+    </div>
+    <div class="vcard">
+                    <div class="author">        <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/ZacharyHoughton"  title="Zachary Houghton"><img class=" photo"  src="http://api.ning.com:80/files/eSLQvCVeKRm13fyX1KiRvf243t19MVOUXj9mMNoXeiw_/crest2b.JPG?width=32&amp;height=32&amp;crop=1%3A1" height="32" width="32" alt="Zachary Houghton" /></a></span>
+    </div>
+                <div class="topic indent">
+            <h3>
+                <a href="http://www.roleplaymedia.net/group/traveller/forum/topics/where-in-the-imperium" _snid="4303603:Topic:5210">Where In The Imperium?.....</a>
+                    <small class="nobr" >3&nbsp;Replies</small>
+            </h3>
+                            <p class="small indent">So, where exactly in the Third Imperium do you set your Traveller game? The Spinward Marches? Verge? Riftspan Reaches? Or perhaps your games is totally outside of the Traveller Universe, or in an ear…</p>
+                                        <p class="small xg_lightfont indent ">
+                    Started by Zachary Houghton. <a href="http://www.roleplaymedia.net/group/traveller/forum/topics/where-in-the-imperium/showLastReply">Last reply</a> by John H Oct. 30, 2009.            </p>
+        </div>
+    </div>
+        </div>
+            <div class="xg_module_foot">
+            <ul>
+                                    <li class="left"><a href="http://www.roleplaymedia.net/main/authorization/signUp?target=http%3A%2F%2Fwww.roleplaymedia.net%2Fgroup%2Ftraveller%2Fforum%2Ftopic%2Fnew%3Ftarget%3Dhttp%253A%252F%252Fwww.roleplaymedia.net%252Fgroup%252Ftraveller&amp;groupToJoin=traveller" dojoType="PromptToJoinLink" _joinPromptText="Like what you see in Traveller? Join Now!" _signInUrl="http://www.roleplaymedia.net/main/authorization/signIn?target=http%3A%2F%2Fwww.roleplaymedia.net%2Fgroup%2Ftraveller%2Fforum%2Ftopic%2Fnew%3Ftarget%3Dhttp%253A%252F%252Fwww.roleplaymedia.net%252Fgroup%252Ftraveller&amp;groupToJoin=traveller" class="xg_sprite xg_sprite-add xj_new_topic_link">Start Discussion</a></li>
+                                <li class="right"><a href="http://www.roleplaymedia.net/group/traveller/forum">View All</a></li>
+            </ul>
+        </div>    </div>
+
+<!-- Template Start:  -->
+
+        <div class="xg_module">
+                            <div class="xg_module_head"><h2 id="comments" numComments="16">Comment Wall</h2></div>
+                                        <div class="xg_module_body">
+                    <p id="add-comment">Comment</p>
+                                            <div class="comment-join">
+                            <h3>You need to be a member of Traveller to add comments!</h3>
+                                                    </div>
+                                                        </div>
+                    <div class="xg_module_body" id="comments"  _numComments="16" _scrollTo="">
+                    <dl _id="4303603:Comment:5400" id="c_b6b" class="comment vcard xg_lightborder">
+            <dt>
+                <a name="first_comment"></a><a name="comment-4303603_Comment_5400" id="comment-4303603_Comment_5400"></a>
+                        <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/Chris"  title="Chris P"><img class=" photo"  src="http://api.ning.com:80/files/7wlIZRNflU5XXtpb4ilFgccGAY1aRE28BF8juHg7ZSc_/ThirdEye.jpg?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="Chris P" /></a></span>
+                    Comment by <a href="/xn/detail/u_2obtvdwja6x8n" class="fn url">Chris P</a> on October 30, 2009 at 5:37am            </dt>
+            <dd>
+            Jake, you're instincts are correct in this case. One of the few criticisms that can be made for the Traveller universe (...whatever system you happen to use) is the sheer size and scale of it. It's very easy for GM's and players to be overwhelmed with information before the first adventure of the first campaign gets off the ground...so to speak.<br />
+<br />
+The show <i>Firefly</i> provides some really good ideas on how to present and run a basic Traveller adventure: the characters are each simple in structure, but complex in back story (thus, making them interesting for players) while the objectives of each episode is fairly straightforward and can be boiled down to one sentence (e.g. "Do the job and get paid", "Take cattle from planet A to planet B and get paid", "Get the part to fix the ship" etc). The rest is just detail and can be added whenever you (...and your players) feel more comfortable with the universe as a whole.<br />
+<br />
+Hope this helps...            </dd>
+                    </dl>
+            <dl _id="4303603:Comment:5348" id="c_7f1" class="comment vcard xg_lightborder">
+            <dt>
+                <a name="comment-4303603_Comment_5348" id="comment-4303603_Comment_5348"></a>
+                        <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/DrRotwang"  title="Dr Rotwang!"><img class=" photo"  src="http://api.ning.com:80/files/mfb4jG462-asrsNAUUkiz9CHPEkJl-VHR3bSCUxjnQQ_/FBLazerBlazerDnDWiz.jpg?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="Dr Rotwang!" /></a></span>
+                    Comment by <a href="/xn/detail/u_17kbe9uvfd7d6" class="fn url">Dr Rotwang!</a> on October 29, 2009 at 8:29pm            </dt>
+            <dd>
+            ...plus all the crap that I keep buying.            </dd>
+                    </dl>
+            <dl _id="4303603:Comment:5334" id="c_7fd" class="comment vcard xg_lightborder">
+            <dt>
+                <a name="comment-4303603_Comment_5334" id="comment-4303603_Comment_5334"></a>
+                        <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/ZacharyHoughton"  title="Zachary Houghton"><img class=" photo"  src="http://api.ning.com:80/files/eSLQvCVeKRm13fyX1KiRvf243t19MVOUXj9mMNoXeiw_/crest2b.JPG?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="Zachary Houghton" /></a></span>
+                    Comment by <a href="/profile/ZacharyHoughton" class="fn url">Zachary Houghton</a> on October 29, 2009 at 7:58pm            </dt>
+            <dd>
+            That's one thing great about Traveller--their fans have created reams and reams of material, and most of it is easily available online.            </dd>
+                    </dl>
+            <dl _id="4303603:Comment:5327" id="c_00c" class="comment vcard xg_lightborder">
+            <dt>
+                <a name="comment-4303603_Comment_5327" id="comment-4303603_Comment_5327"></a>
+                        <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/jakek"  title="jake k"><img class=" photo"  src="http://api.ning.com:80/files/rhIqVf826CXFWK1Jvih4G6iEJGikLTwH*qaYrWb66Po_/billydeewilliamscolt452.jpg?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="jake k" /></a></span>
+                    Comment by <a href="/xn/detail/u_3tkiteexrr5ev" class="fn url">jake k</a> on October 29, 2009 at 7:04pm            </dt>
+            <dd>
+            Doc i will believe you me. I'm tempted to stay real basic. maybe thru 8? Its gonna be neat being a noob seeing as how many people are huge traveller fans. Its like having a huge resource base from the last 30 years.            </dd>
+                    </dl>
+            <dl _id="4303603:Comment:5208" id="c_fb3" class="comment vcard xg_lightborder">
+            <dt>
+                <a name="comment-4303603_Comment_5208" id="comment-4303603_Comment_5208"></a>
+                        <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/ZacharyHoughton"  title="Zachary Houghton"><img class=" photo"  src="http://api.ning.com:80/files/eSLQvCVeKRm13fyX1KiRvf243t19MVOUXj9mMNoXeiw_/crest2b.JPG?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="Zachary Houghton" /></a></span>
+                    Comment by <a href="/profile/ZacharyHoughton" class="fn url">Zachary Houghton</a> on October 29, 2009 at 3:52pm            </dt>
+            <dd>
+            Jake, let us know what you decide on!            </dd>
+                    </dl>
+            <dl _id="4303603:Comment:5006" id="c_e45" class="comment vcard xg_lightborder">
+            <dt>
+                <a name="comment-4303603_Comment_5006" id="comment-4303603_Comment_5006"></a>
+                        <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/DrRotwang"  title="Dr Rotwang!"><img class=" photo"  src="http://api.ning.com:80/files/mfb4jG462-asrsNAUUkiz9CHPEkJl-VHR3bSCUxjnQQ_/FBLazerBlazerDnDWiz.jpg?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="Dr Rotwang!" /></a></span>
+                    Comment by <a href="/profile/DrRotwang" class="fn url">Dr Rotwang!</a> on October 29, 2009 at 7:52am            </dt>
+            <dd>
+            Jake,you wanna peep-before-you-buy on anything,you know where I live and what's on my shelf.            </dd>
+                    </dl>
+            <dl _id="4303603:Comment:4889" id="c_ffe" class="comment vcard xg_lightborder">
+            <dt>
+                <a name="comment-4303603_Comment_4889" id="comment-4303603_Comment_4889"></a>
+                        <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/StuVenable"  title="Stu Venable"><img class=" photo"  src="http://api.ning.com:80/files/UMkB2dtP7-ARZcXjkXHEVKtbTQ5d52w8YIRuiz57u0g_/STUMIB.jpg?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="Stu Venable" /></a></span>
+                    Comment by <a href="/xn/detail/u_396pu16bs4njk" class="fn url">Stu Venable</a> on October 28, 2009 at 10:46pm            </dt>
+            <dd>
+            Ah, the Spinward Marches...            </dd>
+                    </dl>
+            <dl _id="4303603:Comment:4855" id="c_d04" class="comment vcard xg_lightborder">
+            <dt>
+                <a name="comment-4303603_Comment_4855" id="comment-4303603_Comment_4855"></a>
+                        <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/ZacharyHoughton"  title="Zachary Houghton"><img class=" photo"  src="http://api.ning.com:80/files/eSLQvCVeKRm13fyX1KiRvf243t19MVOUXj9mMNoXeiw_/crest2b.JPG?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="Zachary Houghton" /></a></span>
+                    Comment by <a href="/profile/ZacharyHoughton" class="fn url">Zachary Houghton</a> on October 28, 2009 at 10:27pm            </dt>
+            <dd>
+            Oh, how I love that map. <a rel=nofollow href="http://www.utzig.com/cgi-bin/iai/map_top.pl" target="_blank">This one</a> isn't too shabby, though a bit rougher.            </dd>
+                    </dl>
+            <dl _id="4303603:Comment:4835" id="c_f6b" class="comment vcard xg_lightborder">
+            <dt>
+                <a name="comment-4303603_Comment_4835" id="comment-4303603_Comment_4835"></a>
+                        <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/Chris"  title="Chris P"><img class=" photo"  src="http://api.ning.com:80/files/7wlIZRNflU5XXtpb4ilFgccGAY1aRE28BF8juHg7ZSc_/ThirdEye.jpg?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="Chris P" /></a></span>
+                    Comment by <a href="/profile/Chris" class="fn url">Chris P</a> on October 28, 2009 at 10:13pm            </dt>
+            <dd>
+            One of the better online resources for the game is <a rel=nofollow href="http://travellermap.com/" target="_blank">The Traveller Map</a>.            </dd>
+                    </dl>
+            <dl _id="4303603:Comment:4831" id="c_084" class="comment vcard xg_lightborder last-child">
+            <dt>
+                <a name="last_comment"></a><a name="comment-4303603_Comment_4831" id="comment-4303603_Comment_4831"></a>
+                        <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/StuVenable"  title="Stu Venable"><img class=" photo"  src="http://api.ning.com:80/files/UMkB2dtP7-ARZcXjkXHEVKtbTQ5d52w8YIRuiz57u0g_/STUMIB.jpg?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="Stu Venable" /></a></span>
+                    Comment by <a href="/profile/StuVenable" class="fn url">Stu Venable</a> on October 28, 2009 at 10:08pm            </dt>
+            <dd>
+            I used to play the old Traveller back in the early 80s. Loved it. Haven't picked up the latest edition yet, but will eventually. I loved the character generation system. It gave your character a real history. And the setting was awesome.            </dd>
+                    </dl>
+                <ul class="pagination easyclear ">
+                        <li class="xg_lightfont"><span>‹ Previous</span></li>
+                    <li><span>1</span></li>
+                    <li><a href="http://www.roleplaymedia.net/group/traveller?groupUrl=traveller&amp;exposeKeys=&amp;xg_pw=&amp;id=4303603%3AGroup%3A514&amp;page=2#comments">2</a></li>
+                            <li><a class="" href="http://www.roleplaymedia.net/group/traveller?groupUrl=traveller&amp;exposeKeys=&amp;xg_pw=&amp;id=4303603%3AGroup%3A514&amp;page=2#comments">Next ›</a></li>
+                                <li class="right">
+                        <span style="display:none" dojoType="Pagination" _maxPage="2" _gotoUrl="http://www.roleplaymedia.net/group/traveller?groupUrl=traveller&amp;exposeKeys=&amp;xg_pw=&amp;id=4303603%3AGroup%3A514&amp;page=__PAGE___#comments">
+                        <label>Page</label>
+                        <input class="textfield pagination_input align-right" value="2" type="text" name="goto_page" size="2"/>
+                        <input class="goto_button button" value="Go" type="button"/></span>
+                    </li>
+                            </ul>
+                </div>
+            </div>
+    &nbsp;</div>
+<div  class='xg_span-4 xg_column last-child'>
+    <div class="xg_module">
+        <div class="xg_module_head">
+            <h2>Members (21)</h2>
+        </div>
+        <div class="xg_module_body vcard-48grid">
+                               <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/DrRotwang"  title="Dr Rotwang!"><img class=" photo"  src="http://api.ning.com:80/files/mfb4jG462-asrsNAUUkiz9CHPEkJl-VHR3bSCUxjnQQ_/FBLazerBlazerDnDWiz.jpg?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="Dr Rotwang!" /></a></span>
+                                   <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/ZacharyHoughton"  title="Zachary Houghton"><img class=" photo"  src="http://api.ning.com:80/files/eSLQvCVeKRm13fyX1KiRvf243t19MVOUXj9mMNoXeiw_/crest2b.JPG?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="Zachary Houghton" /></a></span>
+                                   <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/Chris"  title="Chris P"><img class=" photo"  src="http://api.ning.com:80/files/7wlIZRNflU5XXtpb4ilFgccGAY1aRE28BF8juHg7ZSc_/ThirdEye.jpg?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="Chris P" /></a></span>
+                                   <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/JohnH"  title="John H"><img class=" photo"  src="http://api.ning.com:80/files/F9IBQ61iEQxV6S*QDZ4meJikGlIL4CpGgzWlCgf*oUs_/weemee3head.png?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="John H" /></a></span>
+                                   <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/DaleCMcCoyJr"  title="Dale C. McCoy, Jr."><img class=" photo"  src="http://api.ning.com:80/files/itGizomINULMw1Wklfo9Togqeunp-7aSomiGcl5FEug_/CorporateLogoSquare.JPG?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="Dale C. McCoy, Jr." /></a></span>
+                                   <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/MutantMouse"  title="Mutant Mouse"><img class=" photo"  src="http://api.ning.com:80/files/EZrsHvwglhvOUeV1HZIrhWw3f5n73l-8pdBRBJc3iR0_/mm.gif?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="Mutant Mouse" /></a></span>
+                                   <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/ConradR"  title="Conrad R."><img class=" photo"  src="http://api.ning.com:80/files/9104I8O*J8YLtsYRf8ToPGZisptS4mDds8jv1S9GJcg_/conradgriz.jpg?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="Conrad R." /></a></span>
+                                   <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/DysonLogos"  title="Dyson Logos"><img class=" photo"  src="http://api.ning.com:80/files/HWouTb9Y28aFs0AteCI6FkG1x-5tzQY6mdlyvZS5d3k_/reddie100.jpg?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="Dyson Logos" /></a></span>
+                                   <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/TedHenkle"  title="Ted Henkle"><img class=" photo"  src="http://api.ning.com:80/files/lyiwkI00bcLMc7wvtlrxBUNqzh*Y0DRD7zBuWVHvwY9Mpmmv0wrmGVrdbCZkcFOCkbwrerMnT*pG1AGeJ9QujaaAV9prTsMK/Thelanis1.JPG?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="Ted Henkle" /></a></span>
+                                   <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/TimHensley"  title="Tim Hensley"><img class=" photo"  src="http://api.ning.com:80/files/8cUIq8slFGc5hsM6LLZGdHppEsW8o7ai7Ua8ZbnGg30_/IMG_0062.jpg?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="Tim Hensley" /></a></span>
+                                   <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/RPGCircus"  title="RPG Circus"><img class=" photo"  src="http://api.ning.com:80/files/cdOgMUAw5ushEJapmA5POKNa8UtcSYLoqG23UyfNcKJ7w7n2IpHqhppnLXu2QFmnK-m9HXb6EWFHzUt5p8OdeiKOG79lilaI/podcast.png?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="RPG Circus" /></a></span>
+                                   <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/RobertSaintJohn"  title="Robert Saint John"><img class=" photo"  src="http://api.ning.com:80/files/qSOMwcHn56jo0eUYOq-uLiLDToAQ-VhuOTDrgZl8iig_/rsj_icon.jpg?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="Robert Saint John" /></a></span>
+                                   <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/jakek"  title="jake k"><img class=" photo"  src="http://api.ning.com:80/files/rhIqVf826CXFWK1Jvih4G6iEJGikLTwH*qaYrWb66Po_/billydeewilliamscolt452.jpg?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="jake k" /></a></span>
+                                   <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/VincentDiakuw"  title="Vincent Diakuw"><img class="xj_user_default photo"  src="http://api.ning.com:80/files/*XG8*0kVvmcUtSyEJ3RiEU9B7YXkwyBYJCYwrVYGTbhPllEcCUXVQTWBzlpaXItru0uYJquX6G1hdyrYEU5IR5REOXKKrQ1R/505522004.png?width=48&amp;height=48&amp;crop=1%3A1&amp;xj_user_default=1" height="48" width="48" alt="Vincent Diakuw" /></a></span>
+                                   <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/LanKelly"  title="Lan Kelly"><img class=" photo"  src="http://api.ning.com:80/files/L0u5-CvI4ULUhsc7UwE6wDTssHVfnKC6dOKoJCZXxDQ_/AvatarBaotu01.jpg?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="Lan Kelly" /></a></span>
+                                   <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/StuVenable"  title="Stu Venable"><img class=" photo"  src="http://api.ning.com:80/files/UMkB2dtP7-ARZcXjkXHEVKtbTQ5d52w8YIRuiz57u0g_/STUMIB.jpg?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="Stu Venable" /></a></span>
+                                   <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/RogerCalver"  title="Roger Calver"><img class="xj_user_default photo"  src="http://api.ning.com:80/files/*XG8*0kVvmcUtSyEJ3RiEU9B7YXkwyBYJCYwrVYGTbhPllEcCUXVQTWBzlpaXItru0uYJquX6G1hdyrYEU5IR5REOXKKrQ1R/505522004.png?width=48&amp;height=48&amp;crop=1%3A1&amp;xj_user_default=1" height="48" width="48" alt="Roger Calver" /></a></span>
+                                   <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/MarkThomas"  title="Mark Thomas"><img class=" photo"  src="http://api.ning.com:80/files/NhZUdyhhFjxfTZ6spnel18q6RrTtQFiq3odzLRY1My4_/SelfPic.jpg?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="Mark Thomas" /></a></span>
+                                   <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/LeeWilliams"  title="Lee Williams"><img class=" photo"  src="http://api.ning.com:80/files/iiRWEMvmdQFigM7dHF2gAQxO7-y3bq6HE2bfwwhe0*FGIXvWUcns1U3eU4dbmDqeh4FqXVG-YY*JxYqhqyd9TtEdD9EGtIYw/Rousler_Kev_200px.jpg?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="Lee Williams" /></a></span>
+                                   <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/Talasmin"  title="Talasmin"><img class="xj_user_default photo"  src="http://api.ning.com:80/files/*XG8*0kVvmcUtSyEJ3RiEU9B7YXkwyBYJCYwrVYGTbhPllEcCUXVQTWBzlpaXItru0uYJquX6G1hdyrYEU5IR5REOXKKrQ1R/505522004.png?width=48&amp;height=48&amp;crop=1%3A1&amp;xj_user_default=1" height="48" width="48" alt="Talasmin" /></a></span>
+                                   <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/JamesGrimDesborough"  title="James &#039;Grim&#039; Desborough"><img class=" photo"  src="http://api.ning.com:80/files/L-y7bPEw1e6hK4ZfQn1BbSyigVfqSacAVS2CGT4wH5I_/games.jpg?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="James &#039;Grim&#039; Desborough" /></a></span>
+                    </div>
+                <div class="xg_module_foot">
+            <ul>
+                                    <li class="right"><a href="http://www.roleplaymedia.net/group/traveller/user/list">View All</a></li>
+                            </ul>
+        </div>
+            </div>
+
+
+&nbsp;</div>
+&nbsp;</div>
+<div  class='xg_span-4 xg_column last-child'>
+&nbsp;</div>
+
+                </div>
+                <div class="xg_column xg_span-4 xg_last xj_classic_sidebar">
+                        <div class="xg_module" id="xg_module_account">
+        <div class="xg_module_body xg_signup xg_lightborder">
+            <p>Welcome to<br />Role Play Media Network</p>
+            <p class="last-child">
+                <big><strong><a href="http://www.roleplaymedia.net/main/authorization/signUp?target=http%3A%2F%2Fwww.roleplaymedia.net%2Fgroup%2Ftraveller">Sign Up</a></strong></big><br/>
+                or <a href="http://www.roleplaymedia.net/main/authorization/signIn?target=http%3A%2F%2Fwww.roleplaymedia.net%2Fgroup%2Ftraveller" style="white-space:nowrap">Sign In</a>            </p>
+                            <div class="xg_external_signup xg_lightborder xj_signup">
+                    <p class="dy-small">You can also sign up with:</p>
+                    <ul class="providers">
+            <li data-provider-name="Facebook"><a onclick="window.open('https://roleplaymedia.networkauth.com/facebook/connect_start?ext_perm=user_birthday%2Cuser_location%2Cemail&token_url=http%3A%2F%2Fwww.roleplaymedia.net%2Fmain%2Fauthorization%2FprocessExternalAuth%3Ftarget%3Dhttp%253A%252F%252Fwww.roleplaymedia.net%252Fgroups%252Fgroup%252Fshow%253FgroupUrl%253Dtraveller%26source%3DsignUp%26close%3D1', null, 'width=626,height=436,location=no,menubar=no,resizable=yes,scrollbars=yes,toolbar=no,status=no'); return false;" href="https://roleplaymedia.networkauth.com/facebook/connect_start?ext_perm=user_birthday%2Cuser_location%2Cemail&amp;token_url=http%3A%2F%2Fwww.roleplaymedia.net%2Fmain%2Fauthorization%2FprocessExternalAuth%3Ftarget%3Dhttp%253A%252F%252Fwww.roleplaymedia.net%252Fgroups%252Fgroup%252Fshow%253FgroupUrl%253Dtraveller%26source%3DsignUp%26close%3D0">
+                            <span class="mini-service mini-service-facebook" title="Facebook"></span>
+                    </a></li>
+            <li data-provider-name="Google"><a onclick="window.open('https://roleplaymedia.networkauth.com/openid/start?openid_identifier=http%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid&token_url=http%3A%2F%2Fwww.roleplaymedia.net%2Fmain%2Fauthorization%2FprocessExternalAuth%3Ftarget%3Dhttp%253A%252F%252Fwww.roleplaymedia.net%252Fgroups%252Fgroup%252Fshow%253FgroupUrl%253Dtraveller%26source%3DsignUp%26close%3D1', null, 'width=530,height=480,location=no,menubar=no,resizable=yes,scrollbars=yes,toolbar=no,status=no'); return false;" href="https://roleplaymedia.networkauth.com/openid/start?openid_identifier=http%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid&amp;token_url=http%3A%2F%2Fwww.roleplaymedia.net%2Fmain%2Fauthorization%2FprocessExternalAuth%3Ftarget%3Dhttp%253A%252F%252Fwww.roleplaymedia.net%252Fgroups%252Fgroup%252Fshow%253FgroupUrl%253Dtraveller%26source%3DsignUp%26close%3D0">
+            <span class="mini-service mini-service-google" title="Google"></span>
+        </a></li>
+            <li data-provider-name="Yahoo!"><a onclick="window.open('https://roleplaymedia.networkauth.com/openid/start?openid_identifier=http%3A%2F%2Fme.yahoo.com%2F&token_url=http%3A%2F%2Fwww.roleplaymedia.net%2Fmain%2Fauthorization%2FprocessExternalAuth%3Ftarget%3Dhttp%253A%252F%252Fwww.roleplaymedia.net%252Fgroups%252Fgroup%252Fshow%253FgroupUrl%253Dtraveller%26source%3DsignUp%26close%3D1', null, 'width=500,height=480,location=no,menubar=no,resizable=yes,scrollbars=yes,toolbar=no,status=no'); return false;" href="https://roleplaymedia.networkauth.com/openid/start?openid_identifier=http%3A%2F%2Fme.yahoo.com%2F&amp;token_url=http%3A%2F%2Fwww.roleplaymedia.net%2Fmain%2Fauthorization%2FprocessExternalAuth%3Ftarget%3Dhttp%253A%252F%252Fwww.roleplaymedia.net%252Fgroups%252Fgroup%252Fshow%253FgroupUrl%253Dtraveller%26source%3DsignUp%26close%3D0">
+            <span class="mini-service mini-service-yahoo" title="Yahoo!"></span>
+        </a></li>
+    </ul>
+                </div>
+                    </div>
+    </div>
+<div class="xg_module module_birthdays" >
+    <div class="xg_module_head">
+        <h2>Birthdays</h2>
+    </div>
+    <div class="xg_module_body">
+<h3>Birthdays Today</h3>
+<ul class="clist">
+    <li>
+        <div class="ib">
+                    <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/CouretonDalton"  title="Coureton Dalton"><img class="xj_user_default photo"  src="http://api.ning.com:80/files/*XG8*0kVvmcUtSyEJ3RiEU9B7YXkwyBYJCYwrVYGTbhPllEcCUXVQTWBzlpaXItru0uYJquX6G1hdyrYEU5IR5REOXKKrQ1R/505522004.png?width=48&amp;height=48&amp;crop=1%3A1&amp;xj_user_default=1" height="48" width="48" alt="Coureton Dalton" /></a></span>
+            </div>
+        <div class="tb">
+            <p>
+	        <span><a href="http://www.roleplaymedia.net/profile/CouretonDalton">Coureton Dalton</a></span>
+	        <span><a class="xg_sprite xg_sprite-gift" href="http://www.roleplaymedia.net/main/authorization/signUp?target=http%3A%2F%2Fwww.roleplaymedia.net%2Fgifts%2Fitem%2Flist%3Fto%3D2v45p6e811lui%26xg_source%3Dbemb">Give a Gift</a> </span>
+	    </p>
+        </div>
+    </li>
+    <li>
+        <div class="ib">
+                    <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/ElmerTucker"  title="Elmer Tucker"><img class="xj_user_default photo"  src="http://api.ning.com:80/files/*XG8*0kVvmcUtSyEJ3RiEU9B7YXkwyBYJCYwrVYGTbhPllEcCUXVQTWBzlpaXItru0uYJquX6G1hdyrYEU5IR5REOXKKrQ1R/505522004.png?width=48&amp;height=48&amp;crop=1%3A1&amp;xj_user_default=1" height="48" width="48" alt="Elmer Tucker" /></a></span>
+            </div>
+        <div class="tb">
+            <p>
+	        <span><a href="http://www.roleplaymedia.net/profile/ElmerTucker">Elmer Tucker</a></span>
+	        <span><a class="xg_sprite xg_sprite-gift" href="http://www.roleplaymedia.net/main/authorization/signUp?target=http%3A%2F%2Fwww.roleplaymedia.net%2Fgifts%2Fitem%2Flist%3Fto%3D1tvltvye0gp8o%26xg_source%3Dbemb">Give a Gift</a> </span>
+	    </p>
+        </div>
+    </li>
+</ul>
+<h3>Birthdays Tomorrow</h3>
+<ul class="clist">
+    <li>
+        <div class="ib">
+                    <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/DysonLogos"  title="Dyson Logos"><img class=" photo"  src="http://api.ning.com:80/files/HWouTb9Y28aFs0AteCI6FkG1x-5tzQY6mdlyvZS5d3k_/reddie100.jpg?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="Dyson Logos" /></a></span>
+            </div>
+        <div class="tb">
+            <p>
+	        <span><a href="http://www.roleplaymedia.net/profile/DysonLogos">Dyson Logos</a></span>
+	        <span><a class="xg_sprite xg_sprite-gift" href="http://www.roleplaymedia.net/main/authorization/signUp?target=http%3A%2F%2Fwww.roleplaymedia.net%2Fgifts%2Fitem%2Flist%3Fto%3D2gc6skjl4tck5%26xg_source%3Dbemb">Give a Gift</a> </span>
+	    </p>
+        </div>
+    </li>
+    <li>
+        <div class="ib">
+                    <span class="xg_avatar"><a class="fn url" href="http://www.roleplaymedia.net/profile/MarquettaKatie"  title="Marquetta Katie"><img class=" photo"  src="http://api.ning.com:80/files/G0PUOUl2vu0dqx7WdjJTMN8Wx*D4pbtAWSJKSUQz-M19-yBeDKt1PQYQ8Tpe4aiOG62ZkQerTTR2kGT1NYfTY1Eu74mqSDxA/759559795.bin?width=48&amp;height=48&amp;crop=1%3A1" height="48" width="48" alt="Marquetta Katie" /></a></span>
+            </div>
+        <div class="tb">
+            <p>
+	        <span><a href="http://www.roleplaymedia.net/profile/MarquettaKatie">Marquetta Katie</a></span>
+	        <span><a class="xg_sprite xg_sprite-gift" href="http://www.roleplaymedia.net/main/authorization/signUp?target=http%3A%2F%2Fwww.roleplaymedia.net%2Fgifts%2Fitem%2Flist%3Fto%3D2mpeuvi9hql12%26xg_source%3Dbemb">Give a Gift</a> </span>
+	    </p>
+        </div>
+    </li>
+</ul>
+</div></div>
+	<div class="xg_module module_badge">
+		<div class="xg_module_head">
+	    <h2>Badge</h2>
+	    </div>
+	    <div class="xg_module_body xj_badge_body xj_embed_container" _embedCode="&lt;object classid=&quot;clsid:D27CDB6E-AE6D-11cf-96B8-444553540000&quot; codebase=&quot;http://fpdownload.macromedia.com/get/flashplayer/current/swflash.cab&quot;
+    id=&quot;badgeSwf&quot; width=&quot;100%&quot; height=&quot;104&quot; &gt;
+    &lt;param name=&quot;movie&quot; value=&quot;http://static.ning.com/socialnetworkmain/widgets/index/swf/badge.swf?v=201103232153&quot; /&gt;
+    &lt;param name=&quot;quality&quot; value=&quot;high&quot; /&gt;
+    &lt;param name=&quot;bgcolor&quot; value=&quot;#CDA950&quot; /&gt;
+    &lt;param name=&quot;flashvars&quot; value=&quot;hideVisit=1&amp;amp;config=http%3A%2F%2Fwww.roleplaymedia.net%2Fmain%2Fbadge%2FshowPlayerConfig%3Fsize%3Dsmall%26v%3D10&amp;amp;backgroundColor=0xCDA950&amp;amp;textColor=0xB26400&quot; /&gt;
+    &lt;param name=&quot;wmode&quot; value=&quot;opaque&quot;/&gt;
+    &lt;param name=&quot;allowScriptAccess&quot; value=&quot;always&quot; /&gt;
+&lt;embed
+    class=&quot;xj_badge_embed&quot;
+    src=&quot;http://static.ning.com/socialnetworkmain/widgets/index/swf/badge.swf?v=201103232153&quot;
+    quality=high
+    bgColor=&quot;#CDA950&quot;
+    width=&quot;100%&quot;
+    height=&quot;104&quot;
+    name=&quot;badgeSwf&quot;
+    type=&quot;application/x-shockwave-flash&quot;
+    pluginspage=&quot;http://www.macromedia.com/go/getflashplayer&quot;
+    wmode=&quot;opaque&quot;
+    FlashVars=&quot;hideVisit=1&amp;amp;config=http%3A%2F%2Fwww.roleplaymedia.net%2Fmain%2Fbadge%2FshowPlayerConfig%3Fsize%3Dsmall%26v%3D10&amp;amp;backgroundColor=0xCDA950&amp;amp;textColor=0xB26400&quot;
+    scale=&quot;noscale&quot;
+    allowScriptAccess=&quot;always&quot;&gt;
+&lt;/embed&gt;
+&lt;/object&gt;">
+    Loading…</div>
+	    <div class="xg_module_foot">
+	        <p class="right"><a href="http://www.roleplaymedia.net/main/embeddable/list">Get Badge</a></p>
+	    </div>
+	</div>
+
+<!-- Template Start:  -->
+
+                </div>
+            </div>
+            <div id="xg_foot">
+                <p class="left">
+    © 2011 &nbsp; Created by <a href="/xn/detail/u_unclebear">Berin Kinsman</a>.        &nbsp;
+    Powered by <a href="http://www.ning.com/"><img src="http://static.ning.com/socialnetworkmain/widgets/index/gfx/logo_ningbar.png?v=201103232153" width="48" height="15" alt="Ning" class="poweredbylogo" /></a>.
+    </p>
+    <p class="right xg_lightfont">
+                <a href="http://www.roleplaymedia.net/main/embeddable/list">Badges</a> &nbsp;|&nbsp;
+                            <a href="http://www.roleplaymedia.net/main/authorization/signUp?target=http%3A%2F%2Fwww.roleplaymedia.net%2Fmain%2Findex%2Freport&amp;groupToJoin=traveller" dojoType="PromptToJoinLink" _joinPromptText="Like what you see in Traveller? Join Now!" _signInUrl="http://www.roleplaymedia.net/main/authorization/signIn?target=http%3A%2F%2Fwww.roleplaymedia.net%2Fmain%2Findex%2Freport&amp;groupToJoin=traveller">Report an Issue</a> &nbsp;|&nbsp;
+                <a href="http://www.roleplaymedia.net/main/authorization/termsOfService?previousUrl=http%3A%2F%2Fwww.roleplaymedia.net%2Fgroup%2Ftraveller">Terms of Service</a>
+    </p>
+
+            </div>
+        </div>
+        
+        <div id="xj_baz17246" class="xg_theme"></div>
+<div id="xg_overlay" style="display:none;">
+<!--[if lte IE 6.5]><iframe></iframe><![endif]-->
+</div>
+<!--googleoff: all--><noscript>
+	<style type="text/css" media="screen">
+        #xg { position:relative;top:120px; }
+        #xn_bar { top:120px; }
+	</style>
+	<div class="errordesc noscript">
+		<div>
+            <h3><strong>Hello, you need to enable JavaScript to use Role Play Media Network.</strong></h3>
+            <p>Please check your browser settings or contact your system administrator.</p>
+			<img src="/xn_resources/widgets/index/gfx/jstrk_off.gif" height="1" width="1" />
+		</div>
+	</div>
+</noscript><!--googleon: all-->
+<script type="text/javascript" src="http://static.ning.com/socialnetworkmain/widgets/lib/core.min.js?v=201103232153"></script>        <script>
+            var sources = ["http:\/\/b.scorecardresearch.com\/beacon.js","http:\/\/static.ning.com\/openrpgblog\/instances\/shared\/js\/set_common.min.js?r=1299796572","http:\/\/static.ning.com\/openrpgblog\/instances\/shared\/js\/set_sidebar_u.min.js?r=1297283455","http:\/\/static.ning.com\/openrpgblog\/instances\/shared\/js\/set_grougroushow_u.min.js?r=1300942316"];
+            var numSources = sources.length;
+            var heads = document.getElementsByTagName('head');
+            var node = heads.length > 0 ? heads[0] : document.body;
+            for (var i = 0; i < numSources; i++) {
+                var source = sources[i];
+                xg._loader.loading(source);
+                var script = document.createElement('script');
+                
+                script.type = 'text/javascript';
+                var cb = (function(source) { return function() { xg._loader.onLoad(source); }; })(source);
+                script.onerror = script.onload = cb;
+                script.onreadystatechange = function() {
+                    if (this.readyState == 'complete' || this.readyState == 'loaded') {
+                        cb();
+                    }
+                }
+                script.src = source;
+                node.appendChild(script);
+            }
+        </script>
+    <script type="text/javascript">
+if (!ning._) {ning._ = {}}
+ning._.compat = { encryptedToken: "<empty>" }
+ning._.CurrentServerTime = "2011-03-24T18:58:37+00:00";
+ning._.probableScreenName = "";
+ning._.domains = {
+    base: 'ning.com',
+    ports: { http: '80', ssl: '443' }
+};
+ning.loader.version = '201103232153_10'; // DEP-6452:81c2cfc 26
+djConfig.parseWidgets = false;
+</script>
+<script type="text/javascript">
+    xg.token = '';
+    xg.cdnHost = 'static.ning.com';
+    xg.version = '201103232153';
+    xg.useMultiCdn = true;
+        xg.staticRoot = 'socialnetworkmain';
+    xg.xnTrackHost = "track.ning.com";
+            xg.cdnDefaultPolicyHost = 'static';
+        xg.cdnPolicy = [];
+        xg.global = xg.global||{}; xg.global.currentMozzle = 'groups';
+    xg.global.userCanInvite = false;
+    xg.global.requestBase = '';
+    xg.global.locale = 'en_US';
+    xg.num_thousand_sep = ",";
+    xg.num_decimal_sep = ".";
+        (function() {
+        dojo.addOnLoad(function() {
+            if(window.bzplcm) { window.bzplcm.ts('hr'); window.bzplcm._profileSend(); }
+                    });
+                            xg._loader.onLoad('xnloader');
+            })();
+</script>
+<div id="xgDock" class="xg_dock">
+            <div class="jsContainer">
+            <a class="xg_info" href="/main/authorization/signIn?chat=true">Sign in to chat!</a>            <a href="#" class="xg_status xg_status-offline" title="You are Offline" ></a>
+        </div>
+    </div>
+<div class="xg_dock_spacer"></div><script type="text/javascript" src="http://static.ning.com/socialnetworkmain/widgets/lib/js/thrift/xn_track.min.js?v=201103232153"></script>
+
+
+    </body>
+</html>
+
+<!-- Template Start:  -->
